@@ -653,7 +653,13 @@
 	<item id="1478" article="a" name="statue">
 		<attribute key="rotateTo" value="1442"/>
 	</item>
-	<item fromid="1479" toid="1480" article="a" name="street lamp"/>
+	<item id="1479" name="street lamp">
+		<attribute key="transformUseTo" value="1480" />
+	</item>
+
+	<item id="1480" name="street lamp">
+		<attribute key="transformUseTo" value="1479" />
+	</item>
 	<item fromid="1481" toid="1484" article="a" name="coal basin"/>
 	<item id="1485" article="an" name="empty coal basin"/>
 	<item id="1486" article="a" name="stone coal basin"/>
@@ -943,8 +949,13 @@
 		<attribute key="type" value="door"/>
 		<attribute key="blockprojectile" value="1"/>
 	</item>
-	<item fromid="1640" toid="1641" article="a" name="table">
+	<item id="1640" article="a" name="table">
 		<attribute key="type" value="door"/>
+		<attribute key="transformUseTo" value="1641"/>
+	</item>
+	<item id="1641" article="a" name="table">
+		<attribute key="type" value="door"/>
+		<attribute key="transformUseTo" value="1640"/>
 	</item>
 	<item fromid="1642" toid="1645" article="a" name="counter"/>
 	<item fromid="1646" toid="1649" article="a" name="throne"/>
@@ -2245,6 +2256,7 @@
 		<attribute key="weight" value="1500"/>
 		<attribute key="stopduration" value="1"/>
 		<attribute key="showduration" value="1"/>
+		<attribute key="transformUseTo" value="2163"/>
 	</item>
 	<item id="2163" article="a" name="magic light wand">
 		<attribute key="slotType" value="ammo"/>
@@ -2252,6 +2264,7 @@
 		<attribute key="decayTo" value="0"/>
 		<attribute key="showduration" value="1"/>
 		<attribute key="duration" value="3000"/>
+		<attribute key="transformUseTo" value="2162"/>
 	</item>
 	<item id="2164" article="a" name="might ring">
 		<attribute key="weight" value="100"/>
@@ -4334,6 +4347,7 @@
 	</item>
 	<item id="2578" article="a" name="closed trap">
 		<attribute key="weight" value="2100"/>
+		<attribute key="transformUseTo" value="2579"/>
 	</item>
 	<item id="2579" article="a" name="trap">
 		<attribute key="weight" value="2100"/>
@@ -6992,7 +7006,9 @@
 	</item>
 	<item fromid="3737" toid="3738" article="a" name="pagoda"/>
 	<item fromid="3739" toid="3742" article="a" name="huntress statue"/>
-	<item id="3743" article="a" name="bamboo lamp"/>
+	<item id="3743" article="a" name="bamboo lamp">
+		<attribute key="transformUseTo" value="4404"/>
+	</item>
 	<item id="3744" article="a" name="skull candle"/>
 	<item fromid="3745" toid="3751" article="a" name="bamboo column"/>
 	<item fromid="3752" toid="3755" article="a" name="bamboo pole"/>
@@ -7313,10 +7329,18 @@
 	<item id="3944" article="a" name="lit torch bearer"/>
 	<item id="3945" article="a" name="torch bearer"/>
 	<item id="3946" article="a" name="lit torch bearer"/>
-	<item id="3947" article="a" name="wall lamp"/>
-	<item id="3948" article="a" name="lit wall lamp"/>
-	<item id="3949" article="a" name="wall lamp"/>
-	<item id="3950" article="a" name="lit wall lamp"/>
+	<item id="3947" article="a" name="wall lamp">
+		<attribute key="transformUseTo" value="3948"/>
+	</item>
+	<item id="3948" article="a" name="lit wall lamp">
+		<attribute key="transformUseTo" value="3947"/>
+	</item>
+	<item id="3949" article="a" name="wall lamp">
+		<attribute key="transformUseTo" value="3948"/>
+	</item>
+	<item id="3950" article="a" name="lit wall lamp">
+		<attribute key="transformUseTo" value="3947"/>
+	</item>
 	<item id="3951" article="a" name="bongo drum">
 		<attribute key="weight" value="2900"/>
 	</item>
@@ -7984,7 +8008,9 @@
 	<item fromid="4375" toid="4393" name=""/>
 	<item fromid="4394" toid="4402" article="a" name="red carpet"/>
 	<item id="4403" article="a" name="mast"/>
-	<item id="4404" article="a" name="bamboo lamp"/>
+	<item id="4404" article="a" name="bamboo lamp">
+		<attribute key="transformUseTo" value="3743"/>
+	</item>
 	<item fromid="4405" toid="4421" name="rock soil"/>
 	<item fromid="4456" toid="4467" name="rocks"/>
 	<item fromid="4468" toid="4513" article="a" name="mountain"/>
