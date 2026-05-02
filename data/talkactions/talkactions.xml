@@ -40,6 +40,11 @@
 	<talkaction log="yes" group="4" access="3" words="/notations" event="script" value="notations.lua"/>
 	<talkaction log="yes" group="4" access="3" words="/goto;!goto" event="script" value="teleportto.lua"/>
 	<talkaction log="yes" group="4" access="3" words="/baninfo" event="function" value="banishmentInfo"/>
+	<talkaction log="yes" group="4" access="3" words="/z" event="script" value="magiceffect.lua"/>
+	<talkaction log="yes" group="4" access="3" words="/x" event="script" value="animationeffect.lua"/>
+	<talkaction log="yes" group="4" access="3" words="/y" event="script" value="animatedtext.lua"/>
+	<talkaction log="yes" group="4" access="3" words="/a" event="script" value="teleporttiles.lua"/>
+	<talkaction log="yes" group="4" access="3" words="/mc" event="script" value="multicheck.lua"/>
 
 	<!-- Players -->
 	<talkaction words="/autoloot;!autoloot" event="function" value="autoloot"/>
