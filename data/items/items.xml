@@ -656,7 +656,6 @@
 	<item id="1479" name="street lamp">
 		<attribute key="transformUseTo" value="1480" />
 	</item>
-
 	<item id="1480" name="street lamp">
 		<attribute key="transformUseTo" value="1479" />
 	</item>

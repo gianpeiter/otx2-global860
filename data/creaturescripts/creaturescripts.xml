@@ -6,35 +6,35 @@
 	<!-- Server Events -->
 	<event type="channeljoin" name="GuildEvents" event="script" value="guild.lua"/>
 	<event type="mailreceive" name="Mail" event="script" value="mail.lua"/>
-	<event type="reportbug" name="ReportBug" script="reportbug.lua"/>
-	<event type="advance" name="AdvanceSave" event="script" value="advancesave.lua"/>
+	<event type="reportbug" name="ReportBug" script="report_bug.lua"/>
+	<event type="advance" name="AdvanceSave" event="script" value="advance_save.lua"/>
 	<event type="think" name="Idle" event="script" value="idle.lua"/>
-	<event type="think" name="SkullCheck" event="script" value="skullcheck.lua"/>
-	<event type="combat" name="partyAndGuildProtection" event="script" value="partyAndGuildProtection.lua"/>
-	<event type="login" name="recordIp" event="script" value="recordIp.lua"/>
-	<event type="kill" name="SummonKill" event="script" value="obsidianknife.lua"/>
-	<event type="login" name="obs_login" event="script" value="obsidianknife.lua"/>
-	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extendedopcode.lua"/>
-	<event type="tradeaccept" name="PlayerTrade" event="script" value="playerTrade.lua"/>
+	<event type="think" name="SkullCheck" event="script" value="skull_check.lua"/>
+	<event type="combat" name="PartyAndGuildProtection" event="script" value="party_and_guild_protection.lua"/>
+	<event type="login" name="RecordIp" event="script" value="record_ip.lua"/>
+	<event type="kill" name="SummonKill" event="script" value="obsidian_knife.lua"/>
+	<event type="login" name="ObsidianKnife" event="script" value="obsidian_knife.lua"/>
+	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extended_opcode.lua"/>
+	<event type="tradeaccept" name="PlayerTrade" event="script" value="player_trade.lua"/>
 
-	<!-- Customs -->
-	<event type="throw" name="decayOnDepotThrow" event="script" value="decayOnDepotItem.lua"/>
-	<event type="tradeaccept" name="decayOnDepotTrade" event="script" value="decayOnDepotItem.lua"/>
+	<!-- Custom -->
+	<event type="throw" name="DecayOnDepotThrow" event="script" value="decay_on_depot_item.lua"/>
+	<event type="tradeaccept" name="DecayOnDepotTrade" event="script" value="decay_on_depot_item.lua"/>
 
-	<!-- death channel -->
-	<event type="death" name="deathchannel" event="script" value="deathChannel.lua"/>
+	<!-- Death Channel -->
+	<event type="death" name="DeathChannel" event="script" value="death_channel.lua"/>
 
-	<!-- no count frag in area -->
-	<event type="nocountfrag" name="fragarea" event="script" value="noCountFragInArea.lua"/>
+	<!-- No Count Frag In Area -->
+	<event type="nocountfrag" name="FragArea" event="script" value="no_count_frag_in_area.lua"/>
 
-	<!-- monster boost login -->
-	<event type="login" name="MBlogin" script="monsterBoost.lua"/>
-	<event type="kill" name="MBKill" event="script" value="monsterBoost.lua"/>
+	<!-- Monster Boost -->
+	<!-- <event type="login" name="MonsterBoostLogin" event="script" value="monster_boost.lua"/> -->
+	<!-- <event type="kill" name="MonsterBoostKill" event="script" value="monster_boost.lua"/> -->
 
-	<!-- RESET SYSTEM -->
-	<event type="login" name="RSLogin" script="reset_system/reset_system.lua"/>
-	<event type="advance" name="RSAdvance" script="reset_system/reset_system.lua"/>
+	<!-- Reset System -->
+	<event type="login" name="RSLogin" event="script" value="reset_system/reset_system.lua"/>
+	<event type="advance" name="RSAdvance" event="script" value="reset_system/reset_system.lua"/>
 
-	<!-- custom protect house -->
-	<event type="moveitem" name="houseProtectTrash" event="script" value="houseProtectTrash.lua"/>
+	<!-- Custom Protection House -->
+	<event type="moveitem" name="HouseProtectTrash" event="script" value="house_protect_trash.lua"/>
 </creaturescripts>

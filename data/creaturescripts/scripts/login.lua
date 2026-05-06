@@ -58,16 +58,16 @@ function onLogin(cid)
 		registerCreatureEvent(cid, "SkullCheck")
 	end
 
-	registerCreatureEvent(cid, "decayOnDepotThrow")
-	registerCreatureEvent(cid, "decayOnDepotTrade")
-	registerCreatureEvent(cid, "fragarea")
-	registerCreatureEvent(cid, "houseProtectTrash")
+	registerCreatureEvent(cid, "DecayOnDepotThrow")
+	registerCreatureEvent(cid, "DecayOnDepotTrade")
+	registerCreatureEvent(cid, "FragArea")
+	registerCreatureEvent(cid, "HouseProtectTrash")
 	registerCreatureEvent(cid, "GuildEvents")
 	registerCreatureEvent(cid, "AdvanceSave")
-	registerCreatureEvent(cid, "recordIp")
-	registerCreatureEvent(cid, "partyAndGuildProtection")
+	registerCreatureEvent(cid, "RecordIp")
+	registerCreatureEvent(cid, "PartyAndGuildProtection")
 	registerCreatureEvent(cid, "PlayerTrade")
-	registerCreatureEvent(cid, "deathchannel")
+	registerCreatureEvent(cid, "DeathChannel")
 
 	doPlayerOpenChannel(cid, 15)  --channel_death
 	doPlayerOpenChannel(cid, 0x10)  --loot channel
