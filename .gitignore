@@ -188,3 +188,4 @@ pip-log.txt
 .*.swp
 .*.swo
 /config.lua
+log.txt

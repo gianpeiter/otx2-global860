@@ -4,9 +4,15 @@ local config = {
         items = {
             {itemId = 2378, count = 1}
         },
-        storage = 5673,
-		emptyMessage = "The pile of bones is empty."
-    }
+        storage = 5673
+    },
+	-- Crusader Helmet
+    [3001] = {
+        items = {
+            {itemId = 2497, count = 1}
+        },
+        storage = 5316
+    },
 }
 
 local function getRewardText(itemId, count)
@@ -36,12 +42,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
 	if useItem.time then
 		if storage > os.time() then
-			doPlayerSendCancel(cid, useItem.emptyMessage or ("The " .. getItemNameById(item.itemid) .. " is empty."))
+			doPlayerSendCancel(cid, "The " .. getItemNameById(item.itemid) .. " is empty.")
 			return true
 		end
 	else
 		if storage ~= (useItem.formerValue or -1) then
-			doPlayerSendCancel(cid, useItem.emptyMessage or ("The " .. getItemNameById(item.itemid) .. " is empty."))
+			doPlayerSendCancel(cid, "The " .. getItemNameById(item.itemid) .. " is empty.")
 			return true
 		end
 	end
