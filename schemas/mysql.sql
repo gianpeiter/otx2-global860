@@ -51,6 +51,7 @@ CREATE TABLE `accounts`
 ) ENGINE = InnoDB;
 
 INSERT INTO `accounts` VALUES (1, '1', '356a192b7913b04c54574d18c28d46e6395428ab', '', 65535, 0, '', '0', 0, 0, 1);
+INSERT INTO `accounts` VALUES (2, '10', '41da8bef22aaef9d7c5821fa0f0de7cccc4dda4d', '', 65535, 0, '', '0', 0, 0, 1);
 
 CREATE TABLE `players`
 (

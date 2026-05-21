@@ -14,6 +14,9 @@
 	<globalevent name="GlobalSave" type="globalsave" event="script" value="init.lua"/>
 	<globalevent name="Record" type="record" event="script" value="record.lua"/>
 
+	<!-- Shop System -->
+	<globalevent name="ShopSystem" interval="5000" event="script" value="shop_system.lua"/>
+
 	<!-- Examples -->
 	<!-- <globalevent name="timer_example" time="21:35:11" event="script" value="my_script.lua"/> -->
 </globalevents>

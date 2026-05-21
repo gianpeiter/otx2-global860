@@ -23,8 +23,10 @@ sources/objects/
 theotxserver
 sources/theotxserver
 
+# Game
 config-ot.lua
 config.lua
+restart.sh
 
 [Dd]ebug/
 [Rr]elease/

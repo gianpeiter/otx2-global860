@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- Alters -->
+	<movevent type="StepIn" fromaid="7801" toaid="7848" event="script" value="alters.lua" />
+	<movevent type="StepIn" fromaid="15111" toaid="15114" event="script" value="alters.lua" />
+
 	<!-- Decaying tiles -->
 	<movevent type="StepIn" itemid="293" event="script" value="decay.lua"/>
 	<movevent type="StepIn" itemid="461" event="script" value="decay.lua"/>

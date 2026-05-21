@@ -356,7 +356,7 @@ local AccInfo = db.getResult("SELECT `password` FROM `accounts` WHERE `id` = " .
 end
 
 function doPlayerAddPremiumPoints(cid, points)
-	return db.Query("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. points .. " WHERE `id` = " .. getPlayerAccountId(cid) .. ";")
+	return db.query("UPDATE `accounts` SET `premium_points` = `premium_points` + " .. points .. " WHERE `id` = " .. getPlayerAccountId(cid) .. ";")
 end
 
 function doRemoveHouse(cid)

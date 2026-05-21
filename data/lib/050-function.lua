@@ -49,6 +49,21 @@ function doPlayerGiveItemContainer(cid, containerid, itemid, amount, subType)
 	return true
 end
 
+function doPlayerGiveShopContainer(cid, containerId, itemId, itemCount, containerCount)
+
+    for i = 1, containerCount do
+        local container = doCreateItemEx(containerId, 1)
+        if container > 0 then
+            doAddContainerItem(container, itemId, itemCount)
+            if doPlayerAddItemEx(cid, container, true) ~= RETURNVALUE_NOERROR then
+                return false
+            end
+        end
+    end
+
+    return true
+end
+
 function doPlayerTakeItem(cid, itemid, amount)
 	return getPlayerItemCount(cid, itemid) >= amount and doPlayerRemoveItem(cid, itemid, amount)
 end
