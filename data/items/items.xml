@@ -2521,7 +2521,7 @@
 		<attribute key="manashield" value="1"/>
 		<attribute key="showattributes" value="1"/>
 	</item>
-	<item id="2205" article="a" name="life ring (faster regeneration)">
+	<item id="2205" article="a" name="life ring">
 		<attribute key="weight" value="80"/>
 		<attribute key="slotType" value="ring"/>
 		<attribute key="decayTo" value="0"/>
@@ -2616,7 +2616,7 @@
 		<attribute key="showduration" value="1"/>
 		<attribute key="showattributes" value="1"/>
 	</item>
-	<item id="2216" article="a" name="ring of healing (faster regeneration)">
+	<item id="2216" article="a" name="ring of healing">
 		<attribute key="weight" value="80"/>
 		<attribute key="slotType" value="ring"/>
 		<attribute key="decayTo" value="0"/>
@@ -4466,7 +4466,7 @@
 	<item fromid="2638" toid="2639" article="a" name="tic-tac-toe token">
 		<attribute key="weight" value="500"/>
 	</item>
-	<item id="2640" article="a" name="pair of soft boots (faster regeneration)">
+	<item id="2640" article="a" name="pair of soft boots">
 		<attribute key="weight" value="800"/>
 		<attribute key="slotType" value="feet"/>
 		<attribute key="decayTo" value="10021"/>

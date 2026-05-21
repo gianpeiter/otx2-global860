@@ -1191,7 +1191,7 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 				s << "invisibility";
 			}
 
-			if(it.abilities->regeneration)
+			if(it.abilities->regeneration && (it.abilities->healthGain > 0 || it.abilities->manaGain > 0))
 			{
 				if(begin)
 				{
@@ -1199,9 +1199,26 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 					s << " (";
 				}
 				else
+				{
 					s << ", ";
+				}
 
-				s << "faster regeneration";
+				bool first = true;
+
+				if(it.abilities->healthGain > 0)
+				{
+					s << std::showpos << it.abilities->healthGain << std::noshowpos
+					<< "hp/" << it.abilities->healthTicks / 1000 << "s";
+					first = false;
+				}
+
+				if(it.abilities->manaGain > 0)
+				{
+					if(!first)
+						s << ", ";
+					s << std::showpos << it.abilities->manaGain << std::noshowpos
+					<< "mp/" << it.abilities->manaTicks / 1000 << "s";
+				}
 			}
 
 			if(it.abilities->manaShield)
@@ -1472,7 +1489,7 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 				s << "invisibility";
 			}
 
-			if(it.abilities->regeneration)
+			if(it.abilities->regeneration && (it.abilities->healthGain > 0 || it.abilities->manaGain > 0))
 			{
 				if(begin)
 				{
@@ -1480,9 +1497,26 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 					s << " (";
 				}
 				else
+				{
 					s << ", ";
+				}
 
-				s << "faster regeneration";
+				bool first = true;
+
+				if(it.abilities->healthGain > 0)
+				{
+					s << std::showpos << it.abilities->healthGain << std::noshowpos
+					<< "hp/" << it.abilities->healthTicks / 1000 << "s";
+					first = false;
+				}
+
+				if(it.abilities->manaGain > 0)
+				{
+					if(!first)
+						s << ", ";
+					s << std::showpos << it.abilities->manaGain << std::noshowpos
+					<< "mp/" << it.abilities->manaTicks / 1000 << "s";
+				}
 			}
 
 			if(it.abilities->manaShield)
