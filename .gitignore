@@ -192,16 +192,7 @@ pip-log.txt
 /config.lua
 log.txt
 
-# Logs / crash / backups
-logs/*
-!logs/.gitkeep
-!logs/restart/
-logs/restart/*
-!logs/restart/.gitkeep
-!logs/restart/console/
-!logs/restart/crash/
-!logs/restart/mysql_backup/
-
+# Logs
 logs/restart/console/*
 logs/restart/crash/*
 logs/restart/mysql_backup/*
