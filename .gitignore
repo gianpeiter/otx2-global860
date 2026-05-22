@@ -191,3 +191,21 @@ pip-log.txt
 .*.swo
 /config.lua
 log.txt
+
+# Logs / crash / backups
+logs/*
+!logs/.gitkeep
+!logs/restart/
+logs/restart/*
+!logs/restart/.gitkeep
+!logs/restart/console/
+!logs/restart/crash/
+!logs/restart/mysql_backup/
+
+logs/restart/console/*
+logs/restart/crash/*
+logs/restart/mysql_backup/*
+
+!logs/restart/console/.gitkeep
+!logs/restart/crash/.gitkeep
+!logs/restart/mysql_backup/.gitkeep
