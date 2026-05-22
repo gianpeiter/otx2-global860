@@ -167,9 +167,9 @@ void Stats::parseSpecialQueue(std::forward_list <Stat*>& queue) {
 }
 
 void Stats::writeSlowInfo(const std::string& file, uint64_t executionTime, const std::string& description, const std::string& extraDescription) {
-    std::ofstream out(std::string("logs/") + file, std::ofstream::out | std::ofstream::app);
+    std::ofstream out(std::string("logs/stats/") + file, std::ofstream::out | std::ofstream::app);
     if (!out.is_open()) {
-        std::clog << "Can't open " << std::string("logs/") + file << " (check if directory exists)" << std::endl;
+        std::clog << "Can't open " << std::string("logs/stats/") + file << " (check if directory exists)" << std::endl;
         return;
     }
     out << "[" << formatDate(time(NULL)) << "] Execution time: " << (executionTime / 1000000) << " ms - " << description << " - " << extraDescription << "\n";
@@ -178,9 +178,9 @@ void Stats::writeSlowInfo(const std::string& file, uint64_t executionTime, const
 }
 
 void Stats::writeStats(const std::string& file, const statsMap& stats, const std::string& extraInfo) {
-    std::ofstream out(std::string("logs/") + file, std::ofstream::out | std::ofstream::app);
+    std::ofstream out(std::string("logs/stats/") + file, std::ofstream::out | std::ofstream::app);
     if (!out.is_open()) {
-        std::clog << "Can't open " << std::string("logs/") + file << " (check if directory exists)" << std::endl;
+        std::clog << "Can't open " << std::string("logs/stats/") + file << " (check if directory exists)" << std::endl;
         return;
     }
     if(stats.empty()) {
