@@ -6,7 +6,8 @@
 		<stage minlevel="41" maxlevel="60" multiplier="10"/>
 		<stage minlevel="61" maxlevel="80" multiplier="5"/>
 		<stage minlevel="81" maxlevel="100" multiplier="3"/>
-		<stage minlevel="101" maxlevel="120" multiplier="1.5"/>
-		<stage minlevel="121" multiplier="0.5"/>
+		<stage minlevel="101" maxlevel="120" multiplier="1"/>
+		<stage minlevel="121" maxlevel="140" multiplier="0.7"/>
+		<stage minlevel="141" multiplier="0.3"/>
 	</world>
 </stages>

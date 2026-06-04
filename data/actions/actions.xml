@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!-- Thais Lighthouse Quest -->
+	<action actionid="4444" event="script" value="quests/thais_lighthouse_quest/lever.lua" />
+	<action actionid="6665" event="script" value="quests/thais_lighthouse_quest/lever_2.lua" />
+
+	<!-- Triangle Tower Quest -->
+	<action actionid="6778" event="script" value="quests/triangle_tower_quest/lever.lua" />
+
+	<!-- Life Ring Quest -->
+	<action actionid="20501" event="script" value="quests/life_ring_quest/lever.lua" />
+
+	<!-- Mintwallin Cyclops Quest -->
+	<action actionid="20500" event="script" value="quests/mintwallin_cyclops_quest/lever.lua" />
+
 	<!-- Telescope -->
 	<action actionid="13842" event="script" value="telescope.lua"/>
 
@@ -13,7 +26,7 @@
 	<!-- Text -->
 	<action itemid="1957;7722;10122" event="script" value="other/text.lua"/>
 
-	<!-- Weapons enchanting (Gems) -->
+	<!-- Weapons Enchanting (Gems) -->
 	<action itemid="2146-2147;2149-2150;7759-7762" event="script" value="other/enchanting.lua"/>
 
 	<!-- Change gold -->
@@ -56,11 +69,11 @@
 	<!-- Spellbooks -->
 	<action itemid="2175;6120;8190;8900-8904;8918;12647" event="script" value="other/spellbook.lua"/>
 
-	<!-- Construction kits -->
+	<!-- Construction Kits -->
 	<action itemid="3901-3938;5086-5088;6114-6115;6372-6373;7503;7700;7960-7962;8692-8693;9974;10295" event="script" value="other/construction_kits.lua"/>
 	<action itemid="7904-7907" event="script" value="other/furniture_beds.lua"/>
 
-	<!-- Music, instruments -->
+	<!-- Music, Instruments -->
 	<action itemid="2070-2085;2094-2095;2332;2364;2367-2374;3951-3953;3957;5786;6123;9561;6572" event="script" value="other/music.lua"/>
 
 	<!-- Teleport (stairs, ladders) -->
@@ -72,9 +85,9 @@
 	<!-- Doors -->
 		<!-- Doors -->
 	<action itemid="1209-1214;1219-1262;1539-1542;3535-3552;4913-4918;5082-5085;5098-5145;5278-5295;5515-5518;5732-5737;5745-5749;6192-6209;6249-6266;6795-6802;6891-6908;7033-7050;7054-7057;8541-8558;9165-9184;9267-9284;10268-10285;10468-10486;10775-10777;10780-10786;10789-10792;12092-12105;12188-12190;12193-12199;12202-12205" event="script" value="other/doors.lua"/>
-		<!-- Keys -->
+	<!-- Keys -->
 	<action itemid="2086-2092;10032;10091" event="script" value="other/keys.lua"/>
-		<!-- Windows -->
+	<!-- Windows -->
 	<action itemid="5303-5305;6436-6473;6788-6791;7025-7032;10264-10267;10488-10491" event="script" value="other/windows.lua"/>
 
 	<!-- Watches -->

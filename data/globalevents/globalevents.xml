@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
 	<!-- Shutdown Server -->
-	<globalevent name="ShutDown" time="14:05" event="script" value="shutdown.lua" />
+	<!-- <globalevent name="ShutDown" time="14:05" event="script" value="shutdown.lua" /> -->
 
 	<!-- Monster Boost -->
 	<!-- <globalevent name="MonsterBoostStart" type="startup" event="script" value="monster_boost/monster_boost.lua"/> -->

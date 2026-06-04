@@ -1,5 +1,5 @@
 SPOTS = { 384, 418, 8278, 8592 }
-ROPABLE = { 294, 369, 370, 383, 392, 408, 409, 427, 428, 430, 462, 469, 470, 482, 484, 485, 489, 924, 3135, 3136, 7933, 7938, 8170, 8286, 8285,
+ROPABLE = { 294, 369, 370, 383, 392, 408, 409, 427, 428, 430, 462, 469, 470, 482, 484, 485, 489, 924, 1369, 3135, 3136, 7933, 7938, 8170, 8286, 8285,
 	8284, 8281, 8280, 8279, 8277, 8276, 8323, 8380, 8567, 8585, 8596, 8595, 8249, 8250, 8251, 8252, 8253, 8254, 8255, 8256, 8972, 9606, 9625 }
 
 HOLES = { 468, 481, 483, 7932, 8579 }
@@ -161,6 +161,24 @@ TOOLS.PICK = function(cid, item, fromPosition, itemEx, toPosition)
 		doSendMagicEffect(toPosition, CONST_ME_BLOCKHIT)
 		return true
 	end
+
+    -- Naginata Quest
+    if itemEx.actionid == 50058 then
+        local storage = getGlobalStorageValue(50058)
+        if storage < 0 then
+            storage = 0
+        end
+        if storage ~= 5 then
+            setGlobalStorageValue(50058, storage + 1)
+        elseif storage == 5 then
+            doRemoveItem(itemEx.uid, 1)
+            setGlobalStorageValue(50058, 0)
+        end
+        doSendMagicEffect(toPosition, CONST_ME_POFF)
+        doTargetCombatHealth(0, cid, COMBAT_PHYSICALDAMAGE, -31, -39, CONST_ME_NONE)
+
+        return true
+    end
 
 	return false
 end

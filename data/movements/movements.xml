@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- Devil Helmet Quest -->
+	<movevent type="StepIn" actionid="10056" event="script" value="quests/devil_helmet_quest/tile.lua"/>
+	<movevent type="StepOut" actionid="10056" event="script" value="quests/devil_helmet_quest/tile.lua"/>
+
+	<!-- Thais Lighthouse Quest -->
+	<movevent type="StepIn" actionid="10055" event="script" value="quests/thais_lighthouse_quest/tile.lua"/>
+	<movevent type="StepOut" actionid="10055" event="script" value="quests/thais_lighthouse_quest/tile.lua"/>
+
 	<!-- Alters -->
 	<movevent type="StepIn" fromaid="7801" toaid="7848" event="script" value="alters.lua" />
 	<movevent type="StepIn" fromaid="15111" toaid="15114" event="script" value="alters.lua" />

@@ -3,9 +3,9 @@ local FIELDS = {1497, 1499, 11095, 11096}
 local DRAW_WELL = 1369
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-	if(item.itemid == DRAW_WELL and item.actionid ~= 100) then
-		return false
-	end
+	-- if(item.itemid == DRAW_WELL and item.actionid ~= 100) then
+	-- 	return false
+	-- end
 
 	local check = false
 	fromPosition.stackpos = STACKPOS_GROUND
