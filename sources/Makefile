@@ -9,6 +9,7 @@ CXX = g++
 
 #-- Folder in which the compiled files '.o' will be stored --#
 OBJDIR = objects
+OUTDIR = ..
 
 
 CXXOBJECTS = $(CXXSOURCES:%.cpp=$(OBJDIR)/%.o)
@@ -64,14 +65,14 @@ CXXSOURCES = 			actions.cpp				allocator.cpp			baseevents.cpp			beds.cpp \
 all: $(BIN)
 
 clean:
-	$(RM) $(CXXOBJECTS) $(BIN)
+	$(RM) $(CXXOBJECTS) $(OUTDIR)/$(BIN)
 
 YELLOW = \033[1;33m
 GREEN = \033[0;32m
 NC = \033[0m
 
 $(BIN): $(CXXOBJECTS)
-	$(CXX) $(CXXFLAGS) -o $@ $(CXXOBJECTS) $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) -o $(OUTDIR)/$@ $(CXXOBJECTS) $(LDFLAGS)
 	@printf "${GREEN}\n\n-----------[Successful compilation]-----------${NC}\n\n"
 
 $(OBJDIR)/%.o: %.cpp
