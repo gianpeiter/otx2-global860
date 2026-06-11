@@ -47,20 +47,22 @@
 	<talkaction log="yes" group="4" access="3" words="/mc" event="script" value="multicheck.lua"/>
 
 	<!-- Players -->
-	<talkaction words="/autoloot;!autoloot" event="function" value="autoloot"/>
-	<talkaction words="/houseprotect;!houseprotect" event="function" value="houseprotect"/>
-	<talkaction words="!reset;!resetar;/reset;/resetar" script="reset_system.lua"/>
-	<talkaction words="/resetcheck;!resetcheck;/resetinfo;!resetinfo"  event="script" value="resetcheck.lua"/>
-	<talkaction words="/mw;!mw"  event="script" value="mwchange.lua"/>
-	<talkaction words="/hpmp;!hpmp"  event="script" value="lifeinpercent.lua"/>
-	<talkaction words="/tradeoff;!tradeoff" event="script" value="tradeoff.lua"/>
+	<talkaction access="0-4" words="/autoloot;!autoloot" event="function" value="autoloot"/>
+	<talkaction access="0-4" words="/houseprotect;!houseprotect" event="function" value="houseprotect"/>
+	<talkaction access="0-4" words="/tradeoff;!tradeoff" event="script" value="tradeoff.lua"/>
 	<talkaction access="0-4" words="!frags;/frags" event="script" value="frags.lua"/>
 	<talkaction access="0-4" words="!online;/online" event="script" value="online.lua"/>
 	<talkaction access="0-4" words="!uptime;/uptime" event="script" value="uptime.lua"/>
 	<talkaction access="0-4" words="!serverinfo;/serverinfo" event="script" value="serverinfo.lua"/>
 	<talkaction access="0-4" words="!commands;/commands" event="script" value="commands.lua"/>
 	<talkaction access="0-4" words="!pvp;/pvp" event="script" value="pvp.lua"/>
-	<talkaction access="0-4" words="/software;!software" event="function" value="software"/>
+	
+	<!-- Players/Disable -->
+	<!-- <talkaction access="0-4" words="/software;!software" event="function" value="software"/> -->
+	<!-- <talkaction access="0-4" words="!reset;!resetar;/reset;/resetar" script="reset_system.lua"/> -->
+	<!-- <talkaction access="0-4" words="/resetcheck;!resetcheck;/resetinfo;!resetinfo"  event="script" value="resetcheck.lua"/> -->
+	<!-- <talkaction access="0-4" words="/mw;!mw"  event="script" value="mwchange.lua"/> -->
+	<!-- <talkaction access="0-4" words="/hpmp;!hpmp"  event="script" value="lifeinpercent.lua"/> -->
 
 	<!-- Houses -->
 	<talkaction access="0-4" words="alana res;/buyhouse" filter="word-spaced" event="function" value="houseBuy"/>

@@ -40,12 +40,28 @@ typedef std::map<std::string, Character> Characters;
 class Account
 {
 	public:
-		Account() {premiumDays = warnings = number = lastDay = 0;}
+		Account()
+		{
+			premiumDays = 0;
+			warnings = 0;
+			number = 0;
+			lastDay = 0;
+			loyaltyPoints = 0;
+		}
+
 		virtual ~Account() {charList.clear();}
 
 		uint16_t premiumDays, warnings;
-		uint32_t number, lastDay;
-		std::string name, password, recoveryKey, salt;
+		uint32_t number;
+		uint32_t lastDay;
+		uint32_t loyaltyPoints;
+
+		std::string name;
+		std::string password;
+		std::string recoveryKey;
+		std::string salt;
+
 		Characters charList;
 };
+
 #endif

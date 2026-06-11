@@ -1460,6 +1460,17 @@ uint32_t DatabaseManager::updateDatabase()
 			registerDatabaseConfig("db_version", 37);
 			return 37;
 		}
+
+		case 37:
+		{
+			std::clog << "> Updating database to version 38... (Loyalty System)" << std::endl;
+
+			db->query("ALTER TABLE `accounts` ADD `loyalty_points` INT(11) UNSIGNED NOT NULL DEFAULT 0;");
+
+			registerDatabaseConfig("db_version", 38);
+			return 38;
+		}
+
 		default:
 			break;
 	}

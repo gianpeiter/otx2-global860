@@ -6,7 +6,7 @@ local removePositions = {
 function onUse(cid, item, fromPosition, itemEx, toPosition)
 
     if item.itemid == 1945 then
-        doPlayerSendCancel(cid, "You cannot use this object.")
+        doPlayerSendDefaultCancel(cid, RETURNVALUE_NOTPOSSIBLE)
         return true
     end
 

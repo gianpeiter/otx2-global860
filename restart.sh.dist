@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Required package:
-# sudo apt install moreutils -y
 #
 # If the script was edited on Windows:
 # sudo apt install dos2unix -y
@@ -16,7 +15,7 @@ MYSQL_DATABASE="database"
 readonly LOG_DIR="logs/restart"
 readonly CONSOLE_DIR="$LOG_DIR/console"
 readonly CRASH_DIR="$LOG_DIR/crash"
-readonly BACKUP_DIR="$LOG_DIR/mysql_backup"
+readonly BACKUP_DIR="$LOG_DIR/mysql"
 
 mkdir -p "$CONSOLE_DIR"
 mkdir -p "$CRASH_DIR"
@@ -50,13 +49,11 @@ while :; do
 
     echo "[$(date '+%H:%M:%S')] Starting server..."
 
-    stdbuf -o 0 "./$BINARY_NAME" 2>&1 \
-        | ts '%Y-%m-%d %H:%M:%S' \
-        | tee -a "$LOG_FILE"
+	stdbuf -o 0 "./$BINARY_NAME" 2>&1 | tee -a "$LOG_FILE"
 
     EXIT_CODE=${PIPESTATUS[0]}
 
-    if [ $EXIT_CODE -ne 0 ] && [ -f core ]; then
+    if [ "$EXIT_CODE" -ne 0 ] && [ -f core ]; then
         mv core "$CRASH_DIR/${DATE_NOW}.core"
         echo "[$(date '+%H:%M:%S')] Crash detected."
     fi

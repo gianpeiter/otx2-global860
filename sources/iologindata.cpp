@@ -53,7 +53,8 @@ Account IOLoginData::loadAccount(uint32_t accountId, bool preLoad/* = false*/)
 	Database* db = Database::getInstance();
 	std::ostringstream query;
 
-	query << "SELECT `name`, `password`, `salt`, `premdays`, `lastday`, `key`, `warnings` FROM `accounts` WHERE `id` = " << accountId << " LIMIT 1";
+	query << "SELECT `name`, `password`, `salt`, `premdays`, `lastday`, `loyalty_points`, `key`, `warnings` FROM `accounts` WHERE `id` = " << accountId << " LIMIT 1";
+
 	DBResult* result;
 	if(!(result = db->storeQuery(query.str())))
 		return Account();
@@ -65,10 +66,12 @@ Account IOLoginData::loadAccount(uint32_t accountId, bool preLoad/* = false*/)
 	account.salt = result->getDataString("salt");
 	account.premiumDays = std::max((int32_t)0, std::min((int32_t)GRATIS_PREMIUM, result->getDataInt("premdays")));
 	account.lastDay = result->getDataInt("lastday");
+	account.loyaltyPoints = result->getDataInt("loyalty_points");
 	account.recoveryKey = result->getDataString("key");
 	account.warnings = result->getDataInt("warnings");
 
 	result->free();
+
 	if(!preLoad)
 		loadCharacters(account);
 
@@ -80,7 +83,9 @@ bool IOLoginData::loadAccount(Account& account, const std::string& name)
 	Database* db = Database::getInstance();
 	std::ostringstream query;
 
-	query << "SELECT `id`, `password`, `salt`, `premdays`, `lastday`, `key`, `warnings` FROM `accounts` WHERE `name` " << db->getStringComparer() << db->escapeString(name) << " LIMIT 1";
+	query << "SELECT `id`, `password`, `salt`, `premdays`, `lastday`, `loyalty_points`, `key`, `warnings` FROM `accounts` WHERE `name` "
+		<< db->getStringComparer() << db->escapeString(name) << " LIMIT 1";
+
 	DBResult* result;
 	if(!(result = db->storeQuery(query.str())))
 		return false;
@@ -91,6 +96,9 @@ bool IOLoginData::loadAccount(Account& account, const std::string& name)
 	account.salt = result->getDataString("salt");
 	account.premiumDays = std::max((int32_t)0, std::min((int32_t)GRATIS_PREMIUM, result->getDataInt("premdays")));
 	account.lastDay = result->getDataInt("lastday");
+
+	account.loyaltyPoints = result->getDataInt("loyalty_points");
+
 	account.recoveryKey = result->getDataString("key");
 	account.warnings = result->getDataInt("warnings");
 
@@ -136,7 +144,15 @@ bool IOLoginData::saveAccount(Account account)
 {
 	Database* db = Database::getInstance();
 	std::ostringstream query;
-	query << "UPDATE `accounts` SET `premdays` = " << account.premiumDays << ", `warnings` = " << account.warnings << ", `lastday` = " << account.lastDay << " WHERE `id` = " << account.number << db->getUpdateLimiter();
+
+	query << "UPDATE `accounts` SET "
+		<< "`premdays` = " << account.premiumDays
+		<< ", `loyalty_points` = " << account.loyaltyPoints
+		<< ", `warnings` = " << account.warnings
+		<< ", `lastday` = " << account.lastDay
+		<< " WHERE `id` = " << account.number
+		<< db->getUpdateLimiter();
+
 	return db->query(query.str());
 }
 

@@ -214,7 +214,7 @@ function VoiceModule:callbackOnThink()
 		self.lastVoice = os.time() + self.timeout
 		if math.random(100) < self.chance  then
 			local voice = self.voices[math.random(self.voiceCount)]
-			npc:say(voice.text, voice.talktype)
+			selfSay(voice.text)
 		end
 	end
 	return true

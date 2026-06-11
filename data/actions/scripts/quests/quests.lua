@@ -326,7 +326,7 @@ local config = {
     -- Life Ring Quest
     [21987] = {
         items = {
-            {itemId = 2201, count = 1}, -- Dragon Necklace
+            {itemId = 2201, charges = 200}, -- Dragon Necklace
             {itemId = 2168, count = 1} -- Life Ring
         },
         storage = 21987
@@ -499,6 +499,127 @@ local config = {
             {itemId = 2089, count = 1, actionId = 3802} -- Copper Key 3802
         },
         storage = 21979
+    },
+
+    -- Explorer Brooch Quest
+    [8900] = {
+        items = {
+            {itemId = 4873, count = 1} -- Explorer brooch
+        },
+        storage = 8900
+    },
+
+    -- Orc Fortress Quest
+    [43987] = {
+        items = {
+            {itemId = 2430, count = 1} -- Knight Axe
+        },
+        storage = 43987
+    },
+    [43981] = {
+        items = {
+            {itemId = 2476, count = 1} -- Knight Armor
+        },
+        storage = 43981
+    },
+    [43985] = {
+        items = {
+            {itemId = 2392, count = 1} -- Fire Sword
+        },
+        storage = 43985
+    },
+
+    -- Panpipe Quest
+    [21978] = {
+        items = {
+            {itemId = 2088, count = 1, actionId = 4055} -- Silver Key 4055
+        },
+        storage = 21978
+    },
+    [21977] = {
+        items = {
+            {itemId = 2166, count = 1}, -- Power Ring
+            {itemId = 2074, count = 1}, -- Panpipes
+            {itemId = 2150, count = 2} -- Small Amethyst
+        },
+        storage = 21977
+    },
+
+    -- The Desert Dungeon Quest
+    [1740] = {
+        items = {
+            {itemId = 2152, count = 100} -- Platinum Coin
+        },
+        storage = 1740
+    },
+    [7163] = {
+        items = {
+            {itemId = 2200, charges = 250}, -- Protection Amulet
+            {itemId = 2214, count = 1}, -- Ring of Healing
+            {itemId = 2162, count = 1}, -- Magic Light Wand
+            {itemId = 2193, count = 1} -- Ankh
+        },
+        storage = 7163,
+        containerId = 1991
+    },
+
+    -- Draconia Quest
+    [21976] = {
+        items = {
+            {itemId = 2396, count = 1}, -- Ice Rapier
+            {itemId = 2409, count = 1} -- Serpent Sword
+        },
+        storage = 21976
+    },
+    [21975] = {
+        items = {
+            {itemId = 2167, count = 1}, -- Energy Ring
+            {itemId = 2197, charges = 5} -- Stone Skin Amulet
+        },
+        storage = 21975
+    },
+
+    -- Adorned UH Rune Quest
+    [23124] = {
+        items = {
+            {itemId = 12559, count = 1} -- Silver Rune Emblem
+        },
+        storage = 23124
+    },
+    [32177] = {
+        items = {
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1} -- Strong Mana Potion
+        },
+        storage = 32177,
+        containerId = 1991
+    },
+    [14224] = {
+        items = {
+            {itemId = 2169, count = 1} -- Time Ring
+        },
+        storage = 14224
+    },
+    [14225] = {
+        items = {
+            {itemId = 1738, count = 1} -- Sword Ring
+        },
+        storage = 14225
+    },
+    [24881] = {
+        items = {
+            {itemId = 2201, charges = 200} -- Dragon Necklace
+        },
+        storage = 24881
+    },
+    [24880] = {
+        items = {
+            {itemId = 1738, count = 1} -- Wedding Ring
+        },
+        storage = 24880
     },
 }
 

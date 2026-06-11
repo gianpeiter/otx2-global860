@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!-- Draconia Quest -->
+	<action actionid="20502-20503" event="script" value="quests/draconia_quest/lever.lua" />
+
+	<!-- Triangle Tower Quest -->
+	<action actionid="1912" event="script" value="quests/the_desert_dungeon_quest/lever.lua" />
+
 	<!-- Thais Lighthouse Quest -->
 	<action actionid="4444" event="script" value="quests/thais_lighthouse_quest/lever.lua" />
 	<action actionid="6665" event="script" value="quests/thais_lighthouse_quest/lever_2.lua" />

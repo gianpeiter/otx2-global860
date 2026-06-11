@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- Draconia Quest -->
+	<movevent type="StepIn" actionid="10057" event="script" value="quests/draconia_quest/fall.lua"/>
+	<movevent type="StepIn" actionid="10058-10059" event="script" value="quests/draconia_quest/tile.lua"/>
+	<movevent type="StepOut" actionid="10058-10059" event="script" value="quests/draconia_quest/tile.lua"/>
+	<movevent type="StepIn" actionid="10060" event="script" value="quests/draconia_quest/teleport.lua"/>
+	<movevent type="StepIn" actionid="10061" event="script" value="quests/draconia_quest/exit.lua"/>
+
+
 	<!-- Devil Helmet Quest -->
 	<movevent type="StepIn" actionid="10056" event="script" value="quests/devil_helmet_quest/tile.lua"/>
 	<movevent type="StepOut" actionid="10056" event="script" value="quests/devil_helmet_quest/tile.lua"/>

@@ -27,6 +27,8 @@
 	<!-- No Count Frag In Area -->
 	<event type="nocountfrag" name="FragArea" event="script" value="no_count_frag_in_area.lua"/>
 
+	<event type="login" name="LoyaltySystem" event="script" value="loyalty_system.lua"/>
+
 	<!-- Monster Boost -->
 	<!-- <event type="login" name="MonsterBoostLogin" event="script" value="monster_boost.lua"/> -->
 	<!-- <event type="kill" name="MonsterBoostKill" event="script" value="monster_boost.lua"/> -->
