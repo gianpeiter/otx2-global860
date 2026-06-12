@@ -53,8 +53,12 @@ modifyDamageInK = false
 modifyExperienceInK= false
 -- display broadcast in distro
 displayBroadcastLog = true
--- enable dodge and critical in source (by storage)
-enableCriticalAndDodgeSource = true
+-- enable dodge, critical, reflect and fatal in source (by storage)
+enableDodgeCriticalReflectFatal = true
+dodgeChancePercent = 20
+criticalChancePercent = 25
+reflectChancePercent = 25
+fatalChancePercent = 20
 -- player can push other player in PZ
 pushInProtectZone = false
 -- set time to exhaust potion 1500 = 1.5s

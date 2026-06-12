@@ -5267,47 +5267,94 @@ bool Game::combatChangeHealth(const CombatParams& params, Creature* attacker, Cr
 		int32_t damage = -healthChange;
 		if(damage > 0)
 		{
-			if(target->hasCondition(CONDITION_MANASHIELD) && params.combatType != COMBAT_UNDEFINEDDAMAGE)
+			bool useDodgeCriticalReflectFatal = g_config.getBool(ConfigManager::DODGECRITICALREFLECTFATAL);
+			if(useDodgeCriticalReflectFatal && attacker && target)
 			{
-				int32_t manaDamage = std::min(target->getMana(), damage + elementDamage);
-				damage = std::max((int32_t)0, damage + elementDamage - manaDamage);
-
-				elementDamage = 0; // TODO: I don't know how it works ;(
-				if(manaDamage && combatChangeMana(attacker, target, -manaDamage, params.combatType, true))
-					addMagicEffect(list, targetPos, MAGIC_EFFECT_LOSE_ENERGY);
-			}
-
-			// Dodge/Critical storage, disabled for now
-			bool useCritAndDodge = g_config.getBool(ConfigManager::CRITICALANDDODGE);
-			if(useCritAndDodge && attacker && target)
-			{
+				// dodge
+				const int32_t dodgeChancePercent = g_config.getNumber(ConfigManager::DODGE_CHANCE_PERCENT);
 				Player* ptarget = NULL;
 				if((ptarget = target->getPlayer()))
 				{
 					std::string valuedod = "-1";
-					if((ptarget->getStorage("48902", valuedod)))
+					if((ptarget->getStorage("48900", valuedod)))
 					{
-						if(!valuedod.empty() && (std::stoi(valuedod)) > random_range(0, 1000))
+						if(!valuedod.empty() && random_range(1, 10000) <= (std::stoi(valuedod) * dodgeChancePercent))
 						{
-							//damage = 0 / can change to damage /= 2 (50%)
+							// Dodge ativado: dano zero, zera também o dano elemental para não descontar mana
 							damage = 0;
+							elementDamage = 0;
 							addAnimatedText(target->getPosition(), COLOR_LIGHTGREEN, "Dodge!");
 						}
 					}
 				}
+			
+				// critical
+				const int32_t criticalChancePercent = g_config.getNumber(ConfigManager::CRITICAL_CHANCE_PERCENT);
 				Player* pattack = NULL;
 				if(damage > 0 && (pattack = attacker->getPlayer()))
 				{
 					std::string valuecrit = "-1";
-					if((pattack->getStorage("48913", valuecrit)))
+					if((pattack->getStorage("48901", valuecrit)))
 					{
-						if(!valuecrit.empty() && (std::stoi(valuecrit)) > random_range(0, 1000))
+						if(!valuecrit.empty() && random_range(1, 10000) <= (std::stoi(valuecrit) * criticalChancePercent))
 						{
+							// Critical ativado: dano multiplicado
 							damage *= 2;
-							addAnimatedText(attacker->getPosition(), COLOR_DARKRED, "CRITICAL!");
+							addAnimatedText(attacker->getPosition(), COLOR_PURPLE, "Critical!");
 						}
 					}
 				}
+				
+				// Reflect
+				const int32_t reflectChancePercent = g_config.getNumber(ConfigManager::REFLECT_CHANCE_PERCENT);
+				Player* ptargetReflect = nullptr;
+				if(damage > 0 && (ptargetReflect = target->getPlayer())) {
+					std::string valuereflect = "-1";
+					if(ptargetReflect->getStorage("48902", valuereflect)) {
+						if(!valuereflect.empty() && random_range(1, 10000) <= (std::stoi(valuereflect) * reflectChancePercent)) {
+							int32_t reflectDamage = static_cast<int32_t>(damage * 0.5); // 50% do dano base
+				
+							if(reflectDamage > 0) {
+								CombatParams reflectParams;
+								reflectParams.combatType = COMBAT_PHYSICALDAMAGE;
+								reflectParams.element.type = COMBAT_NONE;
+								reflectParams.element.damage = 0;
+				
+								// Aplica o dano de reflect no atacante
+								g_game.combatChangeHealth(reflectParams, target, attacker, -reflectDamage, true);
+				
+								g_game.addAnimatedText(attacker->getPosition(), COLOR_YELLOW, "Reflect!");
+							}
+						}
+					}
+				}
+				
+				// fatal
+				const int32_t fatalChancePercent = g_config.getNumber(ConfigManager::FATAL_CHANCE_PERCENT);
+				Player* pattackFatal = NULL;
+				if(damage > 0 && (pattackFatal = attacker->getPlayer()))
+				{
+					std::string valueFatal = "-1";
+					if((pattackFatal->getStorage("48903", valueFatal)))
+					{
+						if(!valueFatal.empty() && random_range(1, 10000) <= (std::stoi(valueFatal) * fatalChancePercent))
+						{
+							// Fatal ativado: dano multiplicado por 1.6 (60% a mais)
+							damage = static_cast<int32_t>(damage * 1.6f);
+							addAnimatedText(attacker->getPosition(), COLOR_LIGHTBLUE, "Fatal!");
+						}
+					}
+				}
+			}
+			
+			if(damage > 0 && target->hasCondition(CONDITION_MANASHIELD) && params.combatType != COMBAT_UNDEFINEDDAMAGE)
+			{
+				int32_t manaDamage = std::min(target->getMana(), damage + elementDamage);
+				damage = std::max((int32_t)0, damage + elementDamage - manaDamage);
+			
+				elementDamage = 0;
+				if(manaDamage && combatChangeMana(attacker, target, -manaDamage, params.combatType, true))
+					addMagicEffect(list, targetPos, MAGIC_EFFECT_LOSE_ENERGY);
 			}
 
 			damage = std::min(target->getHealth(), damage);

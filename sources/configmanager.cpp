@@ -130,7 +130,11 @@ bool ConfigManager::load()
 	m_confNumber[NEWSPRITE_TO_MW] = getGlobalNumber("newSpriteIdMW", 0);
 	m_confNumber[MWSPRITE_TO_REPLACE] = getGlobalNumber("mwSpriteId", 10180);
 	m_confBool[MW_REPLACE_ENABLE] = getGlobalBool("useMwReplaceSystem", false);
-	m_confBool[CRITICALANDDODGE] = getGlobalBool("enableCriticalAndDodgeSource", false);
+	m_confBool[DODGECRITICALREFLECTFATAL] = getGlobalBool("enableDodgeCriticalReflectFatal", false);
+	m_confNumber[DODGE_CHANCE_PERCENT] = getGlobalNumber("dodgeChancePercent", 20);
+	m_confNumber[CRITICAL_CHANCE_PERCENT] = getGlobalNumber("criticalChancePercent", 25);
+	m_confNumber[REFLECT_CHANCE_PERCENT] = getGlobalNumber("reflectChancePercent", 25);
+	m_confNumber[FATAL_CHANCE_PERCENT] = getGlobalNumber("fatalChancePercent", 20);
 	m_confBool[ADD_FRAG_SAMEIP] = getGlobalBool("addFragToSameIp", false);
 	m_confBool[USE_MAX_ABSORBALL] = getGlobalBool("useMaxAbsorbAll", false);
 	m_confDouble[MAX_ABSORB_PERCENT] = getGlobalDouble("maxAbsorbPercent", 80.0);
