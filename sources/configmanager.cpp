@@ -331,6 +331,7 @@ bool ConfigManager::load()
 	m_confNumber[LOOT_MESSAGE_TYPE] = getGlobalNumber("monsterLootMessageType", 19);
 	m_confNumber[NAME_REPORT_TYPE] = getGlobalNumber("violationNameReportActionType", 2);
 	m_confNumber[HOUSE_CLEAN_OLD] = getGlobalNumber("houseCleanOld", 0);
+	m_confNumber[HOUSE_CLEAN_OLD_PREMIUM] = getGlobalNumber("houseCleanOldPremium", 0);
 	m_confNumber[MAX_IP_CONNECTIONS] = getGlobalNumber("MaxIpConnections", 4);
 	m_confBool[VIPLIST_PER_PLAYER] = getGlobalBool("separateVipListPerCharacter", false);
 	m_confDouble[RATE_MONSTER_HEALTH] = getGlobalDouble("rateMonsterHealth", 1);

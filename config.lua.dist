@@ -284,6 +284,7 @@ housePriceAsRent = false
 housePriceEachSquare = 1000
 houseRentPeriod = "weekly"
 houseCleanOld = 8 * 24 * 60 * 60
+houseCleanOldPremium = 10 * 24 * 60 * 60
 guildHalls = true
 houseSkipInitialRent = true
 houseProtection = true
