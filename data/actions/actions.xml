@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!-- Boost -->
+	<action itemid="2661" event="script" value="boost/loot_boost.lua" />
+
 	<!-- Sam's Old Backpack Quest -->
 	<action actionid="42535" event="script" value="quests/sam's_old_backpack_quest/door.lua" />
 

@@ -414,20 +414,31 @@ function hourToNumber(str)
 end
 
 function timeString(seconds)
-    local h = math.floor(seconds / 3600)
-    local m = math.floor((seconds % 3600) / 60)
-    local s = seconds % 60
+    local days = math.floor(seconds / 86400)
+    seconds = seconds % 86400
+
+    local hours = math.floor(seconds / 3600)
+    seconds = seconds % 3600
+
+    local minutes = math.floor(seconds / 60)
+    local secs = seconds % 60
 
     local parts = {}
 
-    if h > 0 then
-        table.insert(parts, h .. (h == 1 and " hour" or " hours"))
+    if days > 0 then
+        table.insert(parts, days .. (days == 1 and " day" or " days"))
     end
-    if m > 0 then
-        table.insert(parts, m .. (m == 1 and " minute" or " minutes"))
+
+    if hours > 0 then
+        table.insert(parts, hours .. (hours == 1 and " hour" or " hours"))
     end
-    if s > 0 or #parts == 0 then
-        table.insert(parts, s .. (s == 1 and " second" or " seconds"))
+
+    if minutes > 0 then
+        table.insert(parts, minutes .. (minutes == 1 and " minute" or " minutes"))
+    end
+
+    if secs > 0 and #parts == 0 then
+        table.insert(parts, secs .. (secs == 1 and " second" or " seconds"))
     end
 
     return table.concat(parts, ", ")

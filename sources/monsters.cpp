@@ -89,9 +89,14 @@ void MonsterType::reset()
 	elementMap.clear();
 }
 
-ItemList MonsterType::createLoot(const LootBlock& lootBlock)
+ItemList MonsterType::createLoot(const LootBlock& lootBlock, double lootBoost)
 {
-	uint16_t item = lootBlock.ids[0], random = Monsters::getLootRandom(), count = 0;
+    uint16_t item = lootBlock.ids[0];
+    uint16_t random = Monsters::getLootRandom();
+    uint16_t count = 0;
+
+    random = (uint16_t)(random / lootBoost);
+
 	if(lootBlock.ids.size() > 1)
 		item = lootBlock.ids[random_range((size_t)0, lootBlock.ids.size() - 1)];
 
@@ -159,7 +164,8 @@ bool MonsterType::createChildLootOld(Container* parent, const LootBlock& lootBlo
 	return !parent->empty();
 }
 
-bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock, uint32_t& money, std::stringstream& str, Player* player)
+bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock,
+    uint32_t& money, std::stringstream& str, Player* player, double lootBoost)
 {
 	if(!g_config.getBool(ConfigManager::AUTOLOOT_ENABLE_SYSTEM))
 	{
@@ -174,7 +180,7 @@ bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock,
 	ItemList items;
 	for(; it != lootBlock.childLoot.end() && !parent->full(); ++it)
 	{
-		items = createLoot(*it);
+		items = createLoot(*it, lootBoost);
 		if(items.empty())
 			continue;
 
@@ -183,7 +189,7 @@ bool MonsterType::createChildLoot(Container* parent, const LootBlock& lootBlock,
 			Item* tmpItem = *iit;
 			if(Container* container = tmpItem->getContainer())
 			{
-				if(createChildLoot(container, *it, money, str, player))
+				if(createChildLoot(container, *it, money, str, player, lootBoost))
 					parent->__internalAddThing(tmpItem);
 				else
 					delete container;
@@ -280,9 +286,27 @@ void MonsterType::dropLoot(Container* corpse)
 	uint32_t money = 0;
 	ItemList items;
 	std::stringstream str;
+
+	Player* lootOwner = g_game.getPlayerByGuid(corpse->getCorpseOwner());
+
+	double lootBoost = 1.0;
+
+	if(lootOwner)
+	{
+		std::string boostValue;
+		std::string expireValue;
+
+		if(lootOwner->getStorage("30000", boostValue) &&
+			lootOwner->getStorage("30001", expireValue))
+		{
+			if(std::stoi(expireValue) > (int32_t)time(NULL))
+				lootBoost = std::stoi(boostValue) / 100.0;
+		}
+	}
+
 	for(LootItems::const_iterator it = lootItems.begin(); it != lootItems.end() && !corpse->full(); ++it)
 	{
-		items = createLoot(*it);
+		items = createLoot(*it, lootBoost);
 		if(items.empty())
 			continue;
 
@@ -292,7 +316,7 @@ void MonsterType::dropLoot(Container* corpse)
 			if(Container* container = tmpItem->getContainer())
 			{
 				Player* tmpPlayer = g_game.getPlayerByGuid(corpse->getCorpseOwner());
-				if(createChildLoot(container, (*it), money, str, tmpPlayer))
+				if(createChildLoot(container, (*it), money, str, tmpPlayer, lootBoost))
 					corpse->__internalAddThing(tmpItem);
 				else
 					delete container;
