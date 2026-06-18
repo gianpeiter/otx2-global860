@@ -1,0 +1,214 @@
+[System]
+48900   -- Dodge
+48901   -- Critical
+48903   -- Reflect
+48904   -- Fatal
+12380   -- Monster Boost
+12381   -- Monster Boost
+12382   -- Monster Boost
+429833  -- Life in Percent
+5556667 -- Life in Percent
+455010  -- Help Mute
+212121  -- Magic Wall Change
+666     -- Trade Off
+667		-- Premium Points
+45510   -- Cast System
+30018   -- Promotion
+57940   -- Stamina System
+
+[Altars]
+15111   -- Ice Portal - Thais
+15112   -- Ice Portal - Venore
+15113   -- Ice Portal - Kazordoon
+15114   -- Ice Portal - Carlin
+15115   -- Ice Portal - Ab'dendriel
+15116   -- Ice Portal - Liberty Bay
+15117   -- Ice Portal - Port Hope
+15118   -- Ice Portal - Ankrahmun
+15119   -- Ice Portal - Darashia
+15120   -- Ice Portal - Edron
+15121   -- Ice Portal - Svargrond
+15122   -- Ice Portal - Yalahar
+15123   -- Earth Portal - Thais
+15124   -- Earth Portal - Venore
+15125   -- Earth Portal - Kazordoon
+15126   -- Earth Portal - Carlin
+15127   -- Earth Portal - Ab'dendriel
+15128   -- Earth Portal - Liberty Bay
+15129   -- Earth Portal - Port Hope
+15130   -- Earth Portal - Ankrahmun
+15131   -- Earth Portal - Darashia
+15132   -- Earth Portal - Edron
+15133   -- Earth Portal - Svargrond
+15134   -- Earth Portal - Yalahar
+15135   -- Energy Portal - Thais
+15136   -- Energy Portal - Venore
+15137   -- Energy Portal - Kazordoon
+15138   -- Energy Portal - Carlin
+15139   -- Energy Portal - Ab'dendriel
+15140   -- Energy Portal - Liberty Bay
+15141   -- Energy Portal - Port Hope
+15142   -- Energy Portal - Ankrahmun
+15143   -- Energy Portal - Darashia
+15144   -- Energy Portal - Edron
+15145   -- Energy Portal - Svargrond
+15146   -- Energy Portal - Yalahar
+15147   -- Fire Portal - Thais
+15148   -- Fire Portal - Venore
+15149   -- Fire Portal - Kazordoon
+15150   -- Fire Portal - Carlin
+15151   -- Fire Portal - Ab'dendriel
+15152   -- Fire Portal - Liberty Bay
+15153   -- Fire Portal - Port Hope
+15154   -- Fire Portal - Ankrahmun
+15155   -- Fire Portal - Darashia
+15156   -- Fire Portal - Edron
+15157   -- Fire Portal - Svargrond
+15158   -- Fire Portal - Yalahar
+
+[Quests]
+50058   -- Naginata Quest
+5673    -- Battle Axe Quest
+5316    -- Crusader Helmet Quest
+14914   -- Circle Room Quest
+14915   -- Circle Room Quest
+13903   -- Demona Quest
+13902   -- Demona Quest
+13901   -- Demona Quest
+14361   -- Demona Quest
+14362   -- Demona Quest
+14363   -- Demona Quest
+14364   -- Demona Quest
+61235   -- Demona Quest
+61233   -- Demona Quest
+52372   -- Demona Quest
+52373   -- Fanfare Quest
+8441    -- Fanfare Quest
+8442    -- Heaven Blossom Quest
+45123   -- Iron Helmet Quest
+45124   -- Iron Ore Quest
+21996   -- Longsword Quest
+21997   -- Longsword Quest
+21998   -- Longsword Quest
+21999   -- Minotaur Leather Quest
+22000   -- Mintwallin Cyclops Quest
+8234    -- Mintwallin Cyclops Quest
+19182   -- Naginata Quest
+39784   -- Orc Shaman Quest
+43430   -- Power Bolts Quest
+43431   -- Power Bolts Quest
+3689    -- Power Ring Quest
+3690    -- Power Ring Quest
+39781   -- Scale Armor Quest
+39680   -- Silver Brooch Quest
+21995   -- Six Rubies Quest
+14433   -- Spike Sword Quest
+21994   -- Dead Archer Quest
+21993   -- Elvenbane Quest
+21992   -- Elvenbane Quest
+21991   -- Elvenbane Quest
+21990   -- Elvenbane Quest
+21989   -- Geomancer Quest
+21988   -- Isle of the Mists Quest
+21987   -- Life Ring Quest
+21986   -- Throwing Star Quest
+61001   -- Triangle Tower Quest
+46574   -- Thais Lighthouse Quest
+46575   -- Thais Lighthouse Quest
+50304   -- Deeper Fibula Quest
+11190   -- Deeper Fibula Quest
+11191   -- Deeper Fibula Quest
+11192   -- Deeper Fibula Quest
+11193   -- Deeper Fibula Quest
+11194   -- Deeper Fibula Quest
+21985   -- Devil Helmet Quest
+21984   -- Devil Helmet Quest
+21983   -- Devil Helmet Quest
+9991    -- Ghoul Room Quest
+1239    -- Ghoul Room Quest
+1238    -- Ghoul Room Quest
+62372   -- Ornamented Shield Quest
+21982   -- Silver Amulet Quest
+59659   -- Blood Herb Quest
+21981   -- Emperor's Cookies Quest
+21980   -- Emperor's Cookies Quest
+21979   -- Emperor's Cookies Quest
+8900    -- Explorer Brooch Quest
+43987   -- Orc Fortress Quest
+43981   -- Orc Fortress Quest
+43985   -- Orc Fortress Quest
+21978   -- Panpipe Quest
+21977   -- Panpipe Quest
+1740    -- The Desert Dungeon Quest
+7163    -- The Desert Dungeon Quest
+21976   -- Draconia Quest
+21975   -- Draconia Quest
+100500  -- Draconia Quest
+23124   -- Adorned UH Rune Quest
+32177   -- Adorned UH Rune Quest
+14224   -- Adorned UH Rune Quest
+14225   -- Adorned UH Rune Quest
+24881   -- Adorned UH Rune Quest
+24880   -- Adorned UH Rune Quest
+1452    -- Barbarian Axe Quest
+1451    -- Barbarian Axe Quest
+7442    -- Berserker Treasure Quest
+6662    -- Dark Armor Quest
+18721   -- Double Hero Quest
+18720   -- Double Hero Quest
+7771    -- Double Hero Quest
+7770    -- Double Hero Quest
+8118    -- Fire Axe Quest
+14260   -- Fire Axe Quest
+14331   -- Poison Daggers Quest
+21974   -- Shaman Treasure Quest
+21973   -- The Outlaw Camp Quest
+21972   -- The Outlaw Camp Quest
+21971   -- The Outlaw Camp Quest
+21970   -- The Outlaw Camp Quest
+21969   -- The Outlaw Camp Quest
+8886    -- Troll Cave Quest
+8887    -- Troll Cave Quest
+16331   -- Vampire Shield Quest
+5142    -- Vampire Shield Quest
+5141    -- Vampire Shield Quest
+6733    -- Alawar's Vault Quest
+6732    -- Alawar's Vault Quest
+21968   -- Alawar's Vault Quest
+21967   -- Alawar's Vault Quest
+21966   -- Alawar's Vault Quest
+21965   -- Iron Hammer Quest
+21964   -- Plate Armor Quest
+21963   -- Stealth Ring Quest
+21962   -- Stealth Ring Quest
+21961   -- Steel Helmet Quest
+50305   -- Black Knight Quest
+50309   -- Black Knight Quest
+50308   -- Black Knight Quest
+21960   -- Dragon Tower Quest
+21959   -- Dragon Tower Quest
+21958   -- Time Ring Quest
+21957   -- Time Ring Quest
+21956   -- Time Ring Quest
+2103    -- Behemoth Quest
+2102    -- Behemoth Quest
+2101    -- Behemoth Quest
+2100    -- Behemoth Quest
+60994   -- Parchment Room Quest
+9831    -- Giant Smithhammer Quest
+9832    -- Giant Smithhammer Quest
+9833    -- Giant Smithhammer Quest
+50012   -- Giant Smithhammer Quest
+46757   -- Skull of Ratha Quest
+57357   -- Skull of Ratha Quest
+14298   -- Skull of Ratha Quest
+21955   -- Voodoo Doll Quest
+21954   -- Voodoo Doll Quest
+48811   -- Medusa Shield Quest
+56490   -- Serpentine Tower Quest
+21953   -- Elephant Tusk Quest
+62382   -- Sam's Old Backpack Quest
+13410   -- Hydra Egg Quest
+
+100168  -- The Postman Missions Quest
+100171  -- The Postman Missions Quest

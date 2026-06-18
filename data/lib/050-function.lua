@@ -50,18 +50,31 @@ function doPlayerGiveItemContainer(cid, containerid, itemid, amount, subType)
 end
 
 function doPlayerGiveShopContainer(cid, containerId, itemId, itemCount, containerCount)
-
     for i = 1, containerCount do
         local container = doCreateItemEx(containerId, 1)
-        if container > 0 then
-            doAddContainerItem(container, itemId, itemCount)
-            if doPlayerAddItemEx(cid, container, true) ~= RETURNVALUE_NOERROR then
-                return false
-            end
+
+        if container <= 0 then
+            return false
+        end
+
+        doAddContainerItem(container, itemId, itemCount)
+
+        if doPlayerAddItemEx(cid, container, true) ~= RETURNVALUE_NOERROR then
+            return false
         end
     end
 
     return true
+end
+
+function canPlayerReceiveContainer(cid, containerCount)
+    local backpack = getPlayerSlotItem(cid, CONST_SLOT_BACKPACK)
+
+    if backpack.uid <= 0 or not isContainer(backpack.uid) then
+        return false
+    end
+
+    return getContainerFreeSlots(backpack.uid) >= containerCount
 end
 
 function doPlayerTakeItem(cid, itemid, amount)

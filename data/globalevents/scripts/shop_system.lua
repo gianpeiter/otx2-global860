@@ -80,8 +80,10 @@ function onThink(interval, lastExecution)
                 if canPlayerReceiveItem(cid, itemId, itemCount) then
 
                     if doPlayerGiveItem(cid, itemId, itemCount) then
+					
+						doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
 
-                        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "You received { ".. addItemName .." } from WebShop.")
+                        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received { ".. addItemName .." } from WebShop.")
 
                         db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
                         db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
@@ -90,27 +92,33 @@ function onThink(interval, lastExecution)
 
                 else
 
-                    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "{ ".. addItemName .." } from WebShop is waiting for you.")
+                    doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "{ ".. addItemName .." } from WebShop is waiting for you.")
 
                 end
             end
 
-            if action == "give_container" then
+			if action == "give_container" then
 
-                local containerId = result:getDataInt("param1")
-                local itemId = result:getDataInt("param2")
-                local itemCount = result:getDataInt("param3")
-                local containerCount = result:getDataInt("param4")
+				local containerId = result:getDataInt("param1")
+				local itemId = result:getDataInt("param2")
+				local itemCount = result:getDataInt("param3")
+				local containerCount = result:getDataInt("param4")
 
-                if doPlayerGiveShopContainer(cid, containerId, itemId, itemCount, containerCount) then
+				if canPlayerReceiveContainer(cid, containerCount) and doPlayerGiveShopContainer(cid, containerId, itemId, itemCount, containerCount) then
 
-                    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "You received { ".. addItemName .." } container from WebShop.")
+					doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
 
-                    db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
-                    db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+					doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received { ".. addItemName .." } container from WebShop.")
 
-                end
-            end
+					db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
+					db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+
+				else
+
+					doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "{ ".. addItemName .." } container from WebShop is waiting for you.")
+
+				end
+			end
 
             if action == "give_outfit" then
 
@@ -132,14 +140,14 @@ function onThink(interval, lastExecution)
 
                         doSendMagicEffect(getCreaturePosition(cid), CONST_ME_GIFT_WRAPS)
 
-                        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "You received the outfit { ".. addItemName .." } from WebShop.")
+                        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received the outfit { ".. addItemName .." } from WebShop.")
 
                         db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
                         db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
 
                     else
 
-                        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ORANGE, "You already have this outfit. Your points were returned.")
+                        doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You already have this outfit. Your points were returned.")
 
                         doPlayerAddPremiumPoints(cid, points)
 
