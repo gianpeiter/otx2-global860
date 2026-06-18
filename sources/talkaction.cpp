@@ -1269,7 +1269,7 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 	{
 		bool enable = (command == "on");
 		player->updateStatusAutoLoot(enable);
-		info << "Autoloot Status: " << (enable ? "Enabled" : "Disabled") << ".";
+		info << "[Autoloot] Status: " << (enable ? "Enabled" : "Disabled") << ".";
 		player->sendTextMessage(MSG_STATUS_CONSOLE_BLUE, info.str());
 		return true;
 	}
@@ -1277,7 +1277,7 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 	if (command == "clear" || command == "clean")
 	{
 		player->clearAutoLoot();
-		info << "All items removed from Autoloot.";
+		info << "[Autoloot] All items removed from Autoloot.";
 		player->sendTextMessage(MSG_STATUS_CONSOLE_BLUE, info.str());
 		return true;
 	}
@@ -1295,18 +1295,15 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 			moneyIds.insert(moneyId);
 		}
 
-		uint16_t i = 1;
 		for (auto it = list.begin(); it != list.end(); ++it)
 		{
 			if(moneyIds.find(*it) == moneyIds.end())
-				info << i++ << ": " << ucwords(Item::items[*it].name) << std::endl;
+				info << ucwords(Item::items[*it].name) << std::endl;
 		}
 
 		player->sendFYIBox((info.str() == "" ? "Nothing Added." : info.str()));
-		list = player->getAutoLoot();
 		return true;
 	}
-
 
 	if(command == "money" && params.size() >= 2)
 	{
@@ -1315,7 +1312,7 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 		{
 			bool isBank = (mode == "bank");
 			player->updateMoneyCollect(isBank);
-			info << "AutoMoney Collect Mode: " << (isBank ? "Bank" : "Bag") << ".";
+			info << "[Autoloot] Collect Mode: " << (isBank ? "Bank" : "Bag") << ".";
 			player->sendTextMessage(MSG_STATUS_CONSOLE_BLUE, info.str());
 			return true;
 		}
@@ -1358,12 +1355,12 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 		}
 
 		std::string actionStr = (adding ? "Added" : "Removed");
-		info << "Autoloot-> " << actionStr << ": " << (successCount > 0 ? actionMsg.str() : "None") 
+		info << "[Autoloot] " << actionStr << ": " << (successCount > 0 ? actionMsg.str() : "None") 
 			<< ". Errors: " << (errorCount > 0 ? errorMsg.str() : "None") << ".";
-		player->sendTextMessage(adding ? MSG_STATUS_CONSOLE_RED : MSG_STATUS_CONSOLE_ORANGE, info.str());
+		player->sendTextMessage(adding ? MSG_STATUS_CONSOLE_BLUE : MSG_STATUS_CONSOLE_BLUE, info.str());
 
 		if(player->limitAutoLoot() && !player->isPremium())
-			player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[AUTOLOOT]: You reached the maximum items in autoloot, buy Premium to unlock more slots.");
+			player->sendTextMessage(MSG_STATUS_CONSOLE_BLUE, "[Autoloot] You reached the maximum items in autoloot, buy Premium Account to unlock more slots.");
 
 		return true;
 	}
@@ -1376,22 +1373,23 @@ bool TalkAction::autoLoot(Creature* creature, const std::string&, const std::str
 	lootsize -= strVector.size();	// don't count money ids of lootsize
 	uint16_t max_allowed = player->isPremium() ? g_config.getNumber(ConfigManager::AUTOLOOT_MAXPREMIUM) : g_config.getNumber(ConfigManager::AUTOLOOT_MAXFREE);
 	
-	info << "_____Perfect AutoLoot System_____\n\n"
-		<< "AutoLoot Status: " << player->statusAutoLoot() << "\n"
-		<< "AutoMoney Mode: " << player->statusAutoMoneyCollect() << "\n\n"
-		<< "Commands:\n"
-		<< "!autoloot on/off\n"
-		<< "!autoloot money, bank/bag\n"
-		<< "!autoloot add, item name, item name, ...\n"
-		<< "!autoloot remove, item name, item name, ...\n"
-		<< "!autoloot list\n"
-		<< "!autoloot clear\n"
-		<< "\n------------------------------"
-		<< "\nSlots used: " << lootsize << "/" << max_allowed
-		<< "\n-----------------------------\n\n"
-		<< "Free Account slots: " << g_config.getNumber(ConfigManager::AUTOLOOT_MAXFREE) << "\nPremium Account Slots: " << g_config.getNumber(ConfigManager::AUTOLOOT_MAXPREMIUM);
+	info << "Autoloot Status: " << player->statusAutoLoot() << "\n";
+	info << "Autoloot Money Mode: " << player->statusAutoMoneyCollect() << "\n\n";
 
+	info << "Commands:\n";
+	info << "!autoloot on/off\n";
+	info << "!autoloot money, bank/bag\n";
+	info << "!autoloot add, itemName\n";
+	info << "!autoloot remove, itemName\n";
+	info << "!autoloot list\n";
+	info << "!autoloot clear\n\n";
+	
+	info << "Slots Used: " << lootsize << " / " << max_allowed << "\n";
+	info << "Free Account: " << g_config.getNumber(ConfigManager::AUTOLOOT_MAXFREE) << "\n";
+	info << "Premium Account: " << g_config.getNumber(ConfigManager::AUTOLOOT_MAXPREMIUM);
+	
 	player->sendFYIBox(info.str());
+	
 	return true;
 }
 

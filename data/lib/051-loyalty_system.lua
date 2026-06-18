@@ -1,8 +1,13 @@
 LOYALTY_RANKS = {
-	{title = "Legend of Realmia", 	   points = 12, skill = 5},
-	{title = "Enlightened of Realmia", points = 8, skill = 4},
-	{title = "Guardian of Realmia",    points = 6,  skill = 3},
-	{title = "Warden of Realmia",      points = 3,  skill = 2},
+	{title = "Enlightened of Realmia", points = 70, skill = 10},
+	{title = "Savant of Realmia",      points = 56, skill = 9},
+	{title = "Sage of Realmia",        points = 42, skill = 8},
+	{title = "Guardian of Realmia",    points = 30, skill = 7},
+	{title = "Keeper of Realmia",      points = 21, skill = 6},
+	{title = "Warrior of Realmia",     points = 15, skill = 5},
+	{title = "Squire of Realmia",      points = 9,  skill = 4},
+	{title = "Warden of Realmia",      points = 6,  skill = 3},
+	{title = "Steward of Realmia",     points = 3,  skill = 2},
 	{title = "Sentinel of Realmia",    points = 1,  skill = 1},
 	{title = "Scout of Realmia",       points = 0,  skill = 0}
 }

@@ -9,17 +9,34 @@ function onSay(cid, words, param, channel)
 	local waypoint = getWaypointPosition(param)
 	local tile = string.explode(param, ",")
 	local pos = {x = 0, y = 0, z = 0}
+	local x, y, z = param:match("%{x%s*=%s*(%d+),%s*y%s*=%s*(%d+),%s*z%s*=%s*(%d+)%}")
 
 	if(player ~= nil and (not isPlayerGhost(player) or getPlayerGhostAccess(player) <= getPlayerGhostAccess(cid))) then
 		pos = getCreaturePosition(player)
+
 	elseif(creature ~= nil and (not isPlayer(creature) or (not isPlayerGhost(creature) or getPlayerGhostAccess(creature) <= getPlayerGhostAccess(cid)))) then
 		pos = getCreaturePosition(creature)
+
 	elseif(isInArray({'back', 'last'}, param:lower())) then
 		pos = getCreatureLastPosition(cid)
+
 	elseif(type(waypoint) == 'table' and waypoint.x ~= 0 and waypoint.y ~= 0) then
 		pos = waypoint
+
+	elseif(x) then
+		pos = {
+			x = tonumber(x),
+			y = tonumber(y),
+			z = tonumber(z)
+		}
+
 	elseif(tile[2] and tile[3]) then
-		pos = {x = tile[1], y = tile[2], z = tile[3]}
+		pos = {
+			x = tonumber(tile[1]),
+			y = tonumber(tile[2]),
+			z = tonumber(tile[3])
+		}
+
 	else
 		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Invalid param specified.")
 		return true

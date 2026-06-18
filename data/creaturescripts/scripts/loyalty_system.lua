@@ -5,7 +5,7 @@ local druidConditions = {}
 local paladinConditions = {}
 local knightConditions = {}
 
-for skill = 1, 5 do
+for skill = 1, 10 do
 
 	local sorcerer = createConditionObject(CONDITION_ATTRIBUTES)
 	setConditionParam(sorcerer, CONDITION_PARAM_TICKS, -1)
@@ -66,6 +66,27 @@ function applyLoyaltyCondition(cid)
 end
 
 function onLogin(cid)
+
+	if getPlayerGroupId(cid) >= 4 then
+		return true
+	end
+
 	applyLoyaltyCondition(cid)
+
+	local loyaltyPoints = getPlayerLoyaltyPoints(cid)
+	local loyaltySkill = getPlayerLoyaltySkill(cid)
+
+	local text = ""
+
+	if isSorcerer(cid) or isDruid(cid) then
+		text = "+" .. loyaltySkill .. " magic level"
+	elseif isPaladin(cid) then
+		text = "+" .. loyaltySkill .. " distance fighting and shielding"
+	elseif isKnight(cid) then
+		text = "+" .. loyaltySkill .. " weapon skills and shielding"
+	end
+
+	doPlayerSendTextMessage(cid, MESSAGE_STATUS_DEFAULT, "Due to your long-term loyalty to " .. getConfigValue('serverName') .. " you currently benefit from " .. text .. ". (You have " .. loyaltyPoints .. " loyalty points).")
+
 	return true
 end

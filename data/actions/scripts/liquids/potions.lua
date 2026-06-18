@@ -15,17 +15,17 @@ local multiplier = {
 }
 
 local POTIONS = {
-	[8704] = {empty = 7636, splash = 42, health = {50, 100}}, -- small health potion
-	[7618] = {empty = 7636, splash = 42, health = {100, 200}}, -- health potion
-	[7588] = {empty = 7634, splash = 42, health = {200, 400}, level = 50, vocations = {isKnight, isPaladin}, vocStr = "knights and paladins"}, -- strong health potion
-	[7591] = {empty = 7635, splash = 42, health = {500, 700}, level = 80, vocations = {isKnight}, vocStr = "knights"}, -- great health potion
-	[8473] = {empty = 7635, splash = 42, health = {800, 1000}, level = 130, vocations = {isKnight}, vocStr = "knights"}, -- ultimate health potion
+	[8704] = {empty = 7636, splash = 42, health = {60, 90}}, -- small health potion
+	[7618] = {empty = 7636, splash = 42, health = {125, 175}}, -- health potion
+	[7588] = {empty = 7634, splash = 42, health = {250, 350}, level = 50, vocations = {isKnight, isPaladin}, vocStr = "knights and paladins"}, -- strong health potion
+	[7591] = {empty = 7635, splash = 42, health = {425, 575}, level = 80, vocations = {isKnight}, vocStr = "knights"}, -- great health potion
+	[8473] = {empty = 7635, splash = 42, health = {650, 850}, level = 130, vocations = {isKnight}, vocStr = "knights"}, -- ultimate health potion
 
-	[7620] = {empty = 7636, splash = 47, mana = {70, 130}}, -- mana potion
-	[7589] = {empty = 7634, splash = 47, mana = {110, 190}, level = 50, vocations = {isSorcerer, isDruid, isPaladin}, vocStr = "sorcerers, druids and paladins"}, -- strong mana potion
-	[7590] = {empty = 7635, splash = 47, mana = {200, 300}, level = 80, vocations = {isSorcerer, isDruid}, vocStr = "sorcerers and druids"}, -- great mana potion
+	[7620] = {empty = 7636, splash = 47, mana = {75, 125}}, -- mana potion
+	[7589] = {empty = 7634, splash = 47, mana = {115, 185}, level = 50, vocations = {isSorcerer, isDruid, isPaladin}, vocStr = "sorcerers, druids and paladins"}, -- strong mana potion
+	[7590] = {empty = 7635, splash = 47, mana = {150, 250}, level = 80, vocations = {isSorcerer, isDruid}, vocStr = "sorcerers and druids"}, -- great mana potion
 
-	[8472] = {empty = 7635, splash = 43, health = {200, 400}, mana = {110, 190}, level = 80, vocations = {isPaladin}, vocStr = "paladins"} -- great spirit potion
+	[8472] = {empty = 7635, splash = 43, health = {250, 350}, mana = {125, 185}, level = 80, vocations = {isPaladin}, vocStr = "paladins"} -- great spirit potion
 }
 
 for i, potion in pairs(POTIONS) do

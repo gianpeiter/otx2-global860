@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
+	<!-- Sam's Old Backpack Quest -->
+	<action actionid="42535" event="script" value="quests/sam's_old_backpack_quest/door.lua" />
+
+	<!-- Serpentine Tower Quest -->
+	<action actionid="20507" event="script" value="quests/serpentine_tower_quest/torch.lua" />
+	<action actionid="20508" event="script" value="quests/serpentine_tower_quest/lever.lua" />
+
+	<!-- Giant Smithhammer Quest -->
+	<action actionid="3991" event="script" value="quests/giant_smithhammer_quest/lever.lua" />
+
+	<!-- Behemoth Quest -->
+	<action actionid="56267" event="script" value="quests/behemoth_quest/lever.lua" />
+
+	<!-- Alawar's Vault Quest -->
+	<action actionid="56222" event="script" value="quests/alawar's_vault_quest/lever.lua" />
+
+	<!-- The Outlaw Camp Quest -->
+	<action actionid="20504" event="script" value="quests/the_outlaw_camp_quest/lever.lua" />
+	<action actionid="20505" event="script" value="quests/the_outlaw_camp_quest/lever_2.lua" />
+	<action actionid="20506" event="script" value="quests/the_outlaw_camp_quest/lever_3.lua" />
+
+	<!-- Barbarian Axe Quest -->
+	<action actionid="5511" event="script" value="quests/barbarian_axe_quest/lever.lua" />
+
 	<!-- Draconia Quest -->
 	<action actionid="20502-20503" event="script" value="quests/draconia_quest/lever.lua" />
 
@@ -89,7 +113,6 @@
 	<action itemid="2692;2694" event="script" value="other/create_bread.lua"/>
 
 	<!-- Doors -->
-		<!-- Doors -->
 	<action itemid="1209-1214;1219-1262;1539-1542;3535-3552;4913-4918;5082-5085;5098-5145;5278-5295;5515-5518;5732-5737;5745-5749;6192-6209;6249-6266;6795-6802;6891-6908;7033-7050;7054-7057;8541-8558;9165-9184;9267-9284;10268-10285;10468-10486;10775-10777;10780-10786;10789-10792;12092-12105;12188-12190;12193-12199;12202-12205" event="script" value="other/doors.lua"/>
 	<!-- Keys -->
 	<action itemid="2086-2092;10032;10091" event="script" value="other/keys.lua"/>

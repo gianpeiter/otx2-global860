@@ -53654,6 +53654,12 @@
 		<monster name="Demon Skeleton" x="-2" y="0" z="10" spawntime="60" />
 		<monster name="Demon Skeleton" x="2" y="1" z="10" spawntime="60" />
 	</spawn>
+	<spawn centerx="32205" centery="31569" centerz="10" radius="3">
+		<monster name="Minotaur" x="0" y="0" z="10" spawntime="60" direction="2" />
+		<monster name="Minotaur" x="3" y="1" z="10" spawntime="60" direction="2" />
+		<monster name="Minotaur Mage" x="-2" y="2" z="10" spawntime="60" direction="2" />
+		<monster name="Minotaur" x="2" y="3" z="10" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32821" centery="31573" centerz="10" radius="2">
 		<monster name="Rotworm" x="-2" y="1" z="10" spawntime="60" />
 	</spawn>

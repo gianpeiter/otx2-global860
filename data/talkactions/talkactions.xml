@@ -45,6 +45,7 @@
 	<talkaction log="yes" group="4" access="3" words="/y" event="script" value="animatedtext.lua"/>
 	<talkaction log="yes" group="4" access="3" words="/a" event="script" value="teleporttiles.lua"/>
 	<talkaction log="yes" group="4" access="3" words="/mc" event="script" value="multicheck.lua"/>
+	<talkaction log="yes" group="4" access="3" words="/software" event="function" value="software"/>
 
 	<!-- Players -->
 	<talkaction access="0-4" words="/autoloot;!autoloot" event="function" value="autoloot"/>

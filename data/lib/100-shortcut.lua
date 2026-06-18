@@ -401,3 +401,43 @@ function createCombat(typea, effect, distEffect, area, mins, maxs)
 		end
 	return combat
 end
+
+function hourToNumber(str)
+    local h = tonumber(str:sub(1,2)) or 0
+    local m = tonumber(str:sub(4,5)) or 0
+    local s = 0
+    if #str > 5 then
+        s = tonumber(str:sub(7,8)) or 0
+    end
+    local totalSeconds = h * 3600 + m * 60 + s
+    return totalSeconds
+end
+
+function timeString(seconds)
+    local h = math.floor(seconds / 3600)
+    local m = math.floor((seconds % 3600) / 60)
+    local s = seconds % 60
+
+    local parts = {}
+
+    if h > 0 then
+        table.insert(parts, h .. (h == 1 and " hour" or " hours"))
+    end
+    if m > 0 then
+        table.insert(parts, m .. (m == 1 and " minute" or " minutes"))
+    end
+    if s > 0 or #parts == 0 then
+        table.insert(parts, s .. (s == 1 and " second" or " seconds"))
+    end
+
+    return table.concat(parts, ", ")
+end
+
+function formatNumber(n)
+    n = tonumber(n)
+    if not n then return "0" end
+
+    local str = string.format("%.0f", n)
+    local formatted = str:reverse():gsub("(%d%d%d)", "%1."):reverse()
+    return formatted:gsub("^%.", "")
+end

@@ -354,7 +354,7 @@ void MonsterType::dropLoot(Container* corpse)
 	ss << "Loot of " << nameDescription << ": " << corpse->getContentDescription() << ".";
 
 	if(owner->statusAutoLoot()  == "On")
-		ss << "\nAutoLoot Colleted:" << str.str();
+ss << "\n[Autoloot] Colleted" << str.str();
 
 	if(owner->getParty() && message > LOOTMSG_PLAYER)
 		owner->getParty()->broadcastMessage((MessageClasses)g_config.getNumber(ConfigManager::LOOT_MESSAGE_TYPE), ss.str());

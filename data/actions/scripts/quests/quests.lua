@@ -621,6 +621,458 @@ local config = {
         },
         storage = 24880
     },
+
+    -- Barbarian Axe Quest
+    [1452] = {
+        items = {
+            {itemId = 2429, count = 1} -- Barbarian Axe
+        },
+        storage = 1452
+    },
+    [1451] = {
+        items = {
+            {itemId = 2419, count = 1} -- Scimitar
+        },
+        storage = 1451
+    },
+
+    -- Berserker Treasure Quest
+    [7442] = {
+        items = {
+            {itemId = 2143, count = 3}, -- White Pearl
+            {itemId = 2148, count = 77}, -- Gold Coin
+            {itemId = 2148, count = 98} -- Gold Coin
+        },
+        storage = 7442
+    },
+    
+    -- Dark Armor Quest
+    [6662] = {
+        items = {
+            {itemId = 2489, count = 1} -- Dark Armor
+        },
+        storage = 6662
+    },
+
+    -- Double Hero Quest
+    [18721] = {
+        items = {
+            {itemId = 2156, count = 1} -- Red Gem
+        },
+        storage = 18721
+    },
+    [18720] = {
+        items = {
+            {itemId = 2209, count = 1} -- Club Ring
+        },
+        storage = 18720
+    },
+
+    -- Double Hero Quest
+    [7771] = {
+        items = {
+            {itemId = 2170, charges = 200} -- Silver Amulet
+        },
+        storage = 7771
+    },
+    [7770] = {
+        items = {
+            {itemId = 2509, count = 1} -- Steel Shield
+        },
+        storage = 7770
+    },
+
+    -- Fire Axe Quest
+    [8118] = {
+        items = {
+            {itemId = 2214, count = 1}, -- Ring of Healing
+            {itemId = 2201, charges = 200}, -- Dragon Necklace
+            {itemId = 2145, count = 7} -- Small Diamond
+        },
+        storage = 8118
+    },
+    [14260] = {
+        items = {
+            {itemId = 2432, count = 1} -- Fire Axe
+        },
+        storage = 14260
+    },
+
+    -- Poison Daggers Quest
+    [14331] = {
+        items = {
+            {itemId = 2545, count = 30}, -- Poison Arrow
+            {itemId = 2411, count = 1}, -- Poison Dagger
+            {itemId = 2411, count = 1} -- Poison Dagger
+        },
+        storage = 14331,
+        containerId = 1988
+    },
+
+    -- Shaman Treasure Quest
+    [21974] = {
+        items = {
+            {itemId = 2260, count = 1}, -- Blank Rune
+            {itemId = 2260, count = 1}, -- Blank Rune
+            {itemId = 2260, count = 1} -- Blank Rune
+        },
+        storage = 21974
+    },
+
+    -- The Outlaw Camp Quest
+    [21973] = {
+        items = {
+            {itemId = 2088, count = 1, actionId = 3301} -- Silver Key 3301
+        },
+        storage = 21973
+    },
+    [21972] = {
+        items = {
+            {itemId = 2089, count = 1, actionId = 3302} -- Copper Key 3302
+        },
+        storage = 21972
+    },
+    [21971] = {
+        items = {
+            {itemId = 2089, count = 1, actionId = 3303} -- Copper Key 3303
+        },
+        storage = 21971
+    },
+    [21970] = {
+        items = {
+            {itemId = 2091, count = 1, actionId = 3304} -- Golden Key 3304
+        },
+        storage = 21970
+    },
+    [21969] = {
+        items = {
+            {itemId = 2407, count = 1}, -- Bright Sword
+            {itemId = 2156, count = 1} -- Red Gem
+        },
+        storage = 21969
+    },
+
+    -- Troll Cave Quest
+    [8886] = {
+        items = {
+            {itemId = 2199, charges = 150} -- Garlic Necklace
+        },
+        storage = 8886
+    },
+    [8887] = {
+        items = {
+            {itemId = 2478, count = 1} -- Brass Legs
+        },
+        storage = 8887
+    },
+
+    -- Vampire Shield Quest
+    [16331] = {
+        items = {
+            {itemId = 2194, count = 1}, -- Mysterious Fetish
+            {itemId = 2174, count = 1}, -- Strange Symbol
+            {itemId = 2144, count = 1} -- Black Pearl
+        },
+        storage = 16331
+    },
+    [5142] = {
+        items = {
+            {itemId = 2414, count = 1} -- Dragon Lance
+        },
+        storage = 5142
+    },
+    [5141] = {
+        items = {
+            {itemId = 2534, count = 1} -- Vampire Shield
+        },
+        storage = 5141
+    },
+
+    -- Alawar's Vault Quest
+    [6733] = {
+        items = {
+            {itemId = 2143, count = 3} -- White Pearl
+        },
+        storage = 6733
+    },
+    [6732] = {
+        items = {
+            {itemId = 2413, count = 1} -- Broadsword
+        },
+        storage = 6732
+    },
+    [21968] = {
+        items = {
+            {itemId = 2089, count = 1, actionId = 4503} -- Copper Key 4503
+        },
+        storage = 21968
+    },
+    [21967] = {
+        items = {
+            {itemId = 2490, count = 1}, -- Dark Helmet
+            {itemId = 2410, count = 4}, -- Throwing Knife
+            {itemId = 2260, count = 1}, -- Blank Rune
+            {itemId = 2148, count = 33}, -- Gold Coin
+            {itemId = 2089, count = 1, actionId = 4502} -- Copper Key 4502
+        },
+        storage = 21967
+    },
+    [21966] = {
+        items = {
+            {itemId = 2089, count = 1, actionId = 4501} -- Copper Key 4501
+        },
+        storage = 21966
+    },
+
+    -- Iron Hammer Quest
+    [21965] = {
+        items = {
+            {itemId = 2422, count = 1} -- Iron Hammer
+        },
+        storage = 21965
+    },
+
+    -- Plate Armor Quest
+    [21964] = {
+        items = {
+            {itemId = 2463, count = 1} -- Plate Armor
+        },
+        storage = 21964
+    },
+
+    -- Stealth Ring Quest
+    [21963] = {
+        items = {
+            {itemId = 2200, charges = 250} -- Protection Amulet
+        },
+        storage = 21963
+    },
+    [21962] = {
+        items = {
+            {itemId = 2165, count = 1} -- Stealth Ring
+        },
+        storage = 21962
+    },
+
+    -- Steel Helmet Quest
+    [21961] = {
+        items = {
+            {itemId = 2457, count = 1} -- Steel Helmet
+        },
+        storage = 21961
+    },
+
+    -- Black Knight Quest
+    [57497] = {
+        items = {
+            {itemId = 2088, count = 1, actionId = 5010} -- Silver Key 5010
+        },
+        storage = 50305
+    },
+    [20000] = {
+        items = {
+            {itemId = 2519, count = 1} -- Crown Shield
+        },
+        storage = 50309
+    },
+    [20001] = {
+        items = {
+            {itemId = 2487, count = 1} -- Crown Armor
+        },
+        storage = 50308
+    },
+
+    -- Dragon Tower Quest
+    [21960] = {
+        items = {
+            {itemId = 2545, count = 60}, -- Poison Arrow
+            {itemId = 2546, count = 30}, -- Burst Arrow
+            {itemId = 7618, count = 1}, -- Health Potion
+            {itemId = 7620, count = 1} -- Mana Potion
+        },
+        storage = 21960,
+        containerId = 1988
+    },
+    [21959] = {
+        items = {
+            {itemId = 2146, count = 2}, -- Small Sapphire
+            {itemId = 2456, count = 1} -- Bow
+        },
+        storage = 21959,
+        containerId = 1988
+    },
+
+    -- Time Ring Quest
+    [21958] = {
+        items = {
+            {itemId = 2192, count = 1} -- Crystal Ball
+        },
+        storage = 21958
+    },
+    [21957] = {
+        items = {
+            {itemId = 2169, count = 1} -- Time Ring
+        },
+        storage = 21957
+    },
+    [21956] = {
+        items = {
+            {itemId = 2198, charges = 50} -- Elven Amulet
+        },
+        storage = 21956
+    },
+
+    -- Behemoth Quest
+    [1298] = {
+        items = {
+            {itemId = 2171, count = 1}, -- Platinum Amulet
+            {itemId = 2168, count = 1}, -- Life Ring
+            {itemId = 2124, count = 1}, -- Crystal Ring
+            {itemId = 2146, count = 4}, -- Small Sapphire
+            {itemId = 2145, count = 3} -- Small Diamond
+        },
+        storage = 2103
+    },
+    [1299] = {
+        items = {
+            {itemId = 2427, count = 1} -- Guardian Halberd
+        },
+        storage = 2102
+    },
+    [1297] = {
+        items = {
+            {itemId = 2520, count = 1} -- Demon Shield
+        },
+        storage = 2101
+    },
+    [1296] = {
+        items = {
+            {itemId = 2466, count = 1} -- Golden Armor
+        },
+        storage = 2100
+    },
+
+    -- Parchment Room Quest
+    [60994] = {
+        items = {
+            {itemId = 2091, count = 1, actionId = 6010}, -- Golden Key 6010
+            {itemId = 2230, count = 1}, -- Bone
+            {itemId = 2165, count = 1}, -- Stealth Ring
+            {itemId = 2151, count = 2}, -- Talon
+            {itemId = 2151, count = 2}, -- Talon
+            {itemId = 2229, count = 1} -- Skull
+        },
+        storage = 60994
+    },
+
+    -- Giant Smithhammer Quest
+    [9831] = {
+        items = {
+            {itemId = 2151, count = 1} -- Talon
+        },
+        storage = 9831
+    },
+    [9832] = {
+        items = {
+            {itemId = 2321, count = 1} -- Giant Smithhammer
+        },
+        storage = 9832
+    },
+    [9833] = {
+        items = {
+            {itemId = 2148, count = 100} -- Gold Coin
+        },
+        storage = 9833
+    },
+    [50012] = {
+        items = {
+            {itemId = 1955, count = 1, text = "Diary of Hengis Wulfson\n...\nI can only hope I can escape the\ncyclops someday. For now I have\noccupied their chief with an attempt\nto learn to read and write, but for\nhow long?\nI'm so desperate.\nWhat a foolish idea to travel here to\nsearch the famous treasures of this\nancient, knightly order.\nI wish I had never heard about it.\nI wish I had never sung that song.\nNo clue how many unfortunate souls I\nhave lured to death with it."} -- Book
+        },
+        storage = 50012
+    },
+
+    -- Skull of Ratha Quest
+    [46757] = {
+        items = {
+            {itemId = 2143, count = 1}, -- White Pearl
+            {itemId = 2320, count = 1} -- Skull of Ratha
+        },
+        storage = 46757
+    },
+    [57357] = {
+        items = {
+            {itemId = 2213, count = 1}, -- Dwarven Ring
+            {itemId = 2129, count = 1} -- Wolf Tooth Chain
+        },
+        storage = 57357
+    },
+    [14298] = {
+        items = {
+            {itemId = 2148, count = 100}, -- Gold Coin
+            {itemId = 2144, count = 4}, -- Black Pearl
+            {itemId = 2125, count = 1} -- Crystal Necklace
+        },
+        storage = 14298
+    },
+
+    -- Voodoo Doll Quest
+    [21955] = {
+        items = {
+            {itemId = 2322, count = 1} -- Voodoo Doll
+        },
+        storage = 21955
+    },
+    [21954] = {
+        items = {
+            {itemId = 2162, count = 1} -- Magic Light Wand
+        },
+        storage = 21954
+    },
+    
+    -- Medusa Shield Quest
+    [48811] = {
+        items = {
+            {itemId = 2436, count = 1}, -- Skull Staff
+            {itemId = 2656, count = 1}, -- Blue Robe
+            {itemId = 2536, count = 1} -- Medusa Shield
+        },
+        storage = 48811
+    },
+
+    -- Serpentine Tower Quest
+    [56490] = {
+        items = {
+            {itemId = 2143, count = 1} -- White Pearl
+        },
+        storage = 56490
+
+    },
+
+    -- Elephant Tusk Quest
+    [21953] = {
+        items = {
+            {itemId = 3956, count = 2} -- Tusk
+        },
+        storage = 21953
+    },   
+
+    -- Sam's Old Backpack Quest
+    [62382] = {
+        items = {
+            {itemId = 2503, count = 1} -- Dwarven Armor
+        },
+        storage = 62382,
+        formerValue = 2,
+        newValue = 3
+    },
+
+    -- Hydra Egg Quest
+    [13410] = {
+        items = {
+            {itemId = 4850, count = 1} -- Hydra Egg
+        },
+        storage = 13410
+    },
 }
 
 local function getRewardText(itemId, count)
