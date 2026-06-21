@@ -76222,7 +76222,7 @@
 	<spawn centerx="32260" centery="31864" centerz="14" radius="3">
 		<monster name="Banshee" x="-1" y="-2" z="14" spawntime="60" />
 		<monster name="Ghost" x="1" y="-2" z="14" spawntime="60" />
-		<npc name="The Queen Of The Banshees" x="-3" y="1" z="14" spawntime="60" direction="2" />
+		<npc name="The Queen of the Banshees" x="-3" y="1" z="14" spawntime="60" direction="2" />
 		<monster name="Mummy" x="2" y="1" z="14" spawntime="120" />
 		<monster name="Mummy" x="-2" y="2" z="14" spawntime="60" />
 	</spawn>

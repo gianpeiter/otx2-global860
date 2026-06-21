@@ -195,8 +195,8 @@ log.txt
 # Logs
 logs/restart/console/*
 logs/restart/crash/*
-logs/restart/mysql_backup/*
+logs/restart/mysql/*
 
 !logs/restart/console/.gitkeep
 !logs/restart/crash/.gitkeep
-!logs/restart/mysql_backup/.gitkeep
+!logs/restart/mysql/.gitkeep

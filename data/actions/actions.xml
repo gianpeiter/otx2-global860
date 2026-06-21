@@ -3,6 +3,26 @@
 	<!-- Boost -->
 	<action itemid="2661" event="script" value="boost/loot_boost.lua" />
 
+	<!-- The Queen of the Banshees Quest -->
+	<action actionid="13309" event="script" value="quests/the_queen_of_the_banshees_quest/ghostlands_lever.lua" />
+	<action actionid="13310" event="script" value="quests/the_queen_of_the_banshees_quest/ghostlands_beholder_lever.lua" />
+	<action actionid="13311" event="script" value="quests/the_queen_of_the_banshees_quest/banshee_seal_secret_lever.lua" />
+	<action actionid="42994" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1.lua" />
+	<action actionid="42993" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_2.lua" />
+	<action actionid="42995" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_3.lua" />
+	<action actionid="42996" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_4.lua" />
+	<action actionid="42997" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_5.lua" />
+	<action actionid="42998" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_6.lua" />
+	<action actionid="42989" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_4.lua" />
+	<action actionid="42992" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_5.lua" />
+	<action actionid="42990" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_1.lua" />
+	<action actionid="42991" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_2.lua" />
+	<action actionid="42988" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_3.lua" />
+	<action actionid="20509-20515" event="script" value="quests/the_queen_of_the_banshees_quest/doors.lua" />
+
+	<!-- Demon Helmet Quest -->
+	<action actionid="45221" event="script" value="quests/demon_helmet_quest/lever.lua" />
+
 	<!-- Sam's Old Backpack Quest -->
 	<action actionid="42535" event="script" value="quests/sam's_old_backpack_quest/door.lua" />
 

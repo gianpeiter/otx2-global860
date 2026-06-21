@@ -676,7 +676,7 @@ bool Actions::useItemEx(Player* player, const Position& fromPos, const Position&
 	if (player->hasCondition(CONDITION_EXHAUST, EXHAUST_POTION) && std::find(potionItems.begin(), potionItems.end(), item_id) != potionItems.end())
 	{
 		player->sendCancelMessage(RET_YOUAREEXHAUSTED);
-		g_game.addMagicEffect(player->getPosition(), MAGIC_EFFECT_POFF);
+		//g_game.addMagicEffect(player->getPosition(), MAGIC_EFFECT_POFF);
 		return false;
 	}
 	else if (player->hasCondition(CONDITION_EXHAUST, EXHAUST_MACHETE) && std::find(macheteItems.begin(), macheteItems.end(), item_id) != macheteItems.end())

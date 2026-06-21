@@ -586,17 +586,6 @@ local config = {
         },
         storage = 23124
     },
-    [32177] = {
-        items = {
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1} -- Strong Mana Potion
-        },
-        storage = 32177,
-        containerId = 1991
-    },
     [14224] = {
         items = {
             {itemId = 2169, count = 1} -- Time Ring
@@ -1072,6 +1061,196 @@ local config = {
             {itemId = 4850, count = 1} -- Hydra Egg
         },
         storage = 13410
+    },
+
+    -- Berserk Potion Quest
+    [21954] = {
+        items = {
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 2152, count = 2}, -- Platinum Coin
+            {itemId = 6500, count = 3}, -- Demonic Essence
+            {itemId = 7439, count = 1} -- Berserk Potion
+        },
+        storage = 21954
+    },
+
+    -- Fishing Box Quest
+    [21953] = {
+        items = {
+            {itemId = 7158, count = 3}, -- Rainbow Trout
+            {itemId = 7159, count = 3}, -- Green Perch
+            {itemId = 2152, count = 5} -- Platinum Coin
+        },
+        storage = 21953,
+        containerId = 7343 -- Fur Bag
+    },
+
+    -- Frost Dragon Quest
+    [21952] = {
+        items = {
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 7443, count = 1}, -- Bullseye Potion
+            {itemId = 2152, count = 10} -- Platinum Coin
+        },
+        storage = 21952
+    },
+
+    -- Lion Trophy Quest
+    [21951] = {
+        items = {
+            {itemId = 7400, count = 1}, -- Lion Trophy
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 2152, count = 2} -- Platinum Coin
+        },
+        storage = 21951
+    },
+    
+    -- Mastermind Potion Quest
+    [21950] = {
+        items = {
+            {itemId = 7440, count = 1}, -- Mastermind Potion
+            {itemId = 2148, count = 78}, -- Gold Coin
+            {itemId = 2148, count = 100}, -- Gold Coin
+            {itemId = 2148, count = 23}, -- Gold Coin
+            {itemId = 7159, count = 1}, -- Green Perch
+            {itemId = 7158, count = 1} -- Rainbow Trout
+        },
+        storage = 21950
+    },
+
+    -- Inukaya Quest
+    [21949] = {
+        items = {
+            {itemId = 2148, count = 48}, -- Gold Coin
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 7158, count = 3} -- Rainbow Trout
+        },
+        storage = 21949,
+        containerId = 7343 -- Fur Bag
+    },
+
+    -- Skeleton Decoration Quest
+    [21948] = {
+        items = {
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 2148, count = 89}, -- Gold Coin
+            {itemId = 6526, count = 1} -- Skeleton Decoration
+        },
+        storage = 21948,
+        containerId = 7343 -- Fur Bag
+    },
+
+    -- Koshei the Deathless Quest
+    [7511] = {
+        items = {
+            {itemId = 8264, count = 1} -- Piece of a Broken Amulet
+        },
+        storage = 7611
+    },
+    [7512] = {
+        items = {
+            {itemId = 8262, count = 1} -- Piece of a Broken Amulet
+        },
+        storage = 7612
+    },
+    [7513] = {
+        items = {
+            {itemId = 8263, count = 1} -- Piece of a Broken Amulet
+        },
+        storage = 7613
+    },
+    [7514] = {
+        items = {
+            {itemId = 8265, count = 1} -- Piece of a Broken Amulet
+        },
+        storage = 7614
+    },
+
+    -- Steal From Thieves Quest
+    [21947] = {
+        items = {
+            {itemId = 7587, count = 1} -- Bag
+        },
+        storage = 21947
+    },
+
+    -- Strong Potions Quest
+    [32177] = {
+        items = {
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1}, -- Strong Mana Potion
+            {itemId = 7509, count = 1} -- Strong Mana Potion
+        },
+        storage = 32177,
+        containerId = 1991
+    },
+
+    -- Waterfall Quest
+    [1881] = {
+        items = {
+            {itemId = 2213, count = 1}, -- Dwarven Ring
+            {itemId = 6096, count = 1} -- Pirate Hat
+        },
+        storage = 1881,
+        containerId = 5926 -- Pirate Backpack
+    },
+
+    -- Darashia Dragon Quest
+    [52374] = {
+        items = {
+            {itemId = 2168, count = 1} -- Life Ring
+        },
+        storage = 52374
+    },
+
+    -- Lone Medusa Quest
+    [51140] = {
+        items = {
+            {itemId = 2144, count = 4} -- Black Pearl
+        },
+        storage = 51140
+    },
+
+    -- Formorgar Mines Quest
+    [21946] = {
+        items = {
+            {itemId = 7290, count = 1}, -- Shard
+            {itemId = 2148, count = 100}, -- Gold Coin
+            {itemId = 7443, count = 1}, -- Bullseye Potion
+            {itemId = 2455, count = 1}, -- Crossbow
+            {itemId = 2547, count = 20} -- Power Bolt
+        },
+        storage = 21946
+    },
+
+    -- Small Ruby Quest
+    [21945] = {
+        items = {
+            {itemId = 2147, count = 1} -- Small Ruby
+        },
+        storage = 21945
+    },
+
+    -- Demon Helmet Quest
+    [13446] = {
+        items = {
+            {itemId = 2645, count = 1} -- Steel Boots
+        },
+        storage = 13446
+    },
+    [13445] = {
+        items = {
+            {itemId = 2493, count = 1} -- Demon Helmet
+        },
+        storage = 13445
+    },
+    [13447] = {
+        items = {
+            {itemId = 2520, count = 1} -- Demon Shield
+        },
+        storage = 13447
     },
 }
 
