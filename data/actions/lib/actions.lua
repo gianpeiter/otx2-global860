@@ -29,6 +29,58 @@ DOORS = {
 	[10477] = 10479, [10775] = 10777, [10784] = 10786, [12092] = 12094, [12099] = 12101, [12188] = 12190, [12197] = 12199
 }
 
+-- The Pits of Inferno Quest
+local lava = {
+    {x = 32808, y = 32336, z = 11},
+    {x = 32809, y = 32336, z = 11},
+    {x = 32810, y = 32336, z = 11},
+    {x = 32808, y = 32334, z = 11},
+    {x = 32807, y = 32334, z = 11},
+    {x = 32807, y = 32335, z = 11},
+    {x = 32807, y = 32336, z = 11},
+    {x = 32807, y = 32337, z = 11},
+    {x = 32806, y = 32337, z = 11},
+    {x = 32805, y = 32337, z = 11},
+    {x = 32805, y = 32338, z = 11},
+    {x = 32805, y = 32339, z = 11},
+    {x = 32806, y = 32339, z = 11},
+    {x = 32806, y = 32338, z = 11},
+    {x = 32807, y = 32338, z = 11},
+    {x = 32808, y = 32338, z = 11},
+    {x = 32808, y = 32337, z = 11},
+    {x = 32809, y = 32337, z = 11},
+    {x = 32810, y = 32337, z = 11},
+    {x = 32811, y = 32337, z = 11},
+    {x = 32811, y = 32338, z = 11},
+    {x = 32806, y = 32338, z = 11},
+    {x = 32810, y = 32338, z = 11},
+    {x = 32810, y = 32339, z = 11},
+    {x = 32809, y = 32339, z = 11},
+    {x = 32809, y = 32338, z = 11},
+    {x = 32811, y = 32336, z = 11},
+    {x = 32811, y = 32335, z = 11},
+    {x = 32810, y = 32335, z = 11},
+    {x = 32809, y = 32335, z = 11},
+    {x = 32808, y = 32335, z = 11},
+    {x = 32809, y = 32334, z = 11},
+    {x = 32809, y = 32333, z = 11},
+    {x = 32810, y = 32333, z = 11},
+    {x = 32811, y = 32333, z = 11},
+    {x = 32806, y = 32338, z = 11},
+    {x = 32810, y = 32334, z = 11},
+    {x = 32811, y = 32334, z = 11},
+    {x = 32812, y = 32334, z = 11},
+    {x = 32813, y = 32334, z = 11},
+    {x = 32814, y = 32334, z = 11},
+    {x = 32812, y = 32333, z = 11},
+    {x = 32810, y = 32334, z = 11},
+    {x = 32812, y = 32335, z = 11},
+    {x = 32813, y = 32335, z = 11},
+    {x = 32814, y = 32335, z = 11},
+    {x = 32814, y = 32333, z = 11},
+    {x = 32813, y = 32333, z = 11}
+}
+
 function destroyItem(cid, itemEx, toPosition)
 	if(itemEx.uid <= 65535 or itemEx.actionid > 0) then
 		return false
@@ -160,6 +212,19 @@ TOOLS.PICK = function(cid, item, fromPosition, itemEx, toPosition)
 		doTransformItem(itemEx.uid, 7236)
 		doSendMagicEffect(toPosition, CONST_ME_BLOCKHIT)
 		return true
+	end
+
+	-- The Pits of Inferno Quest
+	if itemEx.itemid == 1304 then
+		if toPosition.x == 32808 and toPosition.y == 32334 and toPosition.z == 11 then
+			for i = 1, #lava do
+				doCreateItem(5815, 1, lava[i])
+			end
+
+			doTransformItem(itemEx.uid, 2256)
+			doSendMagicEffect(toPosition, CONST_ME_SMOKE)
+			return true
+		end
 	end
 
     -- Naginata Quest

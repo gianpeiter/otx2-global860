@@ -69,6 +69,9 @@ function onLogin(cid)
 	registerCreatureEvent(cid, "PlayerTrade")
 	registerCreatureEvent(cid, "DeathChannel")
 
+	-- Quests
+	registerCreatureEvent(cid, "SvargrondArenaKill") -- Barbarian Arena Quest
+
 	doPlayerOpenChannel(cid, 15)  --channel_death
 	doPlayerOpenChannel(cid, 0x10)  --loot channel
 	return true

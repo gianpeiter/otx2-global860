@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="A Dead Bureaucrat" script="a_dead_bureaucrat_2.lua" walkinterval="2000" floorchange="0">
+	<look type="33"/>
+    <voices>
+        <voice text="Now where did I put that form?" interval2="60" margin="5"/>
+        <voice text="Hail Pumin. Yes, hail." interval2="60" margin="5"/>
+    </voices>
+</npc>

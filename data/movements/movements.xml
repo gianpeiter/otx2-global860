@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- The Pits of Inferno Quest -->
+	<movevent type="StepIn" actionid="10201-10202" event="script" value="quests/the_pits_of_inferno_quest/holy_tible_tile.lua" />
+	<movevent type="StepIn" actionid="9859-9882" event="script" value="quests/the_pits_of_inferno_quest/fire_tile.lua" />
+	<movevent type="StepIn" actionid="10071" event="script" value="quests/the_pits_of_inferno_quest/drawbridge.lua"/>
+	<movevent type="StepOut" actionid="10071" event="script" value="quests/the_pits_of_inferno_quest/drawbridge.lua"/>
+	<movevent type="StepIn" actionid="51886" event="script" value="quests/the_pits_of_inferno_quest/ladder.lua"/>
+	<movevent type="StepOut" actionid="51886" event="script" value="quests/the_pits_of_inferno_quest/ladder.lua"/>
+	<movevent type="StepIn" actionid="28810-28834" event="script" value="quests/the_pits_of_inferno_quest/tile_teleport.lua" />
+	<movevent type="StepIn" actionid="43119" event="script" value="quests/the_pits_of_inferno_quest/stone.lua" />
+	<movevent type="StepIn" actionid="10251-10253" event="script" value="quests/the_pits_of_inferno_quest/trap.lua" />
+	<movevent type="StepIn" actionid="14550" event="script" value="quests/the_pits_of_inferno_quest/trap_2.lua" />
+	<movevent type="StepIn" actionid="10001-10007" event="script" value="quests/the_pits_of_inferno_quest/throne.lua" />
+	<movevent type="StepIn" actionid="50087" event="script" value="quests/the_pits_of_inferno_quest/pumin_teleport.lua" />
+	<movevent type="StepIn" actionid="14320-14326" event="script" value="quests/the_pits_of_inferno_quest/check_throne.lua" />
+	<movevent type="StepIn" actionid="16772-16774;50082-50083" event="script" value="quests/the_pits_of_inferno_quest/bazir_tile.lua" />
+
+	<!-- Barbarian Arena Quest -->
+	<movevent type="StepIn" actionid="25100" event="script" value="quests/barbarian_arena_quest/enter.lua"/>
+	<movevent type="StepIn" actionid="25200" event="script" value="quests/barbarian_arena_quest/pit.lua"/>
+	<movevent type="StepIn" actionid="25300" event="script" value="quests/barbarian_arena_quest/pit.lua"/>
+	<movevent type="StepIn" actionid="23201;23202;23203" event="script" value="quests/barbarian_arena_quest/trophy.lua"/>
+
 	<!-- The Queen of the Banshees Quest -->
 	<movevent type="StepIn" actionid="10067" event="script" value="quests/the_queen_of_the_banshees_quest/entrance_mw_restore_1.lua"/>
 	<movevent type="StepIn" actionid="10068" event="script" value="quests/the_queen_of_the_banshees_quest/entrance_mw_restore_2.lua"/>
@@ -23,6 +45,7 @@
 	<movevent type="StepIn" actionid="12983" event="script" value="quests/the_queen_of_the_banshees_quest/pearls_puzzle_2.lua"/>
 	<movevent type="AddItem" tileitem="1" actionid="12983" event="script" value="quests/the_queen_of_the_banshees_quest/pearls_puzzle_2.lua"/>
 	<movevent type="StepIn" actionid="32993" event="script" value="quests/the_queen_of_the_banshees_quest/pearls_seal.lua"/>
+	<movevent type="StepIn" actionid="32992" event="script" value="quests/the_queen_of_the_banshees_quest/last_room.lua"/>
 
 	<!-- Demon Helmet Quest -->
 	<movevent type="StepIn" actionid="10065-10066" event="script" value="quests/demon_helmet_quest/tile.lua"/>

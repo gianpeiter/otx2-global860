@@ -20,7 +20,7 @@ FLAGS = -D_REENTRANT -DBOOST_DISABLE_ASSERTS -DNDEBUG -D__USE_MYSQL__ -D__ROOT_P
 
 CXXFLAGS =	-pipe								-march=native				-mtune=native \
 					$(INCLUDE) 					$(FLAGS)					-Wall \
-					-Wno-maybe-uninitialized 	-Ofast 						-ggdb3 \
+					-Wno-maybe-uninitialized 	-O0 						-ggdb3 \
 					-std=c++11					-pthread 					-fno-strict-aliasing
 
 

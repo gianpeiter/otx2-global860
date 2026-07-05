@@ -8,7 +8,6 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     end
 
     local criticalCost = (criticalLevel + 1) * 50000
-    local playerPos = getCreaturePosition(cid)
 
     if criticalLevel >= criticalLimit then
         doPlayerSendCancel(cid, "You have already reached the maximum critical level.")
@@ -30,8 +29,8 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
     doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from critical level " .. criticalLevel .. " to " .. (criticalLevel + 1) .. ".")
 
-    doSendAnimatedText(playerPos, "+Critical", COLOR_WHITE)
-    doSendMagicEffect(playerPos, CONST_ME_MAGIC_GREEN)
+    doSendAnimatedText(getCreaturePosition(cid), "+Critical", COLOR_WHITE)
+    doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
 
     return true
 end

@@ -2,16 +2,16 @@ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-local Topic = {}
-local storage = 100168
-
 function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
 function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
 function onThink() npcHandler:onThink() end
 
+local talkState = {}
+local storage = 100168
+
 function greetCallback(cid)
-	Topic[cid] = 0
+	talkState[cid] = 0
 	return true
 end
 
@@ -20,25 +20,25 @@ function creatureSayCallback(cid, type, msg)
 		return false
 	end
 
-	if msgcontains(msg, "no") and Topic[cid] > 0 then
+	if msgcontains(msg, "no") and talkState[cid] > 0 then
 		npcHandler:say("That just makes me sad.", cid)
-		Topic[cid] = 0
+		talkState[cid] = 0
 		return true
 	end
 
 	-- The Postman Missions Quest
 	if msgcontains(msg, "present") and getPlayerStorageValue(cid, storage) == 11 then
 		npcHandler:say("Uh? What do you want?!", cid)
-		Topic[cid] = 1
+		talkState[cid] = 1
 
 	-- Deeper Fibula Quest
 	elseif msgcontains(msg, "key") then
 		npcHandler:say("Do you want to buy the dungeon key for 2000 gold?", cid)
-		Topic[cid] = 2
+		talkState[cid] = 2
 
 	elseif msgcontains(msg, "yes") then
 
-		if Topic[cid] == 1 then
+		if talkState[cid] == 1 then
 			if doPlayerRemoveItem(cid, 2331, 1) then
 				npcHandler:say("You have a present for me?? Realy?", cid)
 				setPlayerStorageValue(cid, storage, 12)
@@ -47,7 +47,7 @@ function creatureSayCallback(cid, type, msg)
 				npcHandler:say("I dont see any {present} with you!", cid)
 			end
 
-		elseif Topic[cid] == 2 then
+		elseif talkState[cid] == 2 then
 			if doPlayerRemoveMoney(cid, 2000) then
 				npcHandler:say("Here it is.", cid)
 
@@ -60,7 +60,7 @@ function creatureSayCallback(cid, type, msg)
 			end
 		end
 
-		Topic[cid] = 0
+		talkState[cid] = 0
 	end
 
 	return true

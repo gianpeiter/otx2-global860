@@ -3,6 +3,23 @@
 	<!-- Consumable -->
 	<action itemid="2661" event="script" value="consumable/loot_boost_potion.lua" />
 
+	<!-- The Pits of Inferno Quest -->
+	<action actionid="8933" event="script" value="quests/the_pits_of_inferno_quest/oil_lever.lua" />
+	<action actionid="30001-30004" event="script" value="quests/the_pits_of_inferno_quest/burning_wall.lua" />
+	<action actionid="30101-30116" event="script" value="quests/the_pits_of_inferno_quest/levers.lua"/>
+	<action actionid="13228-13229" event="script" value="quests/the_pits_of_inferno_quest/ladder_lever.lua"/>
+	<action actionid="42881" event="script" value="quests/the_pits_of_inferno_quest/maze_stone.lua"/>
+	<action actionid="42880" event="script" value="quests/the_pits_of_inferno_quest/fire_stone.lua"/>
+	<action actionid="14551" event="script" value="quests/the_pits_of_inferno_quest/trap_3.lua"/>
+	<action actionid="56330-56331" event="script" value="quests/the_pits_of_inferno_quest/lava_lever.lua"/>
+	<action actionid="50095-50104" event="script" value="quests/the_pits_of_inferno_quest/inferno_wrong_levers.lua"/>
+	<action actionid="50105" event="script" value="quests/the_pits_of_inferno_quest/inferno_maze_lever.lua"/>
+	<action actionid="39511-39512" event="script" value="quests/the_pits_of_inferno_quest/bazir_mirror.lua"/>
+
+	<!-- The Annihilator Quest -->
+	<action actionid="5000" event="script" value="quests/the_annihilator_quest/lever.lua" />
+	<action actionid="2115" event="script" value="quests/the_annihilator_quest/door.lua" />
+
 	<!-- The Queen of the Banshees Quest -->
 	<action actionid="13309" event="script" value="quests/the_queen_of_the_banshees_quest/ghostlands_lever.lua" />
 	<action actionid="13310" event="script" value="quests/the_queen_of_the_banshees_quest/ghostlands_beholder_lever.lua" />
@@ -18,7 +35,7 @@
 	<action actionid="42990" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_1.lua" />
 	<action actionid="42991" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_2.lua" />
 	<action actionid="42988" event="script" value="quests/the_queen_of_the_banshees_quest/lever_puzzle_1_3.lua" />
-	<action actionid="20509-20515" event="script" value="quests/the_queen_of_the_banshees_quest/doors.lua" />
+	<action actionid="20509-20516" event="script" value="quests/the_queen_of_the_banshees_quest/door.lua" />
 
 	<!-- Demon Helmet Quest -->
 	<action actionid="45221" event="script" value="quests/demon_helmet_quest/lever.lua" />

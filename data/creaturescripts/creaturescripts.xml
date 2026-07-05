@@ -16,27 +16,23 @@
 	<event type="login" name="ObsidianKnife" event="script" value="obsidian_knife.lua"/>
 	<event type="extendedopcode" name="ExtendedOpcode" event="script" value="extended_opcode.lua"/>
 	<event type="tradeaccept" name="PlayerTrade" event="script" value="player_trade.lua"/>
-
-	<!-- Custom -->
+	<event type="death" name="PlayerDeath" event="script" value="player_death.lua"/>
 	<event type="throw" name="DecayOnDepotThrow" event="script" value="decay_on_depot_item.lua"/>
 	<event type="tradeaccept" name="DecayOnDepotTrade" event="script" value="decay_on_depot_item.lua"/>
-
-	<!-- Death Channel -->
 	<event type="death" name="DeathChannel" event="script" value="death_channel.lua"/>
-
-	<!-- No Count Frag In Area -->
 	<event type="nocountfrag" name="FragArea" event="script" value="no_count_frag_in_area.lua"/>
-
-	<event type="login" name="LoyaltySystem" event="script" value="loyalty_system.lua"/>
-
+	<event type="login" name="RSLogin" event="script" value="reset_system/reset_system.lua"/>
+	<event type="advance" name="RSAdvance" event="script" value="reset_system/reset_system.lua"/>
+	<event type="moveitem" name="HouseProtectTrash" event="script" value="house_protect_trash.lua"/>
+	
 	<!-- Monster Boost -->
 	<!-- <event type="login" name="MonsterBoostLogin" event="script" value="monster_boost.lua"/> -->
 	<!-- <event type="kill" name="MonsterBoostKill" event="script" value="monster_boost.lua"/> -->
 
-	<!-- Reset System -->
-	<event type="login" name="RSLogin" event="script" value="reset_system/reset_system.lua"/>
-	<event type="advance" name="RSAdvance" event="script" value="reset_system/reset_system.lua"/>
+	<!-- Custom -->
+	<event type="login" name="LoyaltySystem" event="script" value="custom/loyalty_system.lua"/>
 
-	<!-- Custom Protection House -->
-	<event type="moveitem" name="HouseProtectTrash" event="script" value="house_protect_trash.lua"/>
+	<!-- Quests -->
+	<!-- Barbarian Arena Quest-->
+	<event type="kill" name="SvargrondArenaKill" event="script" value="quests/barbarian_arena_quest/kill.lua"/>
 </creaturescripts>

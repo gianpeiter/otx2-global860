@@ -45,6 +45,18 @@ setConditionParam(burn, CONDITION_PARAM_STARTVALUE, -10) -- The damage the condi
 setConditionParam(burn, CONDITION_PARAM_TICKINTERVAL, 10000) -- Delay between damages
 setConditionParam(burn, CONDITION_PARAM_FORCEUPDATE, true) -- Re-update condition when adding it(ie. min/max value)
 
+local function graveStoneTeleport(cid, fromPosition, toPosition)
+	if not isPlayer(cid) then
+		return true
+	end
+
+	doTeleportThing(cid, toPosition)
+	doCreatureSay(cid, "Muahahahaha..", TALKTYPE_MONSTER)
+	doSendMagicEffect(fromPosition, CONST_ME_DRAWBLOOD)
+	doSendMagicEffect(toPosition, CONST_ME_MORTAREA)
+	return true
+end
+
 function onUse(cid, item, fromPosition, itemEx, toPosition)
 	if(doComparePositions(getCreaturePosition(cid), toPosition))then
 		itemEx.uid = cid
@@ -157,9 +169,35 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		toPosition = getThingPos(cid)
 	end
 
+	-- Pits of Inferno Quest
+	if(item.type == TYPE_BLOOD and itemEx.actionid == 32264) then
+		local splash = doCreateItem(2016, item.type, toPosition)
+		doDecayItem(splash)
+
+		local destination = {x = 32791, y = 32332, z = 10}
+
+		local checkPos = {
+			x = toPosition.x,
+			y = toPosition.y + 1,
+			z = toPosition.z
+		}
+
+		local creature = getTopCreature(checkPos)
+
+		if creature.uid > 0 and isPlayer(creature.uid) then
+			graveStoneTeleport(creature.uid, checkPos, destination)
+		else
+			graveStoneTeleport(cid, fromPosition, destination)
+		end
+
+		doChangeTypeItem(item.uid, TYPE_EMPTY)
+		return true
+	end
+
 	local splash = doCreateItem(2016, item.type, toPosition)
 	doDecayItem(splash)
 
 	doChangeTypeItem(item.uid, TYPE_EMPTY)
 	return true
+
 end

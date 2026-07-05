@@ -1,7 +1,7 @@
 local config = {
 	[2661] = {
 		name = "Loot Boost Potion",
-		boost = 150, -- 150 (+50%)
+		boost = 130, -- 130 (+30%)
 		duration = 7 * 24 * 60 * 60 -- 7 days
 	},
 }

@@ -182,14 +182,6 @@ local config = {
         storage = 8234
     },
 
-    -- Naginata Quest
-    [19182] = {
-        items = {
-            {itemId = 2426, count = 1} -- Naginata
-        },
-        storage = 19182
-    },
-
     -- Orc Shaman Quest
     [7451] = {
         items = {
@@ -265,17 +257,6 @@ local config = {
         storage = 14433
     },
 
-    -- Dead Archer Quest
-    [21994] = {
-        items = {
-            {itemId = 2545, count = 5}, -- Poison Arrow
-            {itemId = 2456, count = 1}, -- Bow
-            {itemId = 7618, count = 1}, -- Health Potion
-            {itemId = 7620, count = 1} -- Mana Potion
-        },
-        storage = 21994
-    },
-
     -- Elvenbane Quest
     [21993] = {
         items = {
@@ -305,16 +286,6 @@ local config = {
         storage = 21990
     },
 
-    -- Geomancer Quest
-    [21989] = {
-        items = {
-            {itemId = 2146, count = 1}, -- Small sapphire
-            {itemId = 2145, count = 1}, -- Small Diamond
-            {itemId = 2213, count = 1} -- Dwarven Ring
-        },
-        storage = 21989
-    },
-
     -- Isle of the Mists Quest
     [21988] = {
         items = {
@@ -323,13 +294,67 @@ local config = {
         storage = 21988
     },
 
-    -- Life Ring Quest
+    
+    -- Thais Quest
+    -- Missão 01: Ancient Temple
     [21987] = {
         items = {
             {itemId = 2201, charges = 200}, -- Dragon Necklace
             {itemId = 2168, count = 1} -- Life Ring
         },
         storage = 21987
+    },
+    -- Missão 02: Noble Armor
+    [16451] = {
+        items = {
+            {itemId = 2486, count = 1} -- Noble Armor
+        },
+        storage = 16451
+    },
+    [16452] = {
+        items = {
+            {itemId = 2491, count = 1} -- Crown Helmet
+        },
+        storage = 16452
+    },
+    -- Missão 03: Geomancer
+    [21989] = {
+        items = {
+            {itemId = 2146, count = 1}, -- Small sapphire
+            {itemId = 2145, count = 1}, -- Small Diamond
+            {itemId = 2213, count = 1} -- Dwarven Ring
+        },
+        storage = 21989
+    },
+    -- Missão 04: Dead Archer
+    [21994] = {
+        items = {
+            {itemId = 2545, count = 5}, -- Poison Arrow
+            {itemId = 2456, count = 1}, -- Bow
+            {itemId = 7618, count = 1}, -- Health Potion
+            {itemId = 7620, count = 1} -- Mana Potion
+        },
+        storage = 21994
+    },
+    -- Missão 05: The Lighthouse
+    [46574] = {
+        items = {
+            {itemId = 2417, count = 1} -- Battle Hammer
+        },
+        storage = 46574
+    },
+    [46575] = {
+        items = {
+            {itemId = 2521, count = 1} -- Dark Shield
+        },
+        storage = 46575
+    },
+    -- Missão 06: Naginata
+    [19182] = {
+        items = {
+            {itemId = 2426, count = 1} -- Naginata
+        },
+        storage = 19182
     },
 
     -- Throwing Star Quest
@@ -348,20 +373,6 @@ local config = {
             {itemId = 2213, count = 1}, -- Dwarven Ring
         },
         storage = 61001
-    },
-
-    -- Thais Lighthouse Quest
-    [46574] = {
-        items = {
-            {itemId = 2417, count = 1} -- Battle Hammer
-        },
-        storage = 46574
-    },
-    [46575] = {
-        items = {
-            {itemId = 2521, count = 1} -- Dark Shield
-        },
-        storage = 46575
     },
 
     -- Deeper Fibula Quest
@@ -1251,6 +1262,283 @@ local config = {
             {itemId = 2520, count = 1} -- Demon Shield
         },
         storage = 13447
+    },
+
+    -- The Queen of the Banshees Quest
+    [30016] = {
+        items = {
+            {itemId = 2528, count = 1} -- Tower Shield
+        },
+        storage = 30016
+    },
+    [30017] = {
+        items = {
+            {itemId = 2195, count = 1} -- Boots of Haste
+        },
+        storage = 30017
+    },
+    [30018] = {
+        items = {
+            {itemId = 2152, count = 100} -- Platinum Coin
+        },
+        storage = 30018
+    },
+    [30019] = {
+        items = {
+            {itemId = 2165, count = 1} -- Stealth Ring
+        },
+        storage = 30019
+    },
+    [30020] = {
+        items = {
+            {itemId = 2197, charges = 5} -- Stone Skin Amulet
+        },
+        storage = 30020
+    },
+    [30021] = {
+        items = {
+            {itemId = 2393, count = 1} -- Giant Sword
+        },
+        storage = 30021
+    },
+
+    -- The Annihilator Quest
+    [49111] = {
+        items = {
+            {itemId = 2494, count = 1} -- Demon Armor
+        },
+        storage = 5000
+    },
+    [49112] = {
+        items = {
+            {itemId = 2400, count = 1} -- Magic Sword
+        },
+        storage = 5000
+    },
+    [49113] = {
+        items = {
+            {itemId = 2431, count = 1} -- Stonecutter Axe
+        },
+        storage = 5000
+    },
+    [49114] = {
+        items = {
+            {itemId = 2326, count = 1} -- Annihilation Bear
+        },
+        storage = 5000,
+        containerId = 1990
+    },
+
+    -- Barbarian Arena Quest
+    -- Arena Greenhorn
+    [26300] = {
+        items = {
+            {itemId = 2114, count = 1}, -- Piggy Bank
+            {itemId = 6570, count = 1}, -- Suprise Bag
+            {itemId = 6574, count = 1}, -- Bar of Chocolate
+            {itemId = 2688, count = 10}, -- Candy Cane
+            {itemId = 7372, count = 1} -- Ice Cream Cone
+        },
+        storage = 26300,
+        containerId = 1990
+    },
+    [26400] = {
+        items = {
+            {itemId = 7364, count = 100}, -- Sniper Arrow
+            {itemId = 7365, count = 100} -- Onyx Arrow
+        },
+        storage = 26400,
+        containerId = 7342
+    },
+    [26500] = {
+        items = {
+            {itemId = 7406, count = 1} -- Blacksteel Sword
+        },
+        storage = 24709
+    },
+    [26600] = {
+        items = {
+            {itemId = 7380, count = 1} -- Headchopper
+        },
+        storage = 24709
+    },
+    [26700] = {
+        items = {
+            {itemId = 7392, count = 1} -- Orcish Maul
+        },
+        storage = 24709
+    },
+    -- Arena Scrapper
+    [27300] = {
+        items = {
+            {itemId = 7183, count = 1}, -- Baby Seal Doll
+            {itemId = 6574, count = 1}, -- Bar of Chocolate
+            {itemId = 7375, count = 1}, -- Ice Cream Cone
+            {itemId = 6569, count = 10} -- Candy
+        },
+        storage = 27300,
+        containerId = 1990
+    },
+    [27400] = {
+        items = {
+            {itemId = 2304, count = 50}, -- Great Fireball Rune
+            {itemId = 2311, count = 50}, -- Heavy Magic Missile Rune
+            {itemId = 2547, count = 100}, -- Power Bolt
+            {itemId = 2547, count = 100}, -- Power Bolt
+            {itemId = 7365, count = 100} -- Oxy Arrow
+        },
+        storage = 27400,
+        containerId = 7342
+    },
+    [27500] = {
+        items = {
+            {itemId = 7384, count = 1} -- Mystic Blade
+        },
+        storage = 35809
+    },
+    [27600] = {
+        items = {
+            {itemId = 7389, count = 1} -- Heroic Axe
+        },
+        storage = 35809
+    },
+    [27700] = {
+        items = {
+            {itemId = 7415, count = 1} -- Cranial Basher
+        },
+        storage = 35809
+    },
+    -- Arena Warlord
+    [28300] = {
+        items = {
+            {itemId = 5080, count = 1}, -- Panda Teddy
+            {itemId = 6574, count = 1}, -- Bar of Chocolate
+            {itemId = 7372, count = 1}, -- Ice Cream Cone
+            {itemId = 6569, count = 10} -- Candy
+        },
+        storage = 28300,
+        containerId = 1990
+    },
+    [28400] = {
+        items = {
+            {itemId = 6529, count = 100}, -- Infernal Bolt
+            {itemId = 7440, count = 1}, -- Mastermind Potion
+            {itemId = 7443, count = 1}, -- Bullseye Potion
+            {itemId = 2268, count = 50}, -- Sudden Death Rune
+            {itemId = 2273, count = 50} -- Ultimate Healing Rune
+        },
+        storage = 28400,
+        containerId = 7342
+    },
+    [28500] = {
+        items = {
+            {itemId = 7390, count = 1} -- The Justice Seeker
+        },
+        storage = 15909
+    },
+    [28600] = {
+        items = {
+            {itemId = 7434, count = 1} -- Royal Axe
+        },
+        storage = 15909
+    },
+    [28700] = {
+        items = {
+            {itemId = 7429, count = 1} -- Blessed Sceptre
+        },
+        storage = 15909
+    },
+    -- The Pits of Inferno Quest
+    [15713] = {
+        items = {
+            {itemId = 2090, count = 1, actionId = 3700} -- Crystal Key 3700
+        },
+        storage = 15713
+    },
+    [10552] = {
+        items = {
+            {itemId = 1970, count = 1, text = "Banor I praise your name.\nBe with me in the battle.\nBe my shield, let me be your sword.\nI will honour the godly spark in my soul. May it flourish and grow."} -- The Holy Tible
+        },
+        storage = 10552
+    },
+    [30228] = {
+        items = {
+            {itemId = 1950, count = 1, text = "look at the 4 and ignore the 2\nend the 7 with 5 in mind\nvalue of 6 is 9\nexplain the second of 4\nrun past the 7\nsubstract 10\nuse the northeast first\nsee the colors change\nerrors are red\nlook what changes\nexpect no mercy\nsix times 10\nstupidity is red."} -- Book
+        },
+        storage = 30228
+    },
+    [56221] = {
+        items = {
+            {itemId = 2152, count = 11}, -- Platinum Coin
+            {itemId = 2143, count = 5}, -- White Pearl
+            {itemId = 5944, count = 1}, -- Soul Orb
+            {itemId = 5022, count = 3}, -- Orichalcum Pearl
+            {itemId = 5944, count = 1}, -- Soul Orb
+            {itemId = 6300, count = 1}, -- Death Ring
+            {itemId = 2168, count = 1}, -- Life Ring
+            {itemId = 2260, count = 1}, -- Blank Rune
+            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
+            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
+            {itemId = 2268, count = 1}, -- Sudden Death Rune
+            {itemId = 2268, count = 1}, -- Sudden Death Rune
+            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
+            {itemId = 6561, count = 1}, -- Cerimonial Ankh
+            {itemId = 7590, count = 1} -- Great Mana Potion
+        },
+        storage = 45123,
+        containerId = 5926
+    },
+    [10548] = {
+        items = {
+            {itemId = 12559, count = 1}, -- Silver Rune Emblem
+            {itemId = 12565, count = 1}, -- Silver Rune Emblem
+            {itemId = 12563, count = 1}, -- Silver Rune Emblem
+            {itemId = 12561, count = 1} -- Silver Rune Emblem
+        },
+        storage = 23782,
+        containerId = 2365
+    },
+    [10559] = {
+        items = {
+            {itemId = 2152, count = 100} -- Platinum Coin
+        },
+        storage = 10559
+    },
+    [10550] = {
+        items = {
+            {itemId = 2361, count = 1} -- Frozen Starlight
+        },
+        storage = 10550
+    },
+    [10549] = {
+        items = {
+            {itemId = 5791, count = 1} -- Stuffed Dragon
+        },
+        storage = 10549
+    },
+    [10547] = {
+        items = {
+            {itemId = 6132, count = 1} -- Pair of Soft Boots
+        },
+        storage = 10547
+    },
+    [10544] = {
+        items = {
+            {itemId = 2453, count = 1} -- Arcane Staff
+        },
+        storage = 10544
+    },
+    [10545] = {
+        items = {
+            {itemId = 6528, count = 1} -- The Avenger
+        },
+        storage = 10544
+    },
+    [10546] = {
+        items = {
+            {itemId = 5803, count = 1} -- Arbalest
+        },
+        storage = 10544
     },
 }
 

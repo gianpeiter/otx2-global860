@@ -80891,6 +80891,9 @@
 		<monster name="Demon" x="3" y="0" z="15" spawntime="60" />
 		<monster name="Destroyer" x="1" y="2" z="15" spawntime="60" />
 	</spawn>
+	<spawn centerx="32737" centery="32268" centerz="15" radius="1">
+		<npc name="A Dead Bureaucrat 4" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32878" centery="32268" centerz="15" radius="5">
 		<monster name="Juggernaut" x="-3" y="-2" z="15" spawntime="60" />
 		<monster name="Destroyer" x="1" y="-2" z="15" spawntime="60" />
@@ -80898,6 +80901,9 @@
 		<monster name="Juggernaut" x="-4" y="3" z="15" spawntime="60" />
 		<monster name="Juggernaut" x="1" y="3" z="15" spawntime="60" />
 		<monster name="Destroyer" x="5" y="4" z="15" spawntime="60" />
+	</spawn>
+	<spawn centerx="32729" centery="32273" centerz="15" radius="1">
+		<npc name="A Dead Bureaucrat 3" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32828" centery="32274" centerz="15" radius="2">
 		<monster name="Lich" x="1" y="0" z="15" spawntime="60" />
@@ -80944,6 +80950,9 @@
 	<spawn centerx="32828" centery="32281" centerz="15" radius="2">
 		<monster name="Lich" x="2" y="0" z="15" spawntime="60" />
 	</spawn>
+	<spawn centerx="32737" centery="32283" centerz="15" radius="1">
+		<npc name="A Dead Bureaucrat 2" x="0" y="0" z="15" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32859" centery="32283" centerz="15" radius="3">
 		<monster name="Destroyer" x="1" y="-3" z="15" spawntime="60" />
 		<monster name="Fury" x="2" y="-3" z="15" spawntime="60" />
@@ -80964,6 +80973,9 @@
 		<monster name="Destroyer" x="-1" y="-2" z="15" spawntime="60" />
 		<monster name="Fury" x="4" y="-2" z="15" spawntime="60" />
 		<monster name="Destroyer" x="2" y="0" z="15" spawntime="60" />
+	</spawn>
+	<spawn centerx="32729" centery="32293" centerz="15" radius="1">
+		<npc name="A Dead Bureaucrat 1" x="0" y="0" z="15" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32785" centery="32294" centerz="15" radius="6">
 		<monster name="Spectre" x="-2" y="-6" z="15" spawntime="60" />

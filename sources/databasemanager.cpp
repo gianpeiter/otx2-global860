@@ -1476,13 +1476,13 @@ uint32_t DatabaseManager::updateDatabase()
 			std::clog << "> Updating database to version 39... (Experience History & Online Time)" << std::endl;
 
 			db->query("ALTER TABLE `players` ADD `exphist_lastexp` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist1` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist2` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist3` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist4` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist5` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist6` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
-			db->query("ALTER TABLE `players` ADD `exphist7` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist1` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist2` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist3` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist4` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist5` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist6` BIGINT NOT NULL DEFAULT 0;");
+			db->query("ALTER TABLE `players` ADD `exphist7` BIGINT NOT NULL DEFAULT 0;");
 
 			db->query("ALTER TABLE `players` ADD `onlinetimetoday` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
 			db->query("ALTER TABLE `players` ADD `onlinetime1` BIGINT UNSIGNED NOT NULL DEFAULT 0;");
