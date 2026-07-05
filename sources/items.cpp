@@ -77,6 +77,8 @@ ItemType::ItemType()
 	armorRndMin = armorRndMax = defenseRndMin = defenseRndMax = extraDefenseRndMin = extraDefenseRndMax = 0;
 	attackRndMin = attackRndMax = extraAttackRndMin = extraAttackRndMax = 0;
 	attackSpeedRndMin = attackSpeedRndMax = attackSpeedChance = extraAttackChance = extraDefenseChance = 0;
+	weightReduction = 0;
+	capacityPoints = 0;
 	fluidSource = FLUID_NONE;
 	allowDistRead = false;
 
@@ -772,6 +774,16 @@ void Items::parseItemNode(xmlNodePtr itemNode, uint32_t id)
 				it.attackSpeedRndMin = intValue;
 			if(readXMLInteger(itemAttributesNode, "random_max", intValue))
 				it.attackSpeedRndMax = intValue;
+		}
+		else if (tmpStrValue == "weightreduction") {
+			int32_t intValue = 0;
+			if (readXMLInteger(itemAttributesNode, "value", intValue))
+				it.weightReduction = intValue;
+		}
+		else if (tmpStrValue == "capacitypoints") {
+			int32_t intValue = 0;
+			if (readXMLInteger(itemAttributesNode, "value", intValue))
+				it.capacityPoints = intValue;
 		}
 		else if(tmpStrValue == "rotateto")
 		{

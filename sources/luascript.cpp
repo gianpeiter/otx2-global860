@@ -10959,6 +10959,9 @@ int32_t LuaInterface::luaGetItemInfo(lua_State* L)
 
 	//TODO: absorb, increment, reflect, skills, skillsPercent, stats, statsPercent
 
+	setField(L, "weightReduction", item->weightReduction);
+	setField(L, "capacityPoints", item->capacityPoints);
+
 	pushTable(L);
 	setField(L, "group", (int32_t)item->group);
 	setField(L, "type", (int32_t)item->type);

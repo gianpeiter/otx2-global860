@@ -1557,6 +1557,12 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance, const
 		if(reduceSkillLoss != 0)
 			s << ", SkillLoss: -" << reduceSkillLoss << "%";
 
+		if (it.weightReduction > 0)
+			s << ", weight reduction " << it.weightReduction << "%";
+
+		if (it.capacityPoints > 0)
+			s << ", capacity +" << it.capacityPoints;
+
 		s << ")";
 	}
 	else if(it.isKey())

@@ -2136,11 +2136,37 @@ void Player::removeMessageBuffer()
 
 double Player::getFreeCapacity() const
 {
-	if(hasFlag(PlayerFlag_HasInfiniteCapacity)
-		|| !g_config.getBool(ConfigManager::USE_CAPACITY))
-		return 10000.00;
+    if (hasFlag(PlayerFlag_HasInfiniteCapacity) ||
+        !g_config.getBool(ConfigManager::USE_CAPACITY))
+        return 10000.00;
 
-	return std::max(0.00, capacity - inventoryWeight);
+    double bonusCapacity = 0.0;
+    double weight = inventoryWeight;
+
+    Item* backpack = inventory[SLOT_BACKPACK];
+    if (backpack)
+    {
+        const ItemType& it = Item::items[backpack->getID()];
+
+        if (it.capacityPoints > 0)
+            bonusCapacity += it.capacityPoints;
+
+        if (it.weightReduction > 0)
+        {
+            double backpackContentWeight = 0.0;
+            if (backpack->isContainer())
+                backpackContentWeight = ((Container*)backpack)->getTotalWeight();
+
+            double reducedWeight = backpackContentWeight * ((100.0 - it.weightReduction) / 100.0);
+
+            weight = weight - backpackContentWeight + reducedWeight;
+        }
+    }
+
+    double totalCapacity = capacity + bonusCapacity;
+    double freeCap = std::max(0.0, totalCapacity - weight);
+
+	return freeCap;
 }
 
 void Player::drainHealth(Creature* attacker, CombatType_t combatType, int32_t damage)

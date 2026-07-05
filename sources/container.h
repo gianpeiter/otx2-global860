@@ -71,6 +71,7 @@ class Container : public Item, public Cylinder
 		std::string getContentDescription() const;
 		uint32_t getItemHoldingCount() const;
 		virtual double getWeight() const;
+		double getTotalWeight() const { return totalWeight; }
 
 		uint32_t capacity() const
 		{

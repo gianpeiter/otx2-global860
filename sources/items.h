@@ -162,6 +162,8 @@ class ItemType
 			runeLevel, runeMagLevel, lightLevel, lightColor, decayTo, rotateTo, alwaysOnTopOrder;
 
 		int32_t extraAttackChance, extraDefenseChance, attackSpeedChance;
+		int32_t weightReduction;
+		int32_t capacityPoints;
 		int32_t armorRndMin, armorRndMax, defenseRndMin, defenseRndMax, extraDefenseRndMin,
 			extraDefenseRndMax, attackRndMin, attackRndMax, extraAttackRndMin, extraAttackRndMax,
 			attackSpeedRndMin, attackSpeedRndMax;
