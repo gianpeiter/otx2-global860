@@ -36,6 +36,20 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		doSendMagicEffect(fromPosition, CONST_ME_POFF)
 		return true
 	end
+	
+	-- Infinite Food
+	if(item.itemid == 15263) then
+		local missing = MAX_FOOD - getPlayerFood(cid)
+
+		if(missing <= 0) then
+			doPlayerSendCancel(cid, "You are full.")
+			return true
+		end
+
+		doPlayerFeed(cid, missing)
+		doCreatureSay(cid, "Mmmm.", TALKTYPE_MONSTER)
+		return true
+	end
 
 	local food = FOODS[item.itemid]
 	if(food == nil) then

@@ -1,16 +1,14 @@
 local staminaItems = {
-    [12667] = {
+    [15261] = {
         maxStamina = 42 * 60,
-        infinite = false,
-        message = "You used a stamina refill and your stamina has been restored.",
-        cancelMessage = "Your stamina is already at the maximum allowed by this item."
+        message = "Your stamina has been fully restored.",
+        cancelMessage = "Your stamina is already full."
     },
 
-    [12668] = {
+    [15262] = {
         maxStamina = 40 * 60,
-        infinite = false,
-        message = "You used a small stamina refill and your stamina has been restored.",
-        cancelMessage = "Your stamina is already at the maximum allowed by this item."
+        message = "Your stamina has been restored to 40 hours.",
+        cancelMessage = "Your stamina is already at 40 hours."
     }
 }
 
@@ -30,9 +28,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     doPlayerSetStamina(cid, cfg.maxStamina)
     doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, cfg.message)
 
-    if not cfg.infinite then
-        doRemoveItem(item.uid, 1)
-    end
+	doRemoveItem(item.uid, 1)
 
     doSendMagicEffect(getThingPos(cid), CONST_ME_MAGIC_GREEN)
     return true

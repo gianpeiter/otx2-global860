@@ -4453,7 +4453,7 @@
 	<item fromid="2638" toid="2639" article="a" name="tic-tac-toe token">
 		<attribute key="weight" value="500"/>
 	</item>
-	<item id="2640" article="a" name="pair of soft boots (faster regeneration)">
+	<item id="2640" article="a" name="pair of soft boots">
 		<attribute key="weight" value="800"/>
 		<attribute key="slotType" value="feet"/>
 		<attribute key="decayTo" value="10021"/>
@@ -22073,6 +22073,65 @@
 		<attribute key="description" value="They will expire within a short time, sell them back to Esrik before they do."/>
 		<attribute key="weight" value="2500"/>
 	</item>
+	
+	<!-- Custom -->
+	<item id="15257" article="a" name="realmia helmet">
+		<attribute key="weight" value="1200"/>
+		<attribute key="armor" value="11"/>
+		<attribute key="speed" value="40"/>
+		<attribute key="slotType" value="head"/>
+	</item>
+	<item id="15258" article="a" name="realmia boots">
+		<attribute key="weight" value="800"/>
+		<attribute key="slotType" value="feet"/>
+		<attribute key="healthGain" value="10"/>
+		<attribute key="healthTicks" value="2000"/>
+		<attribute key="manaGain" value="15"/>
+		<attribute key="manaTicks" value="2000"/>
+		<attribute key="showattributes" value="1"/>
+	</item>
+	<item id="15259" article="a" name="experience boost potion">
+		<attribute key="description" value="Drinking this potion increases temporarily your experience gain."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15260" article="a" name="loot boost potion">
+		<attribute key="description" value="Drinking this potion increases temporarily the amount of loot you obtain."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15261" article="a" name="stamina potion">
+		<attribute key="description" value="Drinking this potion fully restores your stamina."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15262" article="a" name="small stamina potion">
+		<attribute key="description" value="Drinking this potion restores your stamina to its maximum of 40 hours."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15263" name="blessed steak">
+		<attribute key="description" value="Eating this steak satisfies your hunger indefinitely."/>
+		<attribute key="weight" value="2000"/>
+		<attribute key="showcount" value="0"/>
+	</item>
+	<item id="15264" article="a" name="dodge stone">
+		<attribute key="description" value="Using this stone increases your dodge chance permanently."/>
+		<attribute key="weight" value="750"/>
+	</item>
+	<item id="15265" article="a" name="critical stone">
+		<attribute key="description" value="Using this stone increases your critical hit chance permanently."/>
+		<attribute key="weight" value="750"/>
+	</item>
+	<item id="15266" article="a" name="premium point" plural="premium points">
+		<attribute key="description" value="Using this item adds premium points to your account."/>
+		<attribute key="weight" value="10"/>
+	</item>
+	<item id="15267" article="a" name="roulette scroll">
+		<attribute key="description" value="This scroll is required to spin the roulette."/>
+		<attribute key="weight" value="10"/>
+	</item>
+	<item id="15268" article="a" name="blessing book">
+		<attribute key="description" value="Using this book grants you all blessings."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	
 	<item id="20001" name="water"/>
 	<item id="20002" name="blood"/>
 	<item id="20003" name="beer"/>

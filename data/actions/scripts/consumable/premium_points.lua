@@ -7,7 +7,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     exhaustion.set(cid, 667, 1)
     doPlayerAddPremiumPoints(cid, 1)
     doRemoveItem(item.uid, 1)
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "1 premium point has been added to your account.")
+    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "One premium point has been added to your account.")
 
     return true
 end

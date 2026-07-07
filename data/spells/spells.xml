@@ -2,9 +2,11 @@
 <spells>
 	<!-- INFO
 		Function: icon
-		Are not supported for it not compiled on spells.cpp
-		To use the grouped exhausted add the following tag: exhaustedGroup="type"(type being: attack, heal, support or special) to the desired spells
-	 -->
+		Not supported.
+
+		To use grouped exhaustion, add:
+		exhaustedGroup="attack, heal, support, special, none"
+	-->
 
 	<!-- Attack Runes -->
 	<rune name="Poison Field" id="2285" allowfaruse="1" charges="3" lvl="14" maglv="0" exhaustion="2000" groups="1,2000" icon="26" blocktype="solid" event="script" value="attack/poison field.lua"/>

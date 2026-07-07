@@ -46,6 +46,47 @@ function onLogin(cid)
 	if(not isPlayerGhost(cid)) then
 		doSendMagicEffect(getCreaturePosition(cid), CONST_ME_TELEPORT)
 	end
+	
+	local rate = 1.0
+	local now = os.time()
+
+	-- Premium Account
+	if not isPremium(cid) then
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "You do not have a Premium Account. Unlock exclusive features and receive 10% bonus experience.")
+	else
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "Your Premium Account grants exclusive features and 10% bonus experience.")
+		rate = rate + 0.10
+
+		local premiumDays = getPlayerPremiumDays(cid)
+		if premiumDays == 1 then
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_RED, "Your Premium Account expires in 1 day. Don't lose your benefits.")
+		elseif premiumDays <= 7 then
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_ORANGE, "Your Premium Account expires in " .. premiumDays .. " days.")
+		end
+	end
+	
+	-- Experience Boost
+	local experienceExpires = getPlayerStorageValue(cid, Storage.ExperienceBoost.Time)
+	local experienceBoost = getPlayerStorageValue(cid, Storage.ExperienceBoost.Boost)
+
+	if experienceExpires > now and experienceBoost > 100 then
+		rate = rate + ((experienceBoost - 100) / 100)
+
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[Experience Boost] Your experience boost is active. +" .. (experienceBoost - 100) .. "% experience for " .. timeString(experienceExpires - now) .. ".")
+	else
+		setPlayerStorageValue(cid, Storage.ExperienceBoost.Boost, -1)
+		setPlayerStorageValue(cid, Storage.ExperienceBoost.Time, -1)
+	end
+	
+	doPlayerSetExperienceRate(cid, rate)
+	
+	-- Loot Boost
+	local lootExpires = getPlayerStorageValue(cid, Storage.LootBoost.Time)
+	local lootBoost = getPlayerStorageValue(cid, Storage.LootBoost.Boost)
+
+	if lootExpires > now and lootBoost > 100 then
+		doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "[Loot Boost] Your loot boost is active. +" .. (lootBoost - 100) .. "% loot for " .. timeString(lootExpires - now) .. ".")
+	end
 
 	registerCreatureEvent(cid, "Idle")
 	registerCreatureEvent(cid, "Mail")
@@ -74,5 +115,7 @@ function onLogin(cid)
 
 	doPlayerOpenChannel(cid, 15)  --channel_death
 	doPlayerOpenChannel(cid, 0x10)  --loot channel
+	
+	print("Player " .. getCreatureName(cid) .. " has experience rate: " .. rate)
 	return true
 end

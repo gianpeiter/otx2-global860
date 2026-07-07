@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 	<!-- Consumable -->
-	<action itemid="2661" event="script" value="consumable/loot_boost_potion.lua" />
+	<action itemid="15264" event="script" value="consumable/dodge_stone.lua" />
+	<action itemid="15265" event="script" value="consumable/critical_stone.lua" />
+	<action itemid="15260" event="script" value="consumable/loot_boost_potion.lua" />
+	<action itemid="15259" event="script" value="consumable/experience_boost_potion.lua" />
+	<action itemid="15266" event="script" value="consumable/premium_points.lua" />
+	<action itemid="15261-15262" event="script" value="consumable/stamina_potion.lua" />
 
 	<!-- The Pits of Inferno Quest -->
 	<action actionid="8933" event="script" value="quests/the_pits_of_inferno_quest/oil_lever.lua" />

@@ -439,6 +439,9 @@
 			<vocation id="7;8" showInDescription="0"/>
 		</movevent>
 		<movevent type="DeEquip" itemid="12646" slot="feet" event="function" value="onDeEquipItem"/>
+		<!-- Realmia Boots -->
+		<movevent type="Equip" itemid="15258" slot="feet" event="function" value="onEquipItem"/>
+		<movevent type="DeEquip" itemid="15258" slot="feet" event="function" value="onDeEquipItem"/>
 
 	<!-- Amulets -->
 		<!-- Strange Talisman -->
@@ -637,6 +640,9 @@
 			<vocation id="7" showInDescription="0"/>
 		</movevent>
 		<movevent type="DeEquip" itemid="12645" slot="head" event="function" value="onDeEquipItem"/>
+		<!-- Realmia Helmet -->
+		<movevent type="Equip" itemid="15257" slot="head" event="function" value="onEquipItem"/>
+		<movevent type="DeEquip" itemid="15257" slot="head" event="function" value="onDeEquipItem"/>
 
 	<!-- Armors -->
 		<!-- Golden Armor -->

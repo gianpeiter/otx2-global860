@@ -50,37 +50,30 @@
 
 	<!-- Pits of Inferno Quest -->
 	<quest name="The Pits of Inferno" startstorageid="100095" startstoragevalue="1">
-	<mission name="Acces to shortcuts" storageid="100096" startvalue="1" endvalue="2">
-		<missionstate id="1" description="At the end of this quest you will be able to use shortcuts."/>
-		<missionstate id="2" description="Unlocked shortcut and now do not have to move all the 15 lever and you can use the teleport in the necromancer's house."/>
-	</mission>
-	<mission name="Thrones: Verminor" storageid="100097" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Veminor and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Veminor's spirit."/>
-	</mission>
-	<mission name="Thrones: Infernatil" storageid="100098" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Infernatil and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Infernatil's spirit."/>
-	</mission>
-	<mission name="Thrones: Tafariel" storageid="100099" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Tafariel and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Tafariel's spirit."/>
-	</mission>
-	<mission name="Thrones: Apocalypse" storageid="100100" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Apocalypse and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Apocalypse's spirit."/>
-	</mission>
-	<mission name="Thrones: Pumin" storageid="100101" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Pumin and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Pumin's spirit."/>
-	</mission>
-	<mission name="Thrones: Ashfalor" storageid="100102" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Ashfalor and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Ashfalor's spirit."/>
-	</mission>
-	<mission name="Thrones: Bazir" storageid="100103" startvalue="1" endvalue="2">
-		<missionstate id="1" description="You have to find the throne of Bazir and absorb it's spirit."/>
-		<missionstate id="2" description="You have already absorbed some of Bazir's spirit."/>
-	</mission>
+		<mission name="Acces to shortcuts" storageid="100096" startvalue="1" endvalue="2">
+			<missionstate id="1" description="At the end of this quest you will be able to use shortcuts."/>
+			<missionstate id="2" description="Unlocked shortcut and now do not have to move all the 15 lever and you can use the teleport in the necromancer's house."/>
+		</mission>
+		<mission name="Thrones: Verminor" storageid="10003" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Verminor's spirit."/>
+		</mission>
+		<mission name="Thrones: Infernatil" storageid="10001" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Infernatil's spirit."/>
+		</mission>
+		<mission name="Thrones: Tafariel" storageid="10002" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Tafariel's spirit."/>
+		</mission>
+		<mission name="Thrones: Apocalypse" storageid="10004" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Apocalypse's spirit."/>
+		</mission>
+		<mission name="Thrones: Pumin" storageid="10007" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Pumin's spirit."/>
+		</mission>
+		<mission name="Thrones: Ashfalor" storageid="10006" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Ashfalor's spirit."/>
+		</mission>
+		<mission name="Thrones: Bazir" storageid="10005" startvalue="1" endvalue="1">
+			<missionstate id="1" description="You have already absorbed some of Bazir's spirit."/>
+		</mission>
 	</quest>
 </quests>
