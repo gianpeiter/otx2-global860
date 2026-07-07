@@ -22131,6 +22131,10 @@
 		<attribute key="description" value="Using this book grants you all blessings."/>
 		<attribute key="weight" value="200"/>
 	</item>
+	<item id="15273" article="a" name="gold bar">
+		<attribute key="weight" value="10"/>
+		<attribute key="worth" value="1000000"/>
+	</item>
 	
 	<item id="20001" name="water"/>
 	<item id="20002" name="blood"/>

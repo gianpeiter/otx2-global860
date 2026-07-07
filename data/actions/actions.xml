@@ -105,7 +105,7 @@
 	<action itemid="2146-2147;2149-2150;7759-7762" event="script" value="other/enchanting.lua"/>
 
 	<!-- Change gold -->
-	<action itemid="2148;2152;2160" event="script" value="other/change_gold.lua"/>
+	<action itemid="2148;2152;2160;15273" event="script" value="other/change_gold.lua"/>
 
 	<!-- Tools -->
 	<action itemid="2420;2442" event="script" value="tools/machete.lua"/>

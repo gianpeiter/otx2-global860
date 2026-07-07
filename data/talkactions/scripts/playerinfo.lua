@@ -24,8 +24,11 @@ function onSay(cid, words, param, channel)
 			"\nSkills:" ..
 			"\nFist - " .. getPlayerSkillLevel(pid, SKILL_FIST) .. ", Club - " .. getPlayerSkillLevel(pid, SKILL_CLUB) .. ", Sword - " .. getPlayerSkillLevel(pid, SKILL_SWORD) .. ", Axe - " .. getPlayerSkillLevel(pid, SKILL_AXE) ..
 			"\nDistance - " .. getPlayerSkillLevel(pid, SKILL_DISTANCE) .. ", Shielding - " .. getPlayerSkillLevel(pid, SKILL_SHIELD) .. ", Fishing - " .. getPlayerSkillLevel(pid, SKILL_FISHING) ..
-		"\nCoins:" ..
-			"\nCrystal - " .. getPlayerItemCount(pid, ITEM_CRYSTAL_COIN) .. ", Platinum - " .. getPlayerItemCount(pid, ITEM_PLATINUM_COIN) .. ", Gold - " .. getPlayerItemCount(pid, ITEM_GOLD_COIN) ..
+			"\nCoins:" ..
+				"\nGold Bar - " .. getPlayerItemCount(pid, ITEM_GOLD_BAR) ..
+				", Crystal - " .. getPlayerItemCount(pid, ITEM_CRYSTAL_COIN) ..
+				", Platinum - " .. getPlayerItemCount(pid, ITEM_PLATINUM_COIN) ..
+				", Gold - " .. getPlayerItemCount(pid, ITEM_GOLD_COIN) ..
 			"\nOverall amount - " .. getPlayerMoney(pid) ..
 		"\nBalance: " .. getPlayerBalance(pid) ..
 		"\nPosition: [X - " .. pos.x .. " | Y - " .. pos.y .. " | Z - " .. pos.z .. "]" ..

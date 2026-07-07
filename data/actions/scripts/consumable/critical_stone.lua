@@ -10,12 +10,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     local criticalCost = (criticalLevel + 1) * 50000
 
     if criticalLevel >= criticalLimit then
-        doPlayerSendCancel(cid, "You have already reached the maximum critical level.")
+        doPlayerSendCancel(cid, "You have already reached the maximum Critical level.")
         return true
     end
 
     if getPlayerMoney(cid) < criticalCost then
-        doPlayerSendCancel(cid, "You need " .. doNumberFormat(criticalCost) .. " gold coins to advance your critical level.")
+        doPlayerSendCancel(cid, "You need " .. doNumberFormat(criticalCost) .. " gold coins to advance your Critical level.")
         return true
     end
 
@@ -27,7 +27,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     doPlayerRemoveMoney(cid, criticalCost)
     doPlayerSetStorageValue(cid, criticalStorage, criticalLevel + 1)
 
-    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from critical level " .. criticalLevel .. " to " .. (criticalLevel + 1) .. ".")
+    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from Critical level " .. criticalLevel .. " to " .. (criticalLevel + 1) .. ".")
 
     doSendAnimatedText(getCreaturePosition(cid), "+Critical", COLOR_WHITE)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
