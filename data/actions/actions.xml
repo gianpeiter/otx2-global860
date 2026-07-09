@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 	<!-- Consumable -->
+	<action itemid="15259" event="script" value="consumable/experience_boost_potion.lua" />
+	<action itemid="15260" event="script" value="consumable/loot_boost_potion.lua" />
+	<action itemid="15261-15262" event="script" value="consumable/stamina_potion.lua" />
 	<action itemid="15264" event="script" value="consumable/dodge_stone.lua" />
 	<action itemid="15265" event="script" value="consumable/critical_stone.lua" />
-	<action itemid="15260" event="script" value="consumable/loot_boost_potion.lua" />
-	<action itemid="15259" event="script" value="consumable/experience_boost_potion.lua" />
 	<action itemid="15266" event="script" value="consumable/premium_points.lua" />
-	<action itemid="15261-15262" event="script" value="consumable/stamina_potion.lua" />
+	<action itemid="15268" event="script" value="consumable/blessing_book.lua" />
+	<action itemid="15269" event="script" value="consumable/teleport_scroll.lua" />
 
 	<!-- The Pits of Inferno Quest -->
 	<action actionid="8933" event="script" value="quests/the_pits_of_inferno_quest/oil_lever.lua" />
@@ -125,7 +127,7 @@
 	<action itemid="7440" event="script" value="liquids/mastermind_potion.lua"/>
 	<action itemid="7443" event="script" value="liquids/bullseye_potion.lua"/>
 	<action itemid="8474" event="script" value="liquids/antidote_potion.lua"/>
-	<action itemid="2328;2362;2666-2691;2695-2696;2787-2796;5097;5678;6125;6278-6279;6393-6394;6501;6541-6545;6569;6574;7158-7159;7245;7372-7377;7909;7963;8112;8838-8845;8847;9005;9114;10454;11246;11429;12415-12418;12637-12639" event="script" value="foods/food.lua"/>
+	<action itemid="2328;2362;2666-2691;2695-2696;2787-2796;5097;5678;6125;6278-6279;6393-6394;6501;6541-6545;6569;6574;7158-7159;7245;7372-7377;7909;7963;8112;8838-8845;8847;9005;9114;10454;11246;11429;12415-12418;12637-12639;15263" event="script" value="foods/food.lua"/>
 	<action itemid="9992" event="script" value="foods/rotworm_stew.lua"/>
 	<action itemid="9993" event="script" value="foods/hydra_tongue_salad.lua"/>
 	<action itemid="9994" event="script" value="foods/roasted_dragon_wings.lua"/>

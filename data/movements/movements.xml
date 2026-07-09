@@ -1172,4 +1172,21 @@
 		<vocation id="7" showInDescription="0"/>
 	</movevent>
 	<movevent type="DeEquip" itemid="8858" slot="two-handed" event="function" value="onDeEquipItem"/>
+	
+	<!-- Backpacks -->
+	<!-- Moon Reduction -->
+	<movevent type="Equip" itemid="15274" slot="backpack" event="function" value="onEquipItem"/>
+	<movevent type="DeEquip" itemid="15274" slot="backpack" event="function" value="onDeEquipItem"/>
+	<!-- Crown Reduction -->
+	<movevent type="Equip" itemid="15275" slot="backpack" event="function" value="onEquipItem"/>
+	<movevent type="DeEquip" itemid="15275" slot="backpack" event="function" value="onDeEquipItem"/>
+	<!-- Heart Reduction -->
+	<movevent type="Equip" itemid="15276" slot="backpack" event="function" value="onEquipItem"/>
+	<movevent type="DeEquip" itemid="15276" slot="backpack" event="function" value="onDeEquipItem"/>
+	<!-- Expedition Reduction -->
+	<movevent type="Equip" itemid="15277" slot="backpack" event="function" value="onEquipItem"/>
+	<movevent type="DeEquip" itemid="15277" slot="backpack" event="function" value="onDeEquipItem"/>
+	<!-- Dragon Reduction -->
+	<movevent type="Equip" itemid="15278" slot="backpack" event="function" value="onEquipItem"/>
+	<movevent type="DeEquip" itemid="15278" slot="backpack" event="function" value="onDeEquipItem"/>
 </movements>

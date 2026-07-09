@@ -113,8 +113,8 @@ function onLogin(cid)
 	-- Quests
 	registerCreatureEvent(cid, "SvargrondArenaKill") -- Barbarian Arena Quest
 
-	doPlayerOpenChannel(cid, 15)  --channel_death
-	doPlayerOpenChannel(cid, 0x10)  --loot channel
+	doPlayerOpenChannel(cid, 15)  -- Death Channel
+	doPlayerOpenChannel(cid, 0x10)  -- Loot Channel
 	
 	print("Player " .. getCreatureName(cid) .. " has experience rate: " .. rate)
 	return true

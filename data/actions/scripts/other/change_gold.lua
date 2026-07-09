@@ -1,18 +1,21 @@
 local coins = {
 	[ITEM_GOLD_COIN] = {
-		to = ITEM_PLATINUM_COIN, effect = COLOR_YELLOW
+		to = ITEM_PLATINUM_COIN,
+		effect = COLOR_YELLOW
 	},
 	[ITEM_PLATINUM_COIN] = {
-		from = ITEM_GOLD_COIN, to = ITEM_CRYSTAL_COIN, effect = COLOR_LIGHTBLUE
+		from = ITEM_GOLD_COIN,
+		to = ITEM_CRYSTAL_COIN,
+		effect = COLOR_LIGHTBLUE
 	},
 	[ITEM_CRYSTAL_COIN] = {
-		from = ITEM_PLATINUM_COIN, to = ITEM_GOLD_BAR, effect = COLOR_TEAL
+		from = ITEM_PLATINUM_COIN,
+		to = ITEM_GOLD_BAR,
+		effect = COLOR_TEAL
 	},
 	[ITEM_GOLD_BAR] = {
-		from = ITEM_CRYSTAL_COIN, to = ITEM_GOLD_INGOT, effect = COLOR_TEAL
-	},
-	[ITEM_GOLD_INGOT] = {
-		from = ITEM_GOLD_BAR, effect = COLOR_TEAL
+		from = ITEM_CRYSTAL_COIN,
+		effect = COLOR_TEAL
 	}
 }
 

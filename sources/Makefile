@@ -72,6 +72,9 @@ GREEN = \033[0;32m
 NC = \033[0m
 
 $(BIN): $(CXXOBJECTS)
+	@if [ -f "$(OUTDIR)/$(BIN)" ]; then \
+		mv -f "$(OUTDIR)/$(BIN)" "$(OUTDIR)/$(BIN).bak"; \
+	fi
 	$(CXX) $(CXXFLAGS) -o $(OUTDIR)/$@ $(CXXOBJECTS) $(LDFLAGS)
 	@printf "${GREEN}\n\n-----------[Successful compilation]-----------${NC}\n\n"
 

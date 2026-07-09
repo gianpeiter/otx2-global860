@@ -52,15 +52,32 @@ local maleOutfits = {
 
 function onThink(interval, lastExecution)
 
-    local result = db.getResult("SELECT * FROM `z_ots_comunication`;")
+    local players = getPlayersOnline()
 
-    if result:getID() == -1 then
+    if #players == 0 then
         return true
     end
 
+    local names = {}
+
+    for _, cid in ipairs(players) do
+        table.insert(names, db.escapeString(getCreatureName(cid)))
+    end
+
+	local result = db.getResult(
+		"SELECT * FROM `z_ots_comunication` WHERE `name` IN (" ..
+		table.concat(names, ",") ..
+		") LIMIT 100;"
+	)
+
+	if result:getID() == -1 then
+		return true
+	end
+
     while true do
 
-        local id = result:getDataInt("id")
+		local communicationId = result:getDataInt("id")
+		local historyId = result:getDataInt("history_id")
         local action = result:getDataString("action")
         local playerName = result:getDataString("name")
 
@@ -68,7 +85,6 @@ function onThink(interval, lastExecution)
 
         if isPlayer(cid) then
 
-            local addItemType = result:getDataString("param5")
             local addItemName = result:getDataString("param6")
             local points = result:getDataInt("param7")
 
@@ -85,8 +101,8 @@ function onThink(interval, lastExecution)
 
                         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received { ".. addItemName .." } from WebShop.")
 
-                        db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
-                        db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+						db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. communicationId .. ";")
+						db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = " .. historyId .. ";")
 
                     end
 
@@ -110,8 +126,8 @@ function onThink(interval, lastExecution)
 
 					doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received { ".. addItemName .." } container from WebShop.")
 
-					db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
-					db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+					db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. communicationId .. ";")
+					db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = " .. historyId .. ";")
 
 				else
 
@@ -142,8 +158,8 @@ function onThink(interval, lastExecution)
 
                         doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You received the outfit { ".. addItemName .." } from WebShop.")
 
-                        db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
-                        db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+						db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. communicationId .. ";")
+						db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'realized', `trans_real` = " .. os.time() .. " WHERE `id` = " .. historyId .. ";")
 
                     else
 
@@ -151,8 +167,8 @@ function onThink(interval, lastExecution)
 
                         doPlayerAddPremiumPoints(cid, points)
 
-                        db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. id .. ";")
-                        db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'returned', `trans_real` = " .. os.time() .. " WHERE `id` = ".. id ..";")
+						db.query("DELETE FROM `z_ots_comunication` WHERE `id` = " .. communicationId .. ";")
+						db.query("UPDATE `z_shop_history_item` SET `trans_state` = 'returned', `trans_real` = " .. os.time() .. " WHERE `id` = " .. historyId .. ";")
 
                     end
                 end

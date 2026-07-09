@@ -2529,7 +2529,7 @@ void ProtocolGame::sendAddCreature(const Creature* creature, const Position& pos
 		}
 	}
 
-	player->sendChannel(CHANNEL_LOOT, "Loot");
+	player->sendChannel(CHANNEL_LOOT, "Loot Channel");
 	player->setGetLoot(true);
 }
 

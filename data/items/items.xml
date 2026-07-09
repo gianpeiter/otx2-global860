@@ -22075,34 +22075,35 @@
 	</item>
 	
 	<!-- Custom -->
-	<item id="15257" article="a" name="realmia helmet">
+	<item id="15257" name="realmia helmet">
 		<attribute key="weight" value="1200"/>
 		<attribute key="armor" value="11"/>
-		<attribute key="speed" value="40"/>
+		<attribute key="speed" value="60"/>
 		<attribute key="slotType" value="head"/>
 	</item>
-	<item id="15258" article="a" name="realmia boots">
+	<item id="15258" name="realmia boots">
 		<attribute key="weight" value="800"/>
 		<attribute key="slotType" value="feet"/>
+		<attribute key="speed" value="40"/>
 		<attribute key="healthGain" value="10"/>
 		<attribute key="healthTicks" value="2000"/>
 		<attribute key="manaGain" value="15"/>
 		<attribute key="manaTicks" value="2000"/>
 		<attribute key="showattributes" value="1"/>
 	</item>
-	<item id="15259" article="a" name="experience boost potion">
-		<attribute key="description" value="Drinking this potion increases temporarily your experience gain."/>
+	<item id="15259" name="experience boost potion">
+		<attribute key="description" value="Drinking this potion temporarily increases your experience gain."/>
 		<attribute key="weight" value="200"/>
 	</item>
-	<item id="15260" article="a" name="loot boost potion">
-		<attribute key="description" value="Drinking this potion increases temporarily the amount of loot you obtain."/>
+	<item id="15260" name="loot boost potion">
+		<attribute key="description" value="Drinking this potion temporarily increases the amount of loot you obtain."/>
 		<attribute key="weight" value="200"/>
 	</item>
-	<item id="15261" article="a" name="stamina potion">
+	<item id="15261" name="stamina potion">
 		<attribute key="description" value="Drinking this potion fully restores your stamina."/>
 		<attribute key="weight" value="200"/>
 	</item>
-	<item id="15262" article="a" name="small stamina potion">
+	<item id="15262" name="small stamina potion">
 		<attribute key="description" value="Drinking this potion restores your stamina to its maximum of 40 hours."/>
 		<attribute key="weight" value="200"/>
 	</item>
@@ -22119,21 +22120,77 @@
 		<attribute key="description" value="Using this stone increases your critical hit chance permanently."/>
 		<attribute key="weight" value="750"/>
 	</item>
-	<item id="15266" article="a" name="premium point" plural="premium points">
-		<attribute key="description" value="Using this item adds premium points to your account."/>
+	<item id="15266" article="a" name="premium point">
+		<attribute key="description" value="Using this item adds one premium point to your account."/>
 		<attribute key="weight" value="10"/>
 	</item>
 	<item id="15267" article="a" name="roulette scroll">
 		<attribute key="description" value="This scroll is required to spin the roulette."/>
 		<attribute key="weight" value="10"/>
 	</item>
-	<item id="15268" article="a" name="blessing book">
+	<item id="15268" name="blessing book">
 		<attribute key="description" value="Using this book grants you all blessings."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15269" article="a" name="teleport scroll">
+		<attribute key="description" value="Using this scroll teleports you to your temple."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15270" article="a" name="blue djinn scroll">
+		<attribute key="description" value="Using this scroll grants access to the Blue Djinn Fortress."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15271" article="a" name="green djinn scroll">
+		<attribute key="description" value="Using this scroll grants access to the Green Djinn Fortress."/>
+		<attribute key="weight" value="200"/>
+	</item>
+	<item id="15272" article="a" name="rashid scroll">
+		<attribute key="description" value="Using this scroll grants access to trade with Rashid."/>
 		<attribute key="weight" value="200"/>
 	</item>
 	<item id="15273" article="a" name="gold bar">
 		<attribute key="weight" value="10"/>
 		<attribute key="worth" value="1000000"/>
+	</item>
+	<item id="15274" article="a" name="moon reduction">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="40"/>
+		<attribute key="weightReduction" value="30"/>
+		<attribute key="capacityPoints" value="300"/>
+		<attribute key="description" value="A backpack that reduces the weight of the items it contains."/>
+		<attribute key="slotType" value="backpack"/>
+	</item>
+	<item id="15275" article="a" name="crown reduction">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="40"/>
+		<attribute key="weightReduction" value="30"/>
+		<attribute key="capacityPoints" value="300"/>
+		<attribute key="description" value="A backpack that reduces the weight of the items it contains."/>
+		<attribute key="slotType" value="backpack"/>
+	</item>
+	<item id="15276" article="a" name="heart reduction">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="40"/>
+		<attribute key="weightReduction" value="30"/>
+		<attribute key="capacityPoints" value="300"/>
+		<attribute key="description" value="A backpack that reduces the weight of the items it contains."/>
+		<attribute key="slotType" value="backpack"/>
+	</item>
+	<item id="15277" article="a" name="expedition reduction">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="40"/>
+		<attribute key="weightReduction" value="30"/>
+		<attribute key="capacityPoints" value="300"/>
+		<attribute key="description" value="A backpack that reduces the weight of the items it contains."/>
+		<attribute key="slotType" value="backpack"/>
+	</item>
+	<item id="15278" article="a" name="dragon reduction">
+		<attribute key="weight" value="1500"/>
+		<attribute key="containerSize" value="40"/>
+		<attribute key="weightReduction" value="30"/>
+		<attribute key="capacityPoints" value="300"/>
+		<attribute key="description" value="A backpack that reduces the weight of the items it contains."/>
+		<attribute key="slotType" value="backpack"/>
 	</item>
 	
 	<item id="20001" name="water"/>
