@@ -10,6 +10,14 @@
 	<action itemid="15268" event="script" value="consumable/blessing_book.lua" />
 	<action itemid="15269" event="script" value="consumable/teleport_scroll.lua" />
 
+	<!-- The Inquisition Quest -->
+	<action itemid="7494" event="script" value="other/special_flask.lua" />
+	<action actionid="64446" event="script" value="quests/the_inquisition_quest/the_count.lua" />
+	<action actionid="18899" event="script" value="other/special_flask.lua" />
+	<action actionid="11000" event="script" value="quests/the_inquisition_quest/ungreez_door.lua" />
+	<action actionid="12965-12968" event="script" value="quests/the_inquisition_quest/brother_lever.lua" />
+	<action actionid="2121" event="script" value="quests/the_inquisition_quest/reward_door.lua" />
+
 	<!-- The Pits of Inferno Quest -->
 	<action actionid="8933" event="script" value="quests/the_pits_of_inferno_quest/oil_lever.lua" />
 	<action actionid="30001-30004" event="script" value="quests/the_pits_of_inferno_quest/burning_wall.lua" />
@@ -22,6 +30,7 @@
 	<action actionid="50095-50104" event="script" value="quests/the_pits_of_inferno_quest/inferno_wrong_levers.lua"/>
 	<action actionid="50105" event="script" value="quests/the_pits_of_inferno_quest/inferno_maze_lever.lua"/>
 	<action actionid="39511-39512" event="script" value="quests/the_pits_of_inferno_quest/bazir_mirror.lua"/>
+	<action actionid="45535" event="script" value="quests/the_pits_of_inferno_quest/shortcuts_door.lua"/>
 
 	<!-- The Annihilator Quest -->
 	<action actionid="5000" event="script" value="quests/the_annihilator_quest/lever.lua" />

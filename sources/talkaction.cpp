@@ -561,7 +561,7 @@ bool TalkAction::houseBuy(Creature* creature, const std::string&, const std::str
 	if(g_config.getBool(ConfigManager::BANK_SYSTEM))
 		ret += "bank or ";
 
-	ret += "depot of this town for rent.\n\nUse command !protecthouse to remove or add a protection for this house. It is enabled by default!\nAll characters in your account have access to your house.";
+	ret += "depot of this town for rent.\n\nUse command /houseprotect;!houseprotect to remove or add a protection for this house. It is enabled by default!\nAll characters in your account have access to your house.";
 	player->sendTextMessage(MSG_INFO_DESCR, ret);
 
 	// Protect House
@@ -1431,13 +1431,13 @@ bool TalkAction::houseProtect(Creature* creature, const std::string&, const std:
 	if(msg == "on" && !house->isProtected())
 	{
 		house->setProtected(true);
-		player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is protected");
+		player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is protected.");
 		return true;
 	}
 	else if (msg == "off" && house->isProtected())
 	{
 		house->setProtected(false);
-		player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is unprotected");
+		player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is unprotected.");
 		return true;
 	}
 	else if(msg.empty())
@@ -1445,13 +1445,13 @@ bool TalkAction::houseProtect(Creature* creature, const std::string&, const std:
 		if(!house->isProtected())
 		{
 			house->setProtected(true);
-			player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is protected");
+			player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is protected.");
 			return true;
 		}
 		else
 		{
 			house->setProtected(false);
-			player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is unprotected");
+			player->sendTextMessage(MSG_STATUS_CONSOLE_RED, "[House Protect]: Now your house is unprotected.");
 			return true;
 		}
 	}

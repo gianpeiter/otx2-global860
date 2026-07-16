@@ -988,8 +988,8 @@ function doPlayerReceiveParcel(name, town, items, extraTextLabel, id)
 		local parcel = doCreateItemEx(2595)
 		local label = doAddContainerItem(parcel, 2599)
 		doSetItemText(label, name.."\n"..getTownName(town))
-		if (extraTextLabel ~= "") then
-			local letter = doAddContainerItem(parcel, id)
+		if extraTextLabel and extraTextLabel ~= "" then
+			local letter = doAddContainerItem(parcel, id or 2597)
 			doSetItemText(letter, extraTextLabel)
 		end
 

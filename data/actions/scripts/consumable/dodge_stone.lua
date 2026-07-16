@@ -10,12 +10,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     local dodgeCost = (dodgeLevel + 1) * 50000
 
     if dodgeLevel >= dodgeLimit then
-        doPlayerSendCancel(cid, "You have already reached the maximum Dodge level.")
+        doPlayerSendCancel(cid, "You have already reached the maximum dodge level.")
         return true
     end
 
     if getPlayerMoney(cid) < dodgeCost then
-        doPlayerSendCancel(cid, "You need " .. doNumberFormat(dodgeCost) .. " gold coins to advance your Dodge level.")
+        doPlayerSendCancel(cid, "You need " .. doNumberFormat(dodgeCost) .. " gold coins to advance your dodge level.")
         return true
     end
 
@@ -27,7 +27,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     doPlayerRemoveMoney(cid, dodgeCost)
     doPlayerSetStorageValue(cid, dodgeStorage, dodgeLevel + 1)
 
-    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from Dodge level " .. dodgeLevel .. " to " .. (dodgeLevel + 1) .. ".")
+    doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from dodge level " .. dodgeLevel .. " to " .. (dodgeLevel + 1) .. ".")
 
     doSendAnimatedText(getCreaturePosition(cid), "+Dodge", COLOR_WHITE)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)

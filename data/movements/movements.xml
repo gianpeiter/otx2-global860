@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- The Inquisition Quest -->
+	<movevent type="StepIn" actionid="10072" event="script" value="quests/the_inquisition_quest/entrance.lua" />
+	<movevent type="StepIn" actionid="1001-1006" event="script" value="quests/the_inquisition_quest/teleport_main.lua"/>
+	<movevent type="StepIn" actionid="2001-2005" event="script" value="quests/the_inquisition_quest/teleport_main.lua"/>
+	<movevent type="StepIn" actionid="3000-3010" event="script" value="quests/the_inquisition_quest/teleport_main.lua"/>
+	<movevent type="StepIn" actionid="2122" event="script" value="quests/the_inquisition_quest/reward_room_text.lua"/>
+
 	<!-- The Pits of Inferno Quest -->
 	<movevent type="StepIn" actionid="10201-10202" event="script" value="quests/the_pits_of_inferno_quest/holy_tible_tile.lua" />
 	<movevent type="StepIn" actionid="9859-9882" event="script" value="quests/the_pits_of_inferno_quest/fire_tile.lua" />
@@ -15,6 +22,7 @@
 	<movevent type="StepIn" actionid="50087" event="script" value="quests/the_pits_of_inferno_quest/pumin_teleport.lua" />
 	<movevent type="StepIn" actionid="14320-14326" event="script" value="quests/the_pits_of_inferno_quest/check_throne.lua" />
 	<movevent type="StepIn" actionid="16772-16774;50082-50083" event="script" value="quests/the_pits_of_inferno_quest/bazir_tile.lua" />
+	<movevent type="StepIn" actionid="10000" event="script" value="quests/the_pits_of_inferno_quest/shortcuts.lua" />
 
 	<!-- Barbarian Arena Quest -->
 	<movevent type="StepIn" actionid="25100" event="script" value="quests/barbarian_arena_quest/enter.lua"/>

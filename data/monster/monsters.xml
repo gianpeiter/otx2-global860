@@ -16,7 +16,7 @@
 	<monster name="Avalanche" file="avalanche.xml"/>
 	<monster name="Axeitus Headbanger" file="axeitus headbanger.xml"/>
 	<monster name="Azure Frog" file="azure frog.xml"/>
-		<monster name="Badger" file="badger.xml"/>
+	<monster name="Badger" file="badger.xml"/>
 	<monster name="Bandit" file="bandit.xml"/>
 	<monster name="Banshee" file="banshee.xml"/>
 	<monster name="Barbaria" file="barbaria.xml"/>
@@ -25,7 +25,7 @@
 	<monster name="Barbarian Headsplitter" file="barbarian headsplitter.xml"/>
 	<monster name="Barbarian Skullhunter" file="barbarian skullhunter.xml"/>
 	<monster name="Baron Brute" file="baron brute.xml"/>
-		<monster name="Bat" file="bat.xml"/>
+	<monster name="Bat" file="bat.xml"/>
 	<monster name="Battlemaster Zunzu" file="battlemaster zunzu.xml"/>  
 	<monster name="Bazir" file="Bazir.xml"/>
 	<monster name="Bear" file="bear.xml"/>
@@ -421,6 +421,7 @@
 	<monster name="The Pit Lord" file="the pit lord.xml"/>
 	<monster name="The Plasmother" file="the plasmother.xml"/>
 	<monster name="The Snapper" file="the snapper.xml"/>
+	<monster name="The Weakened Count" file="the weakened count.xml"/>
 	<monster name="Thornback Tortoise" file="thornback tortoise.xml"/>
 	<monster name="Thul" file="thul.xml"/>
 	<monster name="Tibia Bug" file="tibia bug.xml"/>

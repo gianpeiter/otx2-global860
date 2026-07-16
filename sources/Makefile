@@ -65,7 +65,7 @@ CXXSOURCES = 			actions.cpp				allocator.cpp			baseevents.cpp			beds.cpp \
 all: $(BIN)
 
 clean:
-	$(RM) $(CXXOBJECTS) $(OUTDIR)/$(BIN)
+	$(RM) $(CXXOBJECTS)
 
 YELLOW = \033[1;33m
 GREEN = \033[0;32m

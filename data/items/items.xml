@@ -941,6 +941,7 @@
 	</item>
 	<item id="1639" article="a" name="table">
 		<attribute key="type" value="door"/>
+		<attribute key="transformUseTo" value="1638"/>
 		<attribute key="blockprojectile" value="1"/>
 	</item>
 	<item fromid="1640" toid="1641" article="a" name="table">
@@ -1855,33 +1856,39 @@
 	<item id="2050" article="a" name="torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="500"/>
+		<attribute key="transformUseTo" value="2051"/>
 		<attribute key="stopduration" value="1"/>
 	</item>
 	<item id="2051" article="a" name="lit torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="500"/>
+		<attribute key="transformUseTo" value="2050"/>
 		<attribute key="decayTo" value="2053"/>
 		<attribute key="duration" value="600"/>
 	</item>
 	<item id="2052" article="a" name="torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="450"/>
+		<attribute key="transformUseTo" value="2053"/>
 		<attribute key="stopduration" value="1"/>
 	</item>
 	<item id="2053" article="a" name="lit torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="450"/>
+		<attribute key="transformUseTo" value="2052"/>
 		<attribute key="decayTo" value="2055"/>
 		<attribute key="duration" value="300"/>
 	</item>
 	<item id="2054" article="a" name="torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="400"/>
+		<attribute key="transformUseTo" value="2055"/>
 		<attribute key="stopduration" value="1"/>
 	</item>
 	<item id="2055" article="a" name="lit torch">
 		<attribute key="slotType" value="ammo"/>
 		<attribute key="weight" value="400"/>
+		<attribute key="transformUseTo" value="2054"/>
 		<attribute key="decayTo" value="2056"/>
 		<attribute key="duration" value="300"/>
 	</item>
@@ -2509,7 +2516,7 @@
 		<attribute key="manashield" value="1"/>
 		<attribute key="showattributes" value="1"/>
 	</item>
-	<item id="2205" article="a" name="life ring (faster regeneration)">
+	<item id="2205" article="a" name="life ring">
 		<attribute key="weight" value="80"/>
 		<attribute key="slotType" value="ring"/>
 		<attribute key="decayTo" value="0"/>
@@ -2604,7 +2611,7 @@
 		<attribute key="showduration" value="1"/>
 		<attribute key="showattributes" value="1"/>
 	</item>
-	<item id="2216" article="a" name="ring of healing (faster regeneration)">
+	<item id="2216" article="a" name="ring of healing">
 		<attribute key="weight" value="80"/>
 		<attribute key="slotType" value="ring"/>
 		<attribute key="decayTo" value="0"/>
@@ -15957,7 +15964,7 @@
 	<item id="8753" name="the shadow nexus"/>
 	<item id="8754" name="the shadow nexus">
 		<attribute key="decayTo" value="8755"/>
-		<attribute key="duration" value="30"/>
+		<attribute key="duration" value="20"/>
 	</item>
 	<item id="8755" name="the shadow nexus">
 		<attribute key="decayTo" value="8753"/>
@@ -15965,7 +15972,7 @@
 	</item>
 	<item id="8756" name="the shadow nexus">
 		<attribute key="decayTo" value="8757"/>
-		<attribute key="duration" value="30"/>
+		<attribute key="duration" value="20"/>
 	</item>
 	<item id="8757" name="the shadow nexus">
 		<attribute key="decayTo" value="8753"/>
@@ -15973,7 +15980,7 @@
 	</item>
 	<item id="8758" name="the shadow nexus">
 		<attribute key="decayTo" value="8759"/>
-		<attribute key="duration" value="30"/>
+		<attribute key="duration" value="20"/>
 	</item>
 	<item id="8759" name="the shadow nexus">
 		<attribute key="decayTo" value="8753"/>

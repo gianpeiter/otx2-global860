@@ -64,19 +64,19 @@
 	<!-- <talkaction access="0-4" words="/resetcheck;!resetcheck;/resetinfo;!resetinfo"  event="script" value="resetcheck.lua"/> -->
 	<!-- <talkaction access="0-4" words="/mw;!mw"  event="script" value="mwchange.lua"/> -->
 	<!-- <talkaction access="0-4" words="/hpmp;!hpmp"  event="script" value="lifeinpercent.lua"/> -->
+	<!-- <talkaction access="0-4" words="/createguild;!createguild" event="function" value="guildCreate"/> -->
+	<!-- <talkaction access="0-4" words="/joinguild;!joinguild" event="function" value="guildJoin"/> -->
 
 	<!-- Houses -->
-	<talkaction access="0-4" words="alana res;/buyhouse" filter="word-spaced" event="function" value="houseBuy"/>
-	<talkaction access="0-4" words="alana grav;/sellhouse" filter="word-spaced" event="function" value="houseSell"/>
+	<talkaction access="0-4" words="alana res;/buyhouse;!buyhouse" filter="word-spaced" event="function" value="houseBuy"/>
+	<talkaction access="0-4" words="alana grav;/sellhouse;!sellhouse" filter="word-spaced" event="function" value="houseSell"/>
 	<talkaction access="0-4" words="alana sio" filter="word-spaced" event="function" value="houseKick"/>
 	<talkaction access="0-4" words="aleta grav" filter="word-spaced" event="function" value="houseDoorList"/>
 	<talkaction access="0-4" words="aleta sio" filter="word-spaced" event="function" value="houseGuestList"/>
 	<talkaction access="0-4" words="aleta som" filter="word-spaced" event="function" value="houseSubOwnerList"/>
-	<talkaction access="0-4" words="alana som;/leavehouse" filter="word-spaced" event="script" value="leavehouse.lua"/>
+	<talkaction access="0-4" words="alana som;/leavehouse;!leavehouse" filter="word-spaced" event="script" value="leavehouse.lua"/>
 
 	<!-- Guilds -->
-	<talkaction access="0-4" words="/createguild;!createguild" event="function" value="guildCreate"/>
-	<talkaction access="0-4" words="/joinguild;!joinguild" event="function" value="guildJoin"/>
 	<talkaction access="0-4" words="/war;!war" channel="0" event="script" value="war.lua"/>
 	<talkaction access="0-4" words="/balance;!balance" channel="0" event="script" value="balance.lua"/>
 </talkactions>

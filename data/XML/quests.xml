@@ -49,8 +49,8 @@
 	</quest>
 
 	<!-- Pits of Inferno Quest -->
-	<quest name="The Pits of Inferno" startstorageid="100095" startstoragevalue="1">
-		<mission name="Acces to shortcuts" storageid="100096" startvalue="1" endvalue="2">
+	<quest name="The Pits of Inferno" startstorageid="10001" startstoragevalue="1">
+		<mission name="Acces to shortcuts" storageid="10001" startvalue="1" endvalue="2">
 			<missionstate id="1" description="At the end of this quest you will be able to use shortcuts."/>
 			<missionstate id="2" description="Unlocked shortcut and now do not have to move all the 15 lever and you can use the teleport in the necromancer's house."/>
 		</mission>
@@ -75,5 +75,82 @@
 		<mission name="Thrones: Bazir" storageid="10005" startvalue="1" endvalue="1">
 			<missionstate id="1" description="You have already absorbed some of Bazir's spirit."/>
 		</mission>
+	</quest>
+	
+	<!-- The Inquisition Quest -->
+	<quest name="Inquisition Quest" startstorageid="100078" startstoragevalue="1">
+	<mission name="Method" storageid="100078" startvalue="1" endvalue="1">
+	    <missionstate id="1" description="You have joined The Inquisition."/>
+	</mission>
+	<mission name="Mission 1: Interrogation" storageid="100078" startvalue="2" endvalue="4">
+	    <missionstate id="2" description="Your mission is to investigate the 5 guards in Thais regarding the Heretic behavior."/>
+	    <missionstate id="3" description="Now return to Henricus and talk about your next mission."/>
+	    <missionstate id="4" description="Talk to Henricus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 2: Eclipse" storageid="100078" startvalue="5" endvalue="7">
+	    <missionstate id="5" description="Henricus tells you to get The Witches' Grimoire, he sends you to Femor Hills where you can fly to the witches' mountain."/>
+	    <missionstate id="6" description="Now return to Henricus and talk about your next mission."/>
+	    <missionstate id="7" description="Talk to Henricus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 3: Vampire Hunt" storageid="100078" startvalue="8" endvalue="13">
+	    <missionstate id="8" description="Henricus wants you to find the Dwarfish Vampire Hunter, Storkus, located near Kazordoon."/>
+	    <missionstate id="9" description="Storkus wants you to bring him 20 Vampire Dusts."/>
+	    <missionstate id="10" description="Now he wants you to kill a vampire lord, The Count in the Green Claw Swamp."/>
+	    <missionstate id="11" description="Now return to Storkus and talk about your mission."/>
+	    <missionstate id="12" description="You've impressed Storkus. He wants you now head back to Henricus to talk about more missions."/>
+	    <missionstate id="13" description="Talk to Henricus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 4: The Haunted Ruin" storageid="100078" startvalue="14" endvalue="16">
+	    <missionstate id="14" description="Henricus wants you to exorcism a old house in Liberty Bay with a special flask he gave you."/>
+	    <missionstate id="15" description="You've completed the exorcism. Head back to Henricus and talk about your mission."/>
+	    <missionstate id="16" description="Talk to Henricus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 5: Essential Gathering" storageid="100078" startvalue="17" endvalue="19">
+	    <missionstate id="17" description="Henricus wants you to get him 20 Demonic Essences."/>
+	    <missionstate id="18" description="Talk to Henricus about a outfit."/>
+	    <missionstate id="19" description="Talk to Henricus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 6: The Demon Ungreez" storageid="100078" startvalue="20" endvalue="22">
+	    <missionstate id="20" description="Henricus wants you avenge him, to kill a demon called Ungreez."/>
+	    <missionstate id="21" description="Now head back to Henricus and talk about your mission."/>
+	    <missionstate id="22" description="You've completed all Henricus missions."/>
+	</mission>
+	<mission name="Mission 7: The Shadow Nexus" storageid="100080" startvalue="1" endvalue="4">
+	    <missionstate id="1" description="In order to do this mission, you must go to the Demon Forge."/>
+	    <missionstate id="2" description="Your mission is now to destroy the Shadow Nexus by pouring the holy water you got from Henricus."/>
+	    <missionstate id="3" description="Now return to Henricus and talk about your mission."/>
+	    <missionstate id="4" description="You have completed the Inquisition Quest."/>
+	</mission>
+	<mission name="The Dark Path: Ushuriel" storageid="100079" startvalue="1" endvalue="3">
+	    <missionstate id="1" description="You will be in a path with many Hellfire Fighters, Massive Fire Elementals, Stone Golems, Gargoyles, Behemoths and Juggernauts.\nUntil you reach to a teleport to Ushuriel room."/>
+	    <missionstate id="2" description="Now you'll have to face this demon and slain it."/>
+	    <missionstate id="3" description="You have completed this mission."/>
+	</mission>
+	<mission name="The Crystal Caves: Zugurosh" storageid="100079" startvalue="4" endvalue="6">
+	    <missionstate id="4" description="You will be greeted by several Crystal Spiders, Spectres and Ice Golems, and later Hands of Cursed Fate.\nUntil you reach to a teleport to Zugurosh room."/>
+	    <missionstate id="5" description="Now you'll have to face this demon and slain it."/>
+	    <missionstate id="6" description="You have completed this mission."/>
+	</mission>
+	<mission name="The Blood Halls: Madareth" storageid="100078" startvalue="23" endvalue="25">
+	    <missionstate id="23" description="Here you will face a great number of Dark Torturers, Betrayed Wraiths, Lost Souls and Hand of Cursed Fate.\nUntil you reach to a teleport to Madareth's Ward."/>
+	    <missionstate id="24" description="Now you'll have to face this demon and slain it."/>
+	    <missionstate id="25" description="You have completed this mission."/>
+	</mission>
+	<mission name="The Vats: Latrivan and Golgordan" storageid="100078" startvalue="26" endvalue="28">
+	    <missionstate id="26" description="The Vats contains many Sons of Verminor, Plaguesmiths, Blightwalkers and Defilers.\nUntil you reach to a portal which will lead you to Latrivan and Golgordan."/>
+	    <missionstate id="27" description="Now you'll have to face these demon's and slain them."/>
+	    <missionstate id="28" description="You have completed this mission."/>
+	</mission>
+	<mission name="The Arcanum: Annihilon" storageid="100078" startvalue="29" endvalue="32">
+	    <missionstate id="29" description="The Arcanum is a place with Warlocks, Liches, several Hand of Cursed Fate, Braindeaths, Vampires, Undead Dragons, Efreets, Diabolic Imps, Demons. Until you reach to a teleport to The Soul Wells."/>
+	    <missionstate id="30" description="The Soul Wells is full of Betrayed Wraiths, Spectres, Lost Souls, Phantasms, Demons and possibly more\nUntil you reach to a teleport to the room of Annihilon."/>
+	    <missionstate id="31" description="Now you'll have to face this demon and slain it."/>
+	    <missionstate id="32" description="You have completed this mission."/>
+	</mission>
+	<mission name="The Hive: Hellgorak" storageid="100078" startvalue="33" endvalue="35">
+	    <missionstate id="33" description="You will instantly be greeted by multiple Nightmares, Bonebeasts, Sons of Verminor and Juggernauts.\nUntil you reach to a teleport to Hellgorak room."/>
+	    <missionstate id="34" description="Now you'll have to face this demon and slain it."/>
+	    <missionstate id="35" description="You have completed this mission."/>
+	</mission>
 	</quest>
 </quests>

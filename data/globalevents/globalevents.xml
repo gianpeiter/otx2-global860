@@ -19,6 +19,8 @@
 	<!-- Shop System -->
 	<globalevent name="ShopSystem" interval="5000" event="script" value="shop_system.lua"/>
 	
+	<!-- Events -->
+	<globalevent name="LotterySystem" interval="60000" event="script" value="events/lottery_system/lottery_system.lua"/>
 
 	<!-- Examples -->
 	<!-- <globalevent name="timer_example" time="21:35:11" event="script" value="my_script.lua"/> -->

@@ -112,6 +112,8 @@ function onLogin(cid)
 
 	-- Quests
 	registerCreatureEvent(cid, "SvargrondArenaKill") -- Barbarian Arena Quest
+	registerCreatureEvent(cid, "UngreezKill") -- The Inquisition Quest
+	registerCreatureEvent(cid, "BossesKill") -- The Inquisition Quest
 
 	doPlayerOpenChannel(cid, 15)  -- Death Channel
 	doPlayerOpenChannel(cid, 0x10)  -- Loot Channel

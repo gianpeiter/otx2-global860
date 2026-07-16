@@ -1540,6 +1540,14 @@ local config = {
         },
         storage = 10544
     },
+
+    -- The Inquisition Quest
+    [64440] = {
+        items = {
+            {itemId = 8702} -- The Witches' Grimoire
+        },
+        storage = 53659
+    },
 }
 
 local function getRewardText(itemId, count)
@@ -1655,7 +1663,13 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     end
 
     if useItem.missionStorage then
-        setPlayerStorageValue(cid, useItem.missionStorage.key, useItem.missionStorage.value)
+        if useItem.missionStorage.key then
+            setPlayerStorageValue(cid, useItem.missionStorage.key, useItem.missionStorage.value)
+        else
+            for _, storage in ipairs(useItem.missionStorage) do
+                setPlayerStorageValue(cid, storage.key, storage.value)
+            end
+        end
     end
 
     doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have found " .. result .. ".")

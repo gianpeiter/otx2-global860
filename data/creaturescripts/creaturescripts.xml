@@ -33,6 +33,10 @@
 	<event type="login" name="LoyaltySystem" event="script" value="custom/loyalty_system.lua"/>
 
 	<!-- Quests -->
-	<!-- Barbarian Arena Quest-->
+	<!-- Barbarian Arena Quest -->
 	<event type="kill" name="SvargrondArenaKill" event="script" value="quests/barbarian_arena_quest/kill.lua"/>
+
+	<!-- The Inquisition Quest -->
+	<event type="kill" name="UngreezKill" event="script" value="quests/the_inquisition_quest/ungreez_kill.lua"/>
+	<event type="kill" name="BossesKill" event="script" value="quests/the_inquisition_quest/bosses_kill.lua"/>
 </creaturescripts>

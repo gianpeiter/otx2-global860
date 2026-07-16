@@ -904,17 +904,17 @@ uint32_t DatabaseManager::updateDatabase()
 					std::string queryList[] = {
 						"ALTER TABLE `houses` ADD `tiles` INT UNSIGNED NOT NULL DEFAULT 0 AFTER `beds`;",
 						"CREATE TABLE `house_auctions`\
-(\
-	`house_id` INT UNSIGNED NOT NULL,\
-	`world_id` TINYINT(2) UNSIGNED NOT NULL DEFAULT 0,\
-	`player_id` INT NOT NULL,\
-	`bid` INT UNSIGNED NOT NULL DEFAULT 0,\
-	`limit` INT UNSIGNED NOT NULL DEFAULT 0,\
-	`endtime` BIGINT UNSIGNED NOT NULL DEFAULT 0,\
-	UNIQUE (`house_id`, `world_id`),\
-	FOREIGN KEY (`house_id`, `world_id`) REFERENCES `houses`(`id`, `world_id`) ON DELETE CASCADE,\
-	FOREIGN KEY (`player_id`) REFERENCES `players` (`id`) ON DELETE CASCADE\
-) ENGINE = InnoDB;"
+						(\
+							`house_id` INT UNSIGNED NOT NULL,\
+							`world_id` TINYINT(2) UNSIGNED NOT NULL DEFAULT 0,\
+							`player_id` INT NOT NULL,\
+							`bid` INT UNSIGNED NOT NULL DEFAULT 0,\
+							`limit` INT UNSIGNED NOT NULL DEFAULT 0,\
+							`endtime` BIGINT UNSIGNED NOT NULL DEFAULT 0,\
+							UNIQUE (`house_id`, `world_id`),\
+							FOREIGN KEY (`house_id`, `world_id`) REFERENCES `houses`(`id`, `world_id`) ON DELETE CASCADE,\
+							FOREIGN KEY (`player_id`) REFERENCES `players` (`id`) ON DELETE CASCADE\
+						) ENGINE = InnoDB;"
 					};
 					for(uint32_t i = 0; i < sizeof(queryList) / sizeof(std::string); ++i)
 						db->query(queryList[i]);
@@ -927,16 +927,16 @@ uint32_t DatabaseManager::updateDatabase()
 					std::string queryList[] = {
 						"ALTER TABLE `houses` ADD `tiles` INTEGER NOT NULL DEFAULT 0;",
 						"CREATE TABLE `house_auctions` (\
-	`house_id` INTEGER NOT NULL,\
-	`world_id` INTEGER NOT NULL DEFAULT 0,\
-	`player_id` INTEGER NOT NULL,\
-	`bid` INTEGER NOT NULL DEFAULT 0,\
-	`limit` INTEGER NOT NULL DEFAULT 0,\
-	`endtime` INTEGER NOT NULL DEFAULT 0,\
-	UNIQUE (`house_id`, `world_id`),\
-	FOREIGN KEY (`house_id`, `world_id`) REFERENCES `houses` (`id`, `world_id`)\
-	FOREIGN KEY (`player_id`) REFERENCES `players` (`id`)\
-);"
+							`house_id` INTEGER NOT NULL,\
+							`world_id` INTEGER NOT NULL DEFAULT 0,\
+							`player_id` INTEGER NOT NULL,\
+							`bid` INTEGER NOT NULL DEFAULT 0,\
+							`limit` INTEGER NOT NULL DEFAULT 0,\
+							`endtime` INTEGER NOT NULL DEFAULT 0,\
+							UNIQUE (`house_id`, `world_id`),\
+							FOREIGN KEY (`house_id`, `world_id`) REFERENCES `houses` (`id`, `world_id`)\
+							FOREIGN KEY (`player_id`) REFERENCES `players` (`id`)\
+						);"
 					};
 					for(uint32_t i = 0; i < sizeof(queryList) / sizeof(std::string); ++i)
 						db->query(queryList[i]);
@@ -1261,50 +1261,50 @@ uint32_t DatabaseManager::updateDatabase()
 			if(db->getDatabaseEngine() == DATABASE_ENGINE_MYSQL)
 			{
 				query << "CREATE TABLE IF NOT EXISTS `player_statements`\
-(\
-	`id` INT NOT NULL AUTO_INCREMENT,\
-	`player_id` INT NOT NULL,\
-	`channel_id` INT NOT NULL DEFAULT 0,\
-	`text` VARCHAR (255) NOT NULL,\
-	`date` BIGINT NOT NULL DEFAULT 0,\
-	PRIMARY KEY (`id`), KEY (`player_id`), KEY (`channel_id`),\
-	FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE\
-) ENGINE = InnoDB;";
+				(\
+					`id` INT NOT NULL AUTO_INCREMENT,\
+					`player_id` INT NOT NULL,\
+					`channel_id` INT NOT NULL DEFAULT 0,\
+					`text` VARCHAR (255) NOT NULL,\
+					`date` BIGINT NOT NULL DEFAULT 0,\
+					PRIMARY KEY (`id`), KEY (`player_id`), KEY (`channel_id`),\
+					FOREIGN KEY (`player_id`) REFERENCES `players`(`id`) ON DELETE CASCADE\
+				) ENGINE = InnoDB;";
 
 				db->query(query.str());
 				query.str("");
 
 				query << "CREATE TABLE IF NOT EXISTS `guild_wars`\
-(\
-	`id` INT NOT NULL AUTO_INCREMENT,\
-	`guild_id` INT NOT NULL,\
-	`enemy_id` INT NOT NULL,\
-	`begin` BIGINT NOT NULL DEFAULT 0,\
-	`end` BIGINT NOT NULL DEFAULT 0,\
-	`frags` INT UNSIGNED NOT NULL DEFAULT 0,\
-	`payment` BIGINT UNSIGNED NOT NULL DEFAULT 0,\
-	`guild_kills` INT UNSIGNED NOT NULL DEFAULT 0,\
-	`enemy_kills` INT UNSIGNED NOT NULL DEFAULT 0,\
-	`status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,\
-	PRIMARY KEY (`id`), KEY `status` (`status`),\
-	KEY `guild_id` (`guild_id`), KEY `enemy_id` (`enemy_id`),\
-	FOREIGN KEY (`guild_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE,\
-	FOREIGN KEY (`enemy_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE\
-) ENGINE=InnoDB;";
+				(\
+					`id` INT NOT NULL AUTO_INCREMENT,\
+					`guild_id` INT NOT NULL,\
+					`enemy_id` INT NOT NULL,\
+					`begin` BIGINT NOT NULL DEFAULT 0,\
+					`end` BIGINT NOT NULL DEFAULT 0,\
+					`frags` INT UNSIGNED NOT NULL DEFAULT 0,\
+					`payment` BIGINT UNSIGNED NOT NULL DEFAULT 0,\
+					`guild_kills` INT UNSIGNED NOT NULL DEFAULT 0,\
+					`enemy_kills` INT UNSIGNED NOT NULL DEFAULT 0,\
+					`status` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0,\
+					PRIMARY KEY (`id`), KEY `status` (`status`),\
+					KEY `guild_id` (`guild_id`), KEY `enemy_id` (`enemy_id`),\
+					FOREIGN KEY (`guild_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE,\
+					FOREIGN KEY (`enemy_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE\
+				) ENGINE=InnoDB;";
 
 				db->query(query.str());
 				query.str("");
 
 				query << "CREATE TABLE IF NOT EXISTS `guild_kills`\
-(\
-	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\
-	`guild_id` INT NOT NULL,\
-	`war_id` INT NOT NULL,\
-	`death_id` INT NOT NULL,\
-	FOREIGN KEY (`guild_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE,\
-	FOREIGN KEY (`war_id`) REFERENCES `guild_wars`(`id`) ON DELETE CASCADE,\
-	FOREIGN KEY (`death_id`) REFERENCES `player_deaths`(`id`) ON DELETE CASCADE\
-) ENGINE = InnoDB;";
+				(\
+					`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,\
+					`guild_id` INT NOT NULL,\
+					`war_id` INT NOT NULL,\
+					`death_id` INT NOT NULL,\
+					FOREIGN KEY (`guild_id`) REFERENCES `guilds`(`id`) ON DELETE CASCADE,\
+					FOREIGN KEY (`war_id`) REFERENCES `guild_wars`(`id`) ON DELETE CASCADE,\
+					FOREIGN KEY (`death_id`) REFERENCES `player_deaths`(`id`) ON DELETE CASCADE\
+				) ENGINE = InnoDB;";
 
 				db->query(query.str());
 				query.str("");
@@ -1451,11 +1451,10 @@ uint32_t DatabaseManager::updateDatabase()
 		{
 			std::clog << "> Updating database to version 37... (FeTads Features)" << std::endl;
 			db->query("CREATE TABLE IF NOT EXISTS `player_autoloot` (id int NOT NULL AUTO_INCREMENT, player_id int NOT NULL, autoloot_list blob, PRIMARY KEY (id));");
-			db->query("CREATE TABLE IF NOT EXISTS `trade_off_offers` (`id` int(11) NOT NULL auto_increment, `player_id` int(11) NOT NULL, `type` int(1) NOT NULL DEFAULT '0', `item_id` int(11), `item_count` int(11) NOT NULL DEFAULT '1', `item_charges` int(11) NULL, `item_duration` int(11) NULL, `item_name` varchar(255), `item_trade` tinyint(1) NOT NULL DEFAULT '0', `cost` bigint(20) UNSIGNED NOT NULL, `cost_count` int(11) NOT NULL DEFAULT '1', `date` bigint(20), PRIMARY KEY  (`id`)) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
-			db->query("CREATE TABLE IF NOT EXISTS `trade_off_container_items` ( `offer_id` int(11) NOT NULL, `item_id` int(11), `item_charges` int(11) NULL, `item_duration` int(11) NULL, `count` int(11) DEFAULT '1') ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+			db->query("CREATE TABLE IF NOT EXISTS `trade_off_offers` (`id` int(11) NOT NULL auto_increment, `player_id` int(11) NOT NULL, `type` int(1) NOT NULL DEFAULT '0', `item_id` int(11), `item_count` int(11) NOT NULL DEFAULT '1', `item_charges` int(11) NULL, `item_duration` int(11) NULL, `item_name` varchar(255), `item_trade` tinyint(1) NOT NULL DEFAULT '0', `cost` bigint(20) UNSIGNED NOT NULL, `cost_count` int(11) NOT NULL DEFAULT '1', `date` bigint(20), PRIMARY KEY  (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;");
+			db->query("CREATE TABLE IF NOT EXISTS `trade_off_container_items` (`id` int(11) NOT NULL AUTO_INCREMENT, `offer_id` int(11) NOT NULL, `item_id` int(11), `item_charges` int(11) NULL, `item_duration` int(11) NULL, `count` int(11) DEFAULT '1', PRIMARY KEY (`id`), KEY `offer_id` (`offer_id`)) ENGINE=InnoDB DEFAULT CHARSET=latin1;");
 			db->query("ALTER TABLE players ADD COLUMN reset INT(11) NOT NULL DEFAULT 0;");
 			db->query("ALTER TABLE `houses` ADD `isprotected` TINYINT(1) UNSIGNED NOT NULL DEFAULT TRUE;");
-			db->query("ALTER TABLE `trade_off_container_items` ADD KEY `offer_id` (`offer_id`);");
 			db->query("ALTER TABLE `trade_off_container_items` ADD CONSTRAINT `offer_id_fk` FOREIGN KEY (`offer_id`) REFERENCES `trade_off_offers`(`id`) ON DELETE CASCADE;");
 			registerDatabaseConfig("db_version", 37);
 			return 37;
@@ -1496,6 +1495,26 @@ uint32_t DatabaseManager::updateDatabase()
 
 			registerDatabaseConfig("db_version", 39);
 			return 39;
+		}
+		
+		case 39:
+		{
+			std::clog << "> Updating database to version 40... (Lottery System)" << std::endl;
+
+			db->query(
+				"CREATE TABLE IF NOT EXISTS `lottery_system` ("
+				"`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,"
+				"`name` VARCHAR(255) NOT NULL,"
+				"`item` SMALLINT UNSIGNED NOT NULL,"
+				"`item_name` VARCHAR(255) NOT NULL,"
+				"`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,"
+				"PRIMARY KEY (`id`),"
+				"KEY `created_at` (`created_at`)"
+				") ENGINE=InnoDB;"
+			);
+
+			registerDatabaseConfig("db_version", 40);
+			return 40;
 		}
 
 		default:

@@ -16,6 +16,12 @@ function onStepIn(cid, item, position, fromPosition)
 		return false
 	end
 
+	local slotItem = getPlayerSlotItem(cid, CONST_SLOT_HEAD)
+	if slotItem.uid ~= 0 and (slotItem.itemid == 5461 or slotItem.itemid == 12541) then
+		doRemoveCondition(cid, CONDITION_DROWN)
+		return true
+	end
+
 	doAddCondition(cid, conditionDrown)
 	return true
 end
