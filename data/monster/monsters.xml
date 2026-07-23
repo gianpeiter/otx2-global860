@@ -15,6 +15,10 @@
 	<monster name="Assassin" file="assassin.xml"/>
 	<monster name="Avalanche" file="avalanche.xml"/>
 	<monster name="Axeitus Headbanger" file="axeitus headbanger.xml"/>
+	<monster name="Azerus" file="azerus.xml"/>
+	<monster name="Azerus1" file="azerus1.xml"/> 
+  	<monster name="Azerus2" file="azerus2.xml"/> 
+   	<monster name="Azerus3" file="azerus3.xml"/>
 	<monster name="Azure Frog" file="azure frog.xml"/>
 	<monster name="Badger" file="badger.xml"/>
 	<monster name="Bandit" file="bandit.xml"/>
@@ -107,6 +111,9 @@
 	<monster name="Dipthrah" file="dipthrah.xml"/>
 	<monster name="Dire Penguin" file="dire penguin.xml"/>
 	<monster name="Dirtbeard" file="dirtbeard.xml"/>
+	<monster name="Diseased Bill" file="diseased bill.xml"/>
+	<monster name="Diseased Dan" file="diseased dan.xml"/>
+	<monster name="Diseased Fred" file="diseased fred.xml"/>
 	<monster name="Dog" file="dog.xml"/>
 	<monster name="Doom Deer" file="doom deer.xml"/>
 	<monster name="Doomhowl" file="Doomhowl.xml"/>
@@ -278,6 +285,7 @@
 	<monster name="Monstor" file="monstor.xml"/>
 	<monster name="Morgaroth" file="morgaroth.xml"/>
 	<monster name="Morguthis" file="morguthis.xml"/>
+	<monster name="Morik the Gladiator" file="morik the gladiator.xml"/>
 	<monster name="Mr. Punish" file="mr. punish.xml"/>
 	<monster name="Muddy Earth Elemental" file="muddy earth elemental.xml"/>
 	<monster name="Mummy" file="mummy.xml"/>
@@ -428,6 +436,8 @@
 	<monster name="Tiger" file="tiger.xml"/>
 	<monster name="Tiquandas Revenge" file="tiquandas revenge.xml"/>
 	<monster name="Toad" file="toad.xml"/>
+	<monster name="Tomb Servant" file="tomb servant.xml"/>
+	<monster name="Tormented Ghost" file="tormented ghost.xml"/>
 	<monster name="Tortoise" file="tortoise.xml"/>
 	<monster name="Troll" file="troll.xml"/>
 	<monster name="Troll Champion" file="troll champion.xml"/>

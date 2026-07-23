@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Mr. West" script="mr._west.lua" walkinterval="0" floorchange="0">
+	<look type="132" head="58" body="26" legs="30" feet="0" addons="0"/>
+</npc>

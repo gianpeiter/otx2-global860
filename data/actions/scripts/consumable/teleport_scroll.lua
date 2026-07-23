@@ -1,5 +1,5 @@
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-	if(getTilePzInfo(getCreaturePosition(cid)) ~= TRUE) then
+	if(getTilePzInfo(getCreaturePosition(cid)) ~= true) then
 		doPlayerSendCancel(cid, "You can only use this item while in a Protection Zone.")
 		return true
 	end

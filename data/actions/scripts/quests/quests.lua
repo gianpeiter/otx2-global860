@@ -1022,11 +1022,11 @@ local config = {
         },
         storage = 21955
     },
-    [21954] = {
+    [21944] = {
         items = {
             {itemId = 2162, count = 1} -- Magic Light Wand
         },
-        storage = 21954
+        storage = 21944
     },
     
     -- Medusa Shield Quest
@@ -1544,9 +1544,133 @@ local config = {
     -- The Inquisition Quest
     [64440] = {
         items = {
-            {itemId = 8702} -- The Witches' Grimoire
+            {itemId = 8702, count = 1} -- The Witches' Grimoire
         },
         storage = 53659
+    },
+    [1304] = {
+        items = {
+            {itemId = 8851, count = 1} -- Royal Crossbow
+        },
+        storage = 100166
+    },
+    [1300] = {
+        items = {
+            {itemId = 8851, count = 1} -- Royal Crossbow
+        },
+        storage = 100166
+    },
+    [1301] = {
+        items = {
+            {itemId = 8854, count = 1} -- Warsinger Bow
+        },
+        storage = 100166
+    },
+    [1302] = {
+        items = {
+            {itemId = 8918, count = 1} -- Spellbook of Dark Mysteries
+        },
+        storage = 100166
+    },
+    [1303] = {
+        items = {
+            {itemId = 8930, count = 1} -- Emerald Sword
+        },
+        storage = 100166
+    },
+    [1304] = {
+        items = {
+            {itemId = 8924, count = 1} -- Hellforged Axe
+        },
+        storage = 100166
+    },
+    [1305] = {
+        items = {
+            {itemId = 8928, count = 1} -- Obsidian Truncheon
+        },
+        storage = 100166
+    },
+    [1306] = {
+        items = {
+            {itemId = 8888, count = 1} -- Master Archer's Armor
+        },
+        storage = 100166
+    },
+    [1307] = {
+        items = {
+            {itemId = 8881, count = 1} -- Fireborn Giant Armor
+        },
+        storage = 100166
+    },
+    [1308] = {
+        items = {
+            {itemId = 8890, count = 1} -- Robe of the Underworld
+        },
+        storage = 100166
+    },
+
+    -- In Service of Yalahar Quest
+    [22001] = {
+        items = {
+            {itemId = 1954, count = 1, text = "History of the Augur, Part II They brought more and more people to Yalahar, not all of them became Augur, a good part of them lived in Yalahar as ordinary citizens, at some point, the city had reached a much larger population than under the rule of the true Yalahari, and it became difficult to provide food and shelter for everyone, time and overuse took it's toll on the city, over the years, more and more parts of the city were lost due to ignorance, lack of resources, or catastrophes, the new Yalahari were unable to restore broken machines and devices, and their efforts to retake certain parts of the city with the help of the Augur caused only more disaster, so the new Yalahari decided to stay in the city's centre, letting the Augur care for the rest of the city as well as they could, still, their image as Yalahari allowed them to claim supremacy and to rule over the whole city, this all did not matter too much to our ancestors, the new Yalahari were neither cruel nor overly abusive, and they still wielded the powerful weapons and armors of the true Yalahari, so they stuck to the status quo and continued to work for the Yalahari despite everything they had found out, this worked quite well although the city was still declining and great parts of it had been lost to chaos and anarchy, lately, though, things started to change, it is not a dramatic change but it can be recognised gradually at many places, some of the known routines in the orders of the Yalahari have altered, there are more and more orders who have a dubious purpose, the most frightening thing is that some orders obviously hint at a person with Yalahari knowledge that had been considered as lost for centuries, the overwhelming majority of the new Yalahari still clings to their ignorant and self-centred ways, but perhaps one of them or a small group has discovered some hidden secrets of their vanished masters, it is also possible that something completely different is happening, we simply don't know, but these new orders that seem to aim at restoring order in the city have some bitter taste, they are somewhat oppressive and destructive, not in an obvious way, though, taken together, they paint a dark picture of Yalahar's future, a future of oppression, betrayal, and a much stricter rule by the Yalahari."}, -- Papper
+            {itemId = 1954, count = 1, text = "History of the Augur, Part I We, the families of the Augur, have been living here for many generations, in the course of time, we acquired certain insights in the ways of our masters, the Yalahari, many years ago, things used to be very different in this city, once it was a marvel to behold, but then it started to decay slowly and steadily, this process of deterioration begun in the far past, long before our ancestors came here, at the time they were brought here by the Yalahari as helpers and workers, the city already showed signs of decline, despite their claim of having great power, the Yalahari could do little to stop the catastrophes that should occur, neither did they do anything to restore the damaged parts of the city, still, it took many centuries until the city had reached the pitiful state that you can witness today, some decades ago, a group of Augur suspected that we all were lied to by our masters, they started to look for clues that proved their assumptions, and secretly gathered parts of the puzzle one by one, for all we know, there had been indeed a powerful race called the Yalahari that built this city to distance itself from the wars of some capricious gods, so far the tales that our masters had told us, have been true, these Yalahari were served by a group of Augur such as us, they were their helpers and workers, and the Yalahari shared some of their luxuries and achievements with them, the Yalahari concentrated on research and art, and left the more manual work to their servants, who often only knew what they had to do without understanding their tasks, at one far-away point in history, the Yalahari seemingly vanished, certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers, when the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace, after getting over the initial shock, the Augur assumed the role of the Yalahari themselves, for a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge, they stuck to their usual tasks to keep the city running, still, they were too few to keep the enormous city, of which they understood so little, in shape, so they decided to recruit Augur on their own, this way most of our forefathers came to Yalahar, in the meanwhile, the former Augur retreated into the inner city."} -- Papper
+        },
+        storage = 100012
+    },
+    [22002] = {
+        items = {
+            {itemId = 1954, count = 1, text = "Manifest of the Yalahari, Part II\nIt is obvious that such greatness comes not without sacrifices, but we will make sure to keep them to a minimum. All of our decisions serve a greater good, of course. Even if this is not always obvious, in the end things will work out and provide us all with a better life and a bright future.\nBased on the ruins of our former glory, it is hard to imagine how magnificent this future will be, but we, the Yalahari, still carry the vision of what we want to accomplish in our hearts. To bring this vision to life is our greatest goal which we all work towards.\nThere are elements that see their power and influence waning in these days of change. They are afraid of the things to come, and in their ignorance they cling to the rotting reality they know all too well. They created their own little niches of power and influence and feel guilty for neglecting their duties, and with that also for the decay of the city. They are surely already approaching unsuspecting outsiders to poison their minds with selfish lies. For generations the Augur, once the pride of our people, have done things the same way they had known for generations, and everyone can see where it has taken Yalahar."}, -- Papper
+            {itemId = 1954, count = 1, text = "Manifest of the Yalahari, Part I\nThe city has been neglected for far too long. We concentrated on our research and spiritual evolution and have turned a blind eye on the needs of the people that are our subjects. We have too strongly relied on the help of the Augur who in turn did little but the same routines for many generations. We have decided it is time to take initiative. The experiment to give people too much freedom and too little guidance has to be stopped before all is lost. We have a responsibility for this city and the people living here. Only with our help, they will be able to flourish and to overcome the shadows of the past. The city can be rebuilt and restored to at least some of its former glory when we diligently work for it. It will be hard and it will take the help of determined individuals to assist us in our efforts. However, in the long run, order will be completely re-established and Yalahar will once again be the magnificent city it used to be.\nOnly with drastic decisions and changes, this great goal can be achieved. We will have to get through hard times and prepare for them as good as we can. Most importantly, a good city needs a solid base. For this reason we have to start at the bottom to clean things up. We have to be precise and consequent in our decisions and actions. This way we will be able to create a solid base for the city.\nTo some extent, we have to work like a gardener. The rotten parts have to be cut off, and the healthy parts have to be cherished. The city has to be retaken. Then order can be restored and the actual rebuilding can begin. In the end, the city will once again be a centre of prosperity and a shining light in a dark world."} -- Papper
+        },
+        storage = 100014
+    },
+    [22003] = {
+        items = {
+            {itemId = 9733, count = 1} -- The Alchemist's Formulas
+        },
+        storage = 22003,
+        missionStorage = {
+            storage = 100086,
+            value = 9
+        }
+    },
+    [22004] = {
+        items = {
+            {itemId = 9744, count = 1} -- Matrix Crystal (good)
+        },
+        storage = 100038,
+        missionStorage = {
+            storage = 100086,
+            value = 25
+        }
+    },
+    [22005] = {
+        items = {
+            {itemId = 9743, count = 1} -- Matrix Crystal (bad)
+        },
+        storage = 100038,
+        missionStorage = {
+            storage = 100086,
+            value = 25
+        }
+    },
+    [58268] = {
+        items = {
+            {itemId = 9776, count = 1} -- Yalahari Armor
+        },
+        storage = 102504
+    },
+    [58269] = {
+        items = {
+            {itemId = 9777, count = 1} -- Yalahari Leg Piece
+        },
+        storage = 102504
+    },
+    [58267] = {
+        items = {
+            {itemId = 9778, count = 1} -- Yalahari Mask
+        },
+        storage = 102504
     },
 }
 
@@ -1663,11 +1787,11 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
     end
 
     if useItem.missionStorage then
-        if useItem.missionStorage.key then
-            setPlayerStorageValue(cid, useItem.missionStorage.key, useItem.missionStorage.value)
+        if useItem.missionStorage.storage then
+            setPlayerStorageValue(cid, useItem.missionStorage.storage, useItem.missionStorage.value)
         else
             for _, storage in ipairs(useItem.missionStorage) do
-                setPlayerStorageValue(cid, storage.key, storage.value)
+                setPlayerStorageValue(cid, storage.storage, storage.value)
             end
         end
     end
@@ -1678,6 +1802,12 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
         setPlayerStorageValue(cid, useItem.storage, os.time() + 86400)
     else
         setPlayerStorageValue(cid, useItem.storage, useItem.newValue or 1)
+    end
+
+    if useItem.experience and useItem.experience > 0 then
+        doPlayerAddExpEx(cid, useItem.experience)
+        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
+            "You have gained " .. useItem.experience .. " experience.")
     end
 
     return true

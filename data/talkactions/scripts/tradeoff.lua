@@ -13,15 +13,15 @@ local config = {
 	helpMsg = "Enter the parameters (add, remove, active, buy, info).",
 
 	-- gold in the game, gold/crystal/gold bar...
-	goldItems = {2148, 2152, 2160, 9971},
+	goldItems = {2148, 2152, 2160, 15273},
 	-- items vips
-	itemsVIP = {4540, 4545, 4560},
+	itemsVIP = {15257, 15258, 15259, 15260, 15261, 15262, 15263, 15264, 15265, 15267, 15268, 15269, 15270, 15271, 15272, 15274, 15275, 15276, 15277, 15278},
 	-- items you don't want in tradeOff
-	blokedItems = {12716, 12717, 12718, 12745, 12746, 12747, 12748, 12749, 12750, 2122, 12707, 12708, 11302},
+	blokedItems = {},
 	-- items you use as points, gold nugget, scarab coin ... ff you don't use it, leave it with nothing inside
-	id_points = {2157, 12778, 12779, 12780, 12781},
+	id_points = {15266},
 	-- custom attributes on the server that cannot go to tradeoff
-	blockedAttributes = {"lifeleech", "manaleech"},
+	blockedAttributes = {},
 }
 
 function onSay(cid, words, param, channel)

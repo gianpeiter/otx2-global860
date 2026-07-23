@@ -381,7 +381,7 @@
 				doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You are already promoted.")
 			elseif(getPlayerLevel(cid) < config.minLevel) then
 				doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You need " .. config.minLevel .. " to get promotion.")
-			elseif(doPlayerRemoveMoney(cid, config.cost) ~= TRUE) then
+			elseif(doPlayerRemoveMoney(cid, config.cost) ~= true) then
 				doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You do not have enought money! (Promotion cost " .. config.cost .. " gold coins.")
 			else
 				setPlayerPromotionLevel(cid, getPlayerPromotionLevel(cid) + 1)
@@ -707,7 +707,7 @@
 	<!-- Info mana - exp -->
 	<talkaction words="!mana" event="script"><![CDATA[
 		 function onSay(cid, words, param, channel)
-			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You need to spent " .. (getPlayerRequiredMana(cid, getPlayerMagLevel(cid, TRUE) + 1) - getPlayerSpentMana(cid))  ..
+			doPlayerSendTextMessage(cid, MESSAGE_STATUS_CONSOLE_BLUE, "You need to spent " .. (getPlayerRequiredMana(cid, getPlayerMagLevel(cid, true) + 1) - getPlayerSpentMana(cid))  ..
 				" mana to next magic level.")
 			return true
 		end

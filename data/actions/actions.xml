@@ -10,6 +10,30 @@
 	<action itemid="15268" event="script" value="consumable/blessing_book.lua" />
 	<action itemid="15269" event="script" value="consumable/teleport_scroll.lua" />
 
+	<!-- In Service of Yalahar Quest -->
+	<action actionid="20517" event="script" value="quests/in_service_of_yalahar_quest/palimuth_door.lua" />
+	<action actionid="20518" event="script" value="quests/in_service_of_yalahar_quest/yalahari_door.lua" />
+	<action actionid="2009" event="script" value="quests/in_service_of_yalahar_quest/start_door.lua" />
+	<action actionid="51151-51164" script="quests/in_service_of_yalahar_quest/mechanisms.lua"/>
+	<action actionid="20519" event="script" value="quests/in_service_of_yalahar_quest/diseased_dan_door.lua" />
+	<action actionid="20520" event="script" value="quests/in_service_of_yalahar_quest/diseased_bill_door.lua" />
+	<action actionid="20521" event="script" value="quests/in_service_of_yalahar_quest/diseased_fred_door.lua" />
+	<action actionid="20522" event="script" value="quests/in_service_of_yalahar_quest/alchemist_door.lua" />
+	<action itemid="9733" event="script" value="quests/in_service_of_yalahar_quest/burn.lua" />
+	<action actionid="20523" event="script" value="quests/in_service_of_yalahar_quest/mr_west_door.lua" />
+	<action actionid="20524" event="script" value="quests/in_service_of_yalahar_quest/tamerin_door.lua" />
+	<action actionid="20525" event="script" value="quests/in_service_of_yalahar_quest/morik_door.lua" />
+	<action actionid="20526" event="script" value="quests/in_service_of_yalahar_quest/morik_summon.lua" />
+	<action itemid="9737" event="script" value="quests/in_service_of_yalahar_quest/charm.lua" />
+	<action itemid="9741" event="script" value="quests/in_service_of_yalahar_quest/tormented_ghost.lua" />
+	<action actionid="20528" event="script" value="quests/in_service_of_yalahar_quest/quara_leader_door.lua" />
+	<action actionid="20529" event="script" value="quests/in_service_of_yalahar_quest/matrix_door.lua" />
+	<action itemid="9743-9744" event="script" value="quests/in_service_of_yalahar_quest/machine.lua" />
+	<action actionid="20531" event="script" value="quests/in_service_of_yalahar_quest/machine_door.lua" />
+	<action actionid="20532" event="script" value="quests/in_service_of_yalahar_quest/azerus_door.lua" />
+	<action actionid="58261" event="script" value="quests/in_service_of_yalahar_quest/azerus.lua" />
+	<action actionid="20533" event="script" value="quests/in_service_of_yalahar_quest/reward_door.lua" />
+
 	<!-- The Inquisition Quest -->
 	<action itemid="7494" event="script" value="other/special_flask.lua" />
 	<action actionid="64446" event="script" value="quests/the_inquisition_quest/the_count.lua" />
@@ -127,6 +151,7 @@
 	<action itemid="2553" event="script" value="tools/pick.lua"/>
 	<action itemid="5908;5942" event="script" value="tools/skinning.lua"/>
 	<action itemid="10511;10513;10515" event="script" value="tools/squeeze.lua"/>
+	<action itemid="2416" event="script" value="tools/crowbar.lua"/>
 
 	<!-- Consumables (Liquids+Foods) -->
 	<action itemid="1775;2005-2009;2011-2015;2023;2031-2034;2562;2574-2577;3941-3942;5553;10150" event="script" value="liquids/containers.lua"/>

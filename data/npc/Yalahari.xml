@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Yalahari" script="yalahari.lua" walkinterval="2000" floorchange="0">
+    <look type="309" head="0" body="0" legs="0" feet="0" addons="0"/>
+    <parameters>
+        <parameter key="message_greet" value="Greetings."/>
+    </parameters>
+</npc>

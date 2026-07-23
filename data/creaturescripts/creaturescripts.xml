@@ -31,6 +31,7 @@
 
 	<!-- Custom -->
 	<event type="login" name="LoyaltySystem" event="script" value="custom/loyalty_system.lua"/>
+	<event type="advance" name="RewardLevel" event="script" value="custom/reward_level.lua"/>
 
 	<!-- Quests -->
 	<!-- Barbarian Arena Quest -->
@@ -39,4 +40,10 @@
 	<!-- The Inquisition Quest -->
 	<event type="kill" name="UngreezKill" event="script" value="quests/the_inquisition_quest/ungreez_kill.lua"/>
 	<event type="kill" name="BossesKill" event="script" value="quests/the_inquisition_quest/bosses_kill.lua"/>
+
+	<!-- In Service of Yalahar Quest -->
+	<event type="kill" name="DiseasedKill" event="script" value="quests/in_service_of_yalahar_quest/diseased_kill.lua"/>
+	<event type="kill" name="MorikTheGladiatorKill" event="script" value="quests/in_service_of_yalahar_quest/morik_the_gladiator_kill.lua"/>
+	<event type="kill" name="QuaraLeaderKill" event="script" value="quests/in_service_of_yalahar_quest/quara_leader_kill.lua"/>
+	<event type="kill" name="AzerusKill" event="script" value="quests/in_service_of_yalahar_quest/azerus_kill.lua"/>
 </creaturescripts>

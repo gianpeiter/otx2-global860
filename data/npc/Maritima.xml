@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Maritima" script="maritima.lua" walkinterval="0" floorchange="0">
+	<look typeex="5811"/>
+</npc>

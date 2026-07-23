@@ -153,4 +153,60 @@
 	    <missionstate id="35" description="You have completed this mission."/>
 	</mission>
 	</quest>
+
+	<!-- In Service of Yalahar Quest -->
+	<quest name="In Service Of Yalahar Quest" startstorageid="100086" startstoragevalue="1">
+	<mission name="Mission 01: Something Rotten" storageid="100086" startvalue="1" endvalue="3">
+	    <missionstate id="1" description="Help Palimuth with some sewer malfunctions below Yalahar.\n There are 4 places where you need to go marked with an X on your map."/>
+	    <missionstate id="2" description="You successfully eliminated the sewer problems which Yalahar had.\nReport to Palimuth."/>
+	    <missionstate id="3" description="Talk to Palimuth to continue with your missions."/>
+	</mission>
+	<mission name="Mission 02: Watching the Watchmen" storageid="100086" startvalue="4" endvalue="6">
+	    <missionstate id="4" description="Palimuth wants you to find all 7 guards and retrive the reports from them."/>
+	    <missionstate id="5" description="You managed to gather all seven reports from Yalahar's watchmen. Report back to Palimuth."/>
+	    <missionstate id="6" description="Talk to Palimuth to continue with your missions."/>
+	</mission>
+	<mission name="Mission 03: Death to the Deathbringer" storageid="100086" startvalue="7" endvalue="9">
+	    <missionstate id="7" description="You'll have to kill 3 plague bearers.\nPalimuth wants you to burn the papers.\nAzerus wants you to retrive the papers to him."/>
+	    <missionstate id="8" description="You choose between burning the papers or retrive it to Azerus."/>
+	    <missionstate id="9" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 04: Good to be Kingpin" storageid="100086" startvalue="10" endvalue="12">
+	    <missionstate id="10" description="For this mission you are asked to go to the Trade Quarter.\nPalimuth wants you to negotiate with Mr. West.\nAzerus wants you to threaten Mr. West"/>
+	    <missionstate id="11" description="Return to the side you choosed."/>
+	    <missionstate id="12" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 05: Food or Fight" storageid="100086" startvalue="13" endvalue="17">
+	    <missionstate id="13" description="On this mission you are asked to find a druid by the name of Tamerin.\nYalahari wants you to get Tamerin to breed warbeasts.\n Palimuth begs for you to request that Tamerin breeds cattle."/>
+	    <missionstate id="14" description="Tamerin wants you to fufil him 2 favors, before he takes any orders.\nHe need a bottle of animal cure.\nThen he need you to kill Morik the gladiator and bring his helmet as proof."/>
+	    <missionstate id="15" description="Now select between Palimuth(cattle) or Yalahari(Warbeasts)."/>
+	    <missionstate id="16" description="If you choosed Cattle return to Palimuth.\nIf you choosed Warbeasts return to Yalahari."/>
+	    <missionstate id="17" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 06: Frightening Fuel" storageid="100086" startvalue="18" endvalue="20">
+	    <missionstate id="18" description="Your mission is to charge the charm with tormented souls.\nYalahari wants the charged Ghost Charm.\nPalimuth wants the Charged Ghost Charm in order to free those souls."/>
+	    <missionstate id="19" description="Return back to the side you choosed and give the charged Ghost Charm."/>
+	    <missionstate id="20" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 07: A Fishy Mission" storageid="100086" startvalue="21" endvalue="23">
+	    <missionstate id="21" description="In this mission you will go under the sea.\nYalahari wants you to kill the 3 Quara leaders.\nRather than fighting any Quara leaders Palimuth will instead send you to find the cause for the Quaras aggressive behavior."/>
+	    <missionstate id="22" description="Return back to the side you choosed."/>
+	    <missionstate id="23" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 08: Dangerous Machinations" storageid="100086" startvalue="24" endvalue="26">
+	    <missionstate id="24" description="For this mission the Yalahari requests you go to the Factory Quarter and find a pattern crystal, which will be used to supply weapons to help take control of the city.\nPalimuth will send you there to use the crystal to supply food for the city."/>
+	    <missionstate id="25" description="Return back to the side you choosed."/>
+	    <missionstate id="26" description="Talk to Azerus to continue with your missions."/>
+	</mission>
+	<mission name="Mission 09: Decision" storageid="100086" startvalue="27" endvalue="28">
+	    <missionstate id="27" description="You now need to decide between supporting Palimuth or the Yalahari's goal. If you have decided, go to one of them and say mission."/>
+	    <missionstate id="28" description="You now need to decide between supporting Palimuth or the Yalahari's goal. If you have decided, go to one of them and say mission."/>
+	</mission>
+	<mission name="Mission 10: The Final Battle" storageid="100086" startvalue="29" endvalue="31">
+	    <missionstate id="29" description="In this mission, you will gather a team for the final battle in the festivity hall."/>
+	    <missionstate id="30" description="Return to the side you choosed and report about your mission and you will be greatly rewarded."/>
+	    <missionstate id="31" description="You have completed all the missions.\nYou can now open the door to get your reward."/>
+	    <missionstate id="32" description="You have completed In Service Of Yalahar Quest."/>
+	</mission>
+	</quest>
 </quests>

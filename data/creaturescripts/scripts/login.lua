@@ -109,11 +109,16 @@ function onLogin(cid)
 	registerCreatureEvent(cid, "PartyAndGuildProtection")
 	registerCreatureEvent(cid, "PlayerTrade")
 	registerCreatureEvent(cid, "DeathChannel")
+	registerCreatureEvent(cid, "RewardLevel")
 
 	-- Quests
 	registerCreatureEvent(cid, "SvargrondArenaKill") -- Barbarian Arena Quest
 	registerCreatureEvent(cid, "UngreezKill") -- The Inquisition Quest
 	registerCreatureEvent(cid, "BossesKill") -- The Inquisition Quest
+	registerCreatureEvent(cid, "DiseasedKill") -- In Service of Yalahar Quest
+	registerCreatureEvent(cid, "MorikTheGladiatorKill") -- In Service of Yalahar Quest
+	registerCreatureEvent(cid, "QuaraLeaderKill") -- In Service of Yalahar Quest
+	registerCreatureEvent(cid, "AzerusKill") -- In Service of Yalahar Quest
 
 	doPlayerOpenChannel(cid, 15)  -- Death Channel
 	doPlayerOpenChannel(cid, 0x10)  -- Loot Channel
