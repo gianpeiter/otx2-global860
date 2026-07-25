@@ -10,6 +10,12 @@
 	<action itemid="15268" event="script" value="consumable/blessing_book.lua" />
 	<action itemid="15269" event="script" value="consumable/teleport_scroll.lua" />
 
+	<!-- The Djinn War Quest -->
+	<action actionid="20534" event="script" value="quests/the_djinn_war_quest/ubaid_door.lua" />
+	<action actionid="20535" event="script" value="quests/the_djinn_war_quest/blue_djinn_door.lua" />
+	<action actionid="20536" event="script" value="quests/the_djinn_war_quest/gemmed_lamp_door.lua" />
+	<action actionid="20537" event="script" value="quests/the_djinn_war_quest/gemmed_lamp.lua" />
+
 	<!-- In Service of Yalahar Quest -->
 	<action actionid="20517" event="script" value="quests/in_service_of_yalahar_quest/palimuth_door.lua" />
 	<action actionid="20518" event="script" value="quests/in_service_of_yalahar_quest/yalahari_door.lua" />

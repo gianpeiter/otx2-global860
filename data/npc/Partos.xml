@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Partos" script="partos.lua" walkinterval="2000" floorchange="0">
+	<look type="128" head="116" body="56" legs="95" feet="122" addons="0"/>
+</npc>

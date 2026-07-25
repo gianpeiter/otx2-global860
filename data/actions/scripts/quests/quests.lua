@@ -1672,6 +1672,17 @@ local config = {
         },
         storage = 102504
     },
+
+    [64441] = {
+        items = {
+            {itemId = 2346, count = 1} -- Tear of Daraman
+        },
+        storage = 100059,
+        missionStorage = {
+            storage = 100062,
+            value = 7
+        }
+    },
 }
 
 local function getRewardText(itemId, count)

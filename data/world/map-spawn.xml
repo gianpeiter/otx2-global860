@@ -6873,7 +6873,7 @@
 		<monster name="Wyvern" x="1" y="2" z="5" spawntime="59" />
 	</spawn>
 	<spawn centerx="33047" centery="32621" centerz="5" radius="1">
-		<npc name="alesar" x="1" y="0" z="5" spawntime="60" direction="2" />
+		<npc name="Alesar" x="1" y="0" z="5" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33039" centery="32628" centerz="5" radius="4">
 		<monster name="Gargoyle" x="-1" y="-3" z="5" spawntime="59" />
@@ -11568,7 +11568,7 @@
 		<monster name="Wyvern" x="-2" y="-2" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="33047" centery="32622" centerz="6" radius="1">
-		<npc name="ubaid" x="0" y="0" z="6" spawntime="60" direction="2" />
+		<npc name="Ubaid" x="0" y="0" z="6" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33065" centery="32622" centerz="6" radius="4">
 		<monster name="Cobra" x="1" y="2" z="6" spawntime="33024" />
@@ -21129,7 +21129,7 @@
 		<monster name="Poison Spider" x="-2" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="32383" centery="31777" centerz="7" radius="1">
-		<npc name="shauna" x="0" y="-1" z="7" spawntime="60" direction="2" />
+		<npc name="Shauna" x="0" y="-1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32465" centery="31777" centerz="7" radius="3">
 		<monster name="Amazon" x="0" y="-1" z="7" spawntime="120" />
@@ -30346,7 +30346,7 @@
 		<monster name="Lizard Templar" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="33159" centery="32816" centerz="7" radius="17">
-		<npc name="melchior" x="-17" y="1" z="7" spawntime="60" direction="2" />
+		<npc name="Melchior" x="-17" y="1" z="7" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="32293" centery="32817" centerz="7" radius="2">
 		<npc name="cedrik" x="-1" y="1" z="7" spawntime="60" direction="2" />
@@ -37119,7 +37119,7 @@
 		<monster name="Rotworm" x="-1" y="1" z="8" spawntime="60" />
 	</spawn>
 	<spawn centerx="32324" centery="32280" centerz="8" radius="1">
-		<npc name="partos" x="-1" y="0" z="8" spawntime="60" direction="2" />
+		<npc name="Partos" x="-1" y="0" z="8" spawntime="60" direction="2" />
 	</spawn>
 	<spawn centerx="33301" centery="32280" centerz="8" radius="2">
 		<monster name="Minotaur" x="2" y="0" z="8" spawntime="60" />

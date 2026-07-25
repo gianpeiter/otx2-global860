@@ -55,10 +55,11 @@ if(NpcHandler == nil) then
 	CALLBACK_PLAYER_CLOSECHANNEL	= 9
 	CALLBACK_ONBUY			= 10
 	CALLBACK_ONSELL			= 11
+	CALLBACK_ONTRADEREQUEST         = 12
 
 	-- Addidional module callback ids
-	CALLBACK_MODULE_INIT		= 12
-	CALLBACK_MODULE_RESET		= 13
+	CALLBACK_MODULE_INIT		= 13
+	CALLBACK_MODULE_RESET		= 14
 
 	-- Constant strings defining the keywords to replace in the default messages.
 	TAG_PLAYERNAME = '|PLAYERNAME|'
@@ -255,6 +256,16 @@ if(NpcHandler == nil) then
 		end
 
 		return ret
+	end
+
+	function NpcHandler:onTradeRequest(cid)
+		local callback = self:getCallback(CALLBACK_ONTRADEREQUEST)
+
+		if callback == nil then
+			return true
+		end
+
+		return callback(cid)
 	end
 
 	-- Changes the callback function for the given id to callback.
