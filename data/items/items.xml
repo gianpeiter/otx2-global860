@@ -6980,7 +6980,18 @@
 		<attribute key="floorchange" value="west"/>
 	</item>
 	<item fromid="3689" toid="3696" article="a" name="large cauldron"/>
-	<item fromid="3697" toid="3700" article="a" name="sacred statue"/>
+	<item id="3697" article="a" name="sacred statue">
+		<attribute key="transformUseTo" value="3698"/>
+	</item>
+	<item id="3698" article="a" name="sacred statue">
+		<attribute key="transformUseTo" value="3697"/>
+	</item>
+	<item id="3699" article="a" name="sacred statue">
+		<attribute key="transformUseTo" value="3700"/>
+	</item>
+	<item id="3700" article="a" name="sacred statue">
+		<attribute key="transformUseTo" value="3699"/>
+	</item>
 	<item fromid="3701" toid="3704" article="a" name="broken lizard statue"/>
 	<item fromid="3705" toid="3708" article="a" name="lizard statue"/>
 	<item id="3709" article="a" name="small pagoda"/>
@@ -7316,14 +7327,30 @@
 		<attribute key="weight" value="200"/>
 		<attribute key="pickupable" value="1"/>
 	</item>
-	<item id="3943" article="a" name="torch bearer"/>
-	<item id="3944" article="a" name="lit torch bearer"/>
-	<item id="3945" article="a" name="torch bearer"/>
-	<item id="3946" article="a" name="lit torch bearer"/>
-	<item id="3947" article="a" name="wall lamp"/>
-	<item id="3948" article="a" name="lit wall lamp"/>
-	<item id="3949" article="a" name="wall lamp"/>
-	<item id="3950" article="a" name="lit wall lamp"/>
+	<item id="3943" article="a" name="torch bearer">
+		<attribute key="transformUseTo" value="3944"/>
+	</item>
+	<item id="3944" article="a" name="lit torch bearer">
+		<attribute key="transformUseTo" value="3943"/>
+	</item>
+	<item id="3945" article="a" name="torch bearer">
+		<attribute key="transformUseTo" value="3946"/>
+	</item>
+	<item id="3946" article="a" name="lit torch bearer">
+		<attribute key="transformUseTo" value="3945"/>
+	</item>
+	<item id="3947" article="a" name="wall lamp">
+		<attribute key="transformUseTo" value="3948"/>
+	</item>
+	<item id="3948" article="a" name="lit wall lamp">
+		<attribute key="transformUseTo" value="3947"/>
+	</item>
+	<item id="3949" article="a" name="wall lamp">
+		<attribute key="transformUseTo" value="3950"/>
+	</item>
+	<item id="3950" article="a" name="lit wall lamp">
+		<attribute key="transformUseTo" value="3949"/>
+	</item>
 	<item id="3951" article="a" name="bongo drum">
 		<attribute key="weight" value="2900"/>
 	</item>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
+	<!-- The Paradox Tower Quest -->
+	<movevent type="StepIn" actionid="13002" event="script" value="quests/the_paradox_tower_quest/poison_fields.lua" />
+
 	<!-- In Service of Yalahar Quest -->
 	<movevent type="StepIn" actionid="9105-9106" event="script" value="quests/in_service_of_yalahar_quest/azerus_fight_teleport.lua" />
 	<movevent type="StepIn" actionid="58262" event="script" value="quests/in_service_of_yalahar_quest/morik.lua" />

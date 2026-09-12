@@ -29,7 +29,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
     doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from critical level " .. criticalLevel .. " to " .. (criticalLevel + 1) .. ".")
 
-    doSendAnimatedText(getCreaturePosition(cid), "+Critical", COLOR_WHITE)
+    doSendAnimatedText(getCreaturePosition(cid), "+Critical", COLOR_PURPLE)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
 
     return true

@@ -2,10 +2,18 @@ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
-function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
-function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
-function onThink() npcHandler:onThink() end
+function onCreatureAppear(cid)
+	npcHandler:onCreatureAppear(cid)
+end
+function onCreatureDisappear(cid)
+	npcHandler:onCreatureDisappear(cid)
+end
+function onCreatureSay(cid, type, msg)
+	npcHandler:onCreatureSay(cid, type, msg)
+end
+function onThink()
+	npcHandler:onThink()
+end
 
 local talkState = {}
 local storage = 100168
@@ -35,9 +43,7 @@ function creatureSayCallback(cid, type, msg)
 	elseif msgcontains(msg, "key") then
 		npcHandler:say("Do you want to buy the dungeon key for 2000 gold?", cid)
 		talkState[cid] = 2
-
 	elseif msgcontains(msg, "yes") then
-
 		if talkState[cid] == 1 then
 			if doPlayerRemoveItem(cid, 2331, 1) then
 				npcHandler:say("You have a present for me?? Realy?", cid)
@@ -46,7 +52,6 @@ function creatureSayCallback(cid, type, msg)
 			else
 				npcHandler:say("I dont see any {present} with you!", cid)
 			end
-
 		elseif talkState[cid] == 2 then
 			if doPlayerRemoveMoney(cid, 2000) then
 				npcHandler:say("Here it is.", cid)

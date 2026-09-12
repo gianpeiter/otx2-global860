@@ -68014,6 +68014,9 @@
 	<spawn centerx="32970" centery="32406" centerz="12" radius="2">
 		<monster name="Mummy" x="1" y="0" z="12" spawntime="60" />
 	</spawn>
+	<spawn centerx="33271" centery="32406" centerz="12" radius="2">
+		<monster name="Koshei The Deathless" x="0" y="0" z="12" spawntime="60" direction="2" />
+	</spawn>
 	<spawn centerx="32976" centery="32407" centerz="12" radius="2">
 		<monster name="Vampire" x="-1" y="1" z="12" spawntime="60" />
 	</spawn>

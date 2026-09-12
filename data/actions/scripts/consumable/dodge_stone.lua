@@ -29,7 +29,7 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 
     doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You advanced from dodge level " .. dodgeLevel .. " to " .. (dodgeLevel + 1) .. ".")
 
-    doSendAnimatedText(getCreaturePosition(cid), "+Dodge", COLOR_WHITE)
+    doSendAnimatedText(getCreaturePosition(cid), "+Dodge", COLOR_LIGHTGREEN)
     doSendMagicEffect(getCreaturePosition(cid), CONST_ME_MAGIC_GREEN)
 
     return true

@@ -10,11 +10,24 @@
 	<action itemid="15268" event="script" value="consumable/blessing_book.lua" />
 	<action itemid="15269" event="script" value="consumable/teleport_scroll.lua" />
 
+	<!-- The Travelling Trader Quest -->
+	<action actionid="9050" event="script" value="quests/the_travelling_trader_quest/door.lua" />
+
+	<!-- Koshei The Deathless Quest -->
+	<action actionid="20542" event="script" value="quests/koshei_the_deathless_quest/switch.lua" />
+	<action itemid="8266" event="script" value="quests/koshei_the_deathless_quest/amulet_corpse.lua"/>
+	<!-- <action itemid="8272" event="script" value="quests/koshei_the_deathless_quest/corpse.lua"/> -->
+	<action actionid="36205" event="script" value="quests/koshei_the_deathless_quest/door.lua"/>
+
 	<!-- The Djinn War Quest -->
 	<action actionid="20534" event="script" value="quests/the_djinn_war_quest/ubaid_door.lua" />
 	<action actionid="20535" event="script" value="quests/the_djinn_war_quest/blue_djinn_door.lua" />
-	<action actionid="20536" event="script" value="quests/the_djinn_war_quest/gemmed_lamp_door.lua" />
-	<action actionid="20537" event="script" value="quests/the_djinn_war_quest/gemmed_lamp.lua" />
+	<action actionid="20536" event="script" value="quests/the_djinn_war_quest/green_djinn_gemmed_lamp_door.lua" />
+	<action actionid="20537" event="script" value="quests/the_djinn_war_quest/green_djinn_gemmed_lamp.lua" />
+	<action actionid="20538" event="script" value="quests/the_djinn_war_quest/umar_door.lua" />
+	<action actionid="20539" event="script" value="quests/the_djinn_war_quest/green_djinn_door.lua" />
+	<action actionid="20540" event="script" value="quests/the_djinn_war_quest/blue_djinn_gemmed_lamp_door.lua" />
+	<action actionid="20541" event="script" value="quests/the_djinn_war_quest/blue_djinn_gemmed_lamp.lua" />
 
 	<!-- In Service of Yalahar Quest -->
 	<action actionid="20517" event="script" value="quests/in_service_of_yalahar_quest/palimuth_door.lua" />
@@ -226,6 +239,7 @@
 	<action itemid="7735" event="script" value="other/spell_wand.lua"/>
 	<action itemid="7537;7585" event="script" value="other/spider_egg.lua" />
 	<action itemid="6561;12424" event="script" value="other/blessings.lua"/>
+	<action itemid="5928" event="script" value="other/catch_fish.lua"/>
 
 	<!-- Offline Training -->
 	<!-- <action itemid="1444;1448;1449;3705;3739" event="script" value="other/offline_training.lua"/> -->

@@ -1,1714 +1,1781 @@
 local config = {
-    -- Battle Axe Quest
-    [7777] = {
-        items = {
-            {itemId = 2378, count = 1} -- Battle Axe
-        },
-        storage = 5673
-    },
+	-- Battle Axe Quest
+	[7777] = {
+		items = {
+			{ itemId = 2378, count = 1 }, -- Battle Axe
+		},
+		storage = 5673,
+	},
 
-    -- Crusader Helmet Quest
-    [54116] = {
-        items = {
-            {itemId = 2497, count = 1} -- Crusader Helmet
-        },
-        storage = 5316
-    },
+	-- Crusader Helmet Quest
+	[54116] = {
+		items = {
+			{ itemId = 2497, count = 1 }, -- Crusader Helmet
+		},
+		storage = 5316,
+	},
 
 	-- Circle Room Quest
-    [14914] = {
-        items = {
-            {itemId = 2391, count = 1} -- War Hammer
-        },
-        storage = 14914
-    },
-    [14915] = {
-        items = {
-            {itemId = 2435, count = 1} -- Dwarven Axe
-        },
-        storage = 14915
-    },
+	[14914] = {
+		items = {
+			{ itemId = 2391, count = 1 }, -- War Hammer
+		},
+		storage = 14914,
+	},
+	[14915] = {
+		items = {
+			{ itemId = 2435, count = 1 }, -- Dwarven Axe
+		},
+		storage = 14915,
+	},
 
 	-- Demona Quest
-    [13903] = {
-        items = {
-            {itemId = 2435, count = 1} -- Dwarven Axe
-        },
-        storage = 13903
-    },
-    [13902] = {
-        items = {
-            {itemId = 2425, count = 1} -- Obsidian Lance
-        },
-        storage = 13902
-    },
-    [13901] = {
-        items = {
-            {itemId = 2533, count = 1} -- Griffin Shield
-        },
-        storage = 13901
-    },
-    [14361] = {
-        items = {
-            {itemId = 2184, count = 1} -- Crystal Wand
-        },
-        storage = 14361
-    },
-    [14362] = {
-        items = {
-            {itemId = 1953, count = 1, text = "Dear Gelunidas,\nI request that you send me the twinkiller-rune I ordered some months ago immediately. If I am convinced that they work as promised I will order them in greater numbers. They might be handy in my next schemes. As this letter should show you, the tales of my death are wildly exagerated. I hope you and your warlock brethren did not think you get off the hook that easy? If you don't work on the stuff I ordered and I do not receive the stuff I ordered in time, be prepared for a visit. You won't like my new friends that I would introduce to you.\n\nFerumbras"}, -- Twinkiller Rune
-            {itemId = 12565, count = 1} -- Silver Rune Emblem
-        },
-        storage = 14362
-    },
-    [14363] = {
-        items = {
-            {itemId = 2165, count = 1} -- Stealth Ring
-        },
-        storage = 14363
-    },
-    [14364] = {
-        items = {
-            {itemId = 2167, count = 1} -- Energy Ring
-        },
-        storage = 14364
-    },
-    [61235] = {
-        items = {
-            {itemId = 1956, count = 1} -- Map (Brown)
-        },
-        storage = 61235
-    },
-    [61233] = {
-        items = {
-            {itemId = 1982, count = 1} -- Purple Tome
-        },
-        storage = 61233
-    },
-    [52372] = {
-        items = {
-            {itemId = 1957, count = 1} -- Map (Colour)
-        },
-        storage = 52372
-    },
-
-    -- Fanfare Quest
-    [52373] = {
-        items = {
-            {itemId = 2092, count = 1, actionId = 3520} -- Bone Key 3520
-        },
-        storage = 52373
-    },
-    [8441] = {
-        items = {
-            {itemId = 2076, count = 1} -- Fanfare
-        },
-        storage = 8441
-    },
-
-    -- Heaven Blossom Quest
-    [8442] = {
-        items = {
-            {itemId = 5921, count = 1} -- Heaven Blossom
-        },
-        storage = 8442
-    },
-
-    -- Iron Helmet Quest
-    [45123] = {
-        items = {
-            {itemId = 2238, count = 1}, -- Worn Leather Boots
-            {itemId = 2268, count = 3}, -- Sudden Death Rune
-            {itemId = 2467, count = 1}, -- Leather Armor
-            {itemId = 2459, count = 1}, -- Iron Helmet
-            {itemId = 2397, count = 1}, -- Longsword
-            {itemId = 2598, count = 1} -- Stamped Letter
-        },
-        storage = 45123,
-        containerId = 1988
-    },
-
-    -- Iron Ore Quest
-    [45124] = {
-        items = {
-            {itemId = 5880, count = 1} -- Iron Ore
-        },
-        storage = 45124
-    },
-
-    -- Longsword Quest
-    [21996] = {
-        items = {
-            {itemId = 2397, count = 1} -- Longsword
-        },
-        storage = 21996
-    },
-    [21997] = {
-        items = {
-            {itemId = 2121, count = 1} -- Wedding ring
-        },
-        storage = 21997
-    },
-    [21998] = {
-        items = {
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2108, count = 1}, -- Wooden Doll
-            {itemId = 2148, count = 76} -- Gold Coin
-        },
-        storage = 21998
-    },
-
-    -- Minotaur Leather Quest
-    [21999] = {
-        items = {
-            {itemId = 5878, count = 1} -- Minotaur Leather
-        },
-        storage = 21999
-    },
-
-    -- Mintwallin Cyclops Quest
-    [22000] = {
-        items = {
-            {itemId = 2145, count = 1} -- Small Diamond
-        },
-        storage = 22000
-    },
-    [8271] = {
-        items = {
-            {itemId = 2088, count = 1, actionId = 3610} -- Silver Key 3610
-        },
-        storage = 8234
-    },
-
-    -- Orc Shaman Quest
-    [7451] = {
-        items = {
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2208, count = 1}, -- Axe Ring
-            {itemId = 2162, count = 1}, -- Magic Light Wand
-        },
-        storage = 39784,
-        containerId = 1988
-    },
-
-    -- Power Bolts Quest
-    [43430] = {
-        items = {
-            {itemId = 2546, count = 12}, -- Burst Arrow
-            {itemId = 2547, count = 5} -- Power Bolt
-        },
-        storage = 43430,
-    },
-    [43431] = {
-        items = {
-            {itemId = 1955, count = 1, text = "... the dream master retreated to the world behind the curtains of awareness, I can't reach him, now that the last hall of dreams is lost to the forces of evil. I sealed Goshnar's grave so no one can enter the pits without knowing our secret. I will try to retreat to Knightwatch Tower and wait for a dreamer in possession of the key. So we can travel on one of the dream paths to a saver place to regroup and to plan a counter-attack. I fear we have to recruit new members and we have only little time left to train them. I hope Taciror will not waste our last forces in a futile attack on the Ruthless Seven. Our order has never truly recovered from the losses in our war against Goshnar and his undead hordes. Now that our leaders and best warriors have died in the attack on the demonic forces, we don't stand a chance against our enemies. Our only hope is to gather new forces and to recapture the chamber of dreams. Of course I know the right method to distract Hugo long enough to get past him. The dream master is important to teach our recruits in the old ways and in the art of dreamwalking. We need a leader for our cause and we need him badly. Headless we will fail and fall. It is already uncertain who took the Nightmare Chronicles out of the pits and I have no idea where they are hidden. They are fighting about power and influence but unity is the key to success. Our whole order is centred about unity. All our rituals and procedures rooted on unity and sharing, they can't neglect that."} -- Book
-        },
-        storage = 43431
-    },
-
-    -- Power Ring Quest
-    [3689] = {
-        items = {
-            {itemId = 2166, count = 1} -- Power Ring
-        },
-        storage = 3689
-    },
-    [3690] = {
-        items = {
-            {itemId = 2172, count = 1} -- Bronze Amulet
-        },
-        storage = 3690
-    },
-
-    -- Scale Armor Quest
-    [7644] = {
-        items = {
-            {itemId = 2483, count = 1} -- Scale Armor
-        },
-        storage = 39781,
-        containerId = 1987
-    },
-
-    -- Silver Brooch Quest
-    [47666] = {
-        items = {
-            {itemId = 2134, count = 1}, -- Silver Broch
-            {itemId = 2147, count = 2}, -- Small Ruby
-            {itemId = 2145, count = 3} -- Small Diamond
-        },
-        storage = 39680
-    },
-
-    -- Six Rubies Quest
-    [21995] = {
-        items = {
-            {itemId = 2147, count = 6} -- Small Ruby
-        },
-        storage = 21995
-    },
-
-    -- Spike Sword Quest
-    [14433] = {
-        items = {
-            {itemId = 2383, count = 1} -- Spike Sword
-        },
-        storage = 14433
-    },
-
-    -- Elvenbane Quest
-    [21993] = {
-        items = {
-            {itemId = 2525, count = 1} -- Dwarven Shield
-        },
-        storage = 21993
-    },
-    [21992] = {
-        items = {
-            {itemId = 2394, count = 1} -- morning star
-        },
-        storage = 21992
-    },
-    [21991] = {
-        items = {
-            {itemId = 2175, count = 1}, -- Spellbook
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 7589, count = 1} -- Strong Mana Potion
-        },
-        storage = 21991
-    },
-    [21990] = {
-        items = {
-            {itemId = 2148, count = 100}, -- Gold Coin
-            {itemId = 2145, count = 1} -- Small Diamond
-        },
-        storage = 21990
-    },
-
-    -- Isle of the Mists Quest
-    [21988] = {
-        items = {
-            {itemId = 2149, count = 2} -- Small Emerald
-        },
-        storage = 21988
-    },
-
-    
-    -- Thais Quest
-    -- Missão 01: Ancient Temple
-    [21987] = {
-        items = {
-            {itemId = 2201, charges = 200}, -- Dragon Necklace
-            {itemId = 2168, count = 1} -- Life Ring
-        },
-        storage = 21987
-    },
-    -- Missão 02: Noble Armor
-    [16451] = {
-        items = {
-            {itemId = 2486, count = 1} -- Noble Armor
-        },
-        storage = 16451
-    },
-    [16452] = {
-        items = {
-            {itemId = 2491, count = 1} -- Crown Helmet
-        },
-        storage = 16452
-    },
-    -- Missão 03: Geomancer
-    [21989] = {
-        items = {
-            {itemId = 2146, count = 1}, -- Small sapphire
-            {itemId = 2145, count = 1}, -- Small Diamond
-            {itemId = 2213, count = 1} -- Dwarven Ring
-        },
-        storage = 21989
-    },
-    -- Missão 04: Dead Archer
-    [21994] = {
-        items = {
-            {itemId = 2545, count = 5}, -- Poison Arrow
-            {itemId = 2456, count = 1}, -- Bow
-            {itemId = 7618, count = 1}, -- Health Potion
-            {itemId = 7620, count = 1} -- Mana Potion
-        },
-        storage = 21994
-    },
-    -- Missão 05: The Lighthouse
-    [46574] = {
-        items = {
-            {itemId = 2417, count = 1} -- Battle Hammer
-        },
-        storage = 46574
-    },
-    [46575] = {
-        items = {
-            {itemId = 2521, count = 1} -- Dark Shield
-        },
-        storage = 46575
-    },
-    -- Missão 06: Naginata
-    [19182] = {
-        items = {
-            {itemId = 2426, count = 1} -- Naginata
-        },
-        storage = 19182
-    },
-
-    -- Throwing Star Quest
-    [21986] = {
-        items = {
-            {itemId = 2399, count = 10} -- Throwing Star
-        },
-        storage = 21986
-    },
-
-    -- Triangle Tower Quest
-    [61001] = {
-        items = {
-            {itemId = 2199, charges = 150}, -- Garlic Necklace
-            {itemId = 2146, count = 2}, -- Small Sapphire
-            {itemId = 2213, count = 1}, -- Dwarven Ring
-        },
-        storage = 61001
-    },
-
-    -- Deeper Fibula Quest
-    [14009] = {
-        items = {
-            {itemId = 2091, count = 1, actionId = 3980} -- Golden Key 3980
-        },
-        storage = 50304
-    },
-    [11190] = {
-        items = {
-            {itemId = 2528, count = 1} -- Tower Shield
-        },
-        storage = 11190
-    },
-    [11190] = {
-        items = {
-            {itemId = 2528, count = 1} -- Tower Shield
-        },
-        storage = 11190
-    },
-    [11194] = {
-        items = {
-            {itemId = 2475, count = 1} -- Warrior Helmet
-        },
-        storage = 11194
-    },
-    [11191] = {
-        items = {
-            {itemId = 2213, count = 1} -- Dwarven Ring
-        },
-        storage = 11191
-    },
-    [11192] = {
-        items = {
-            {itemId = 2198, charges = 50} -- Elven Amulet
-        },
-        storage = 11192
-    },
-    [11193] = {
-        items = {
-            {itemId = 2430, count = 50} -- Knight Axe
-        },
-        storage = 11193
-    },
-
-    -- Devil Helmet Quest
-    [21985] = {
-        items = {
-            {itemId = 2146, count = 4} -- Small Sapphire
-        },
-        storage = 21985
-    },
-    [21984] = {
-        items = {
-            {itemId = 2462, count = 1} -- Devil Helmet
-        },
-        storage = 21984
-    },
-    [21983] = {
-        items = {
-            {itemId = 2381, count = 1} -- Halberd
-        },
-        storage = 21983
-    },
-
-    -- Ghoul Room Quest
-    [9991] = {
-        items = {
-            {itemId = 2088, count = 1, actionId = 3600} -- Silver Key 3600
-        },
-        storage = 9991
-    },
-    [1239] = {
-        items = {
-            {itemId = 2209, count = 1} -- Club Ring
-        },
-        storage = 1239
-    },
-    [1238] = {
-        items = {
-            {itemId = 2199, charges = 150} -- Garlic Necklace
-        },
-        storage = 1238
-    },
-
-    -- Ornamented Shield Quest
-    [62372] = {
-        items = {
-            {itemId = 2090, count = 1, actionId = 3702}, -- Crystal Key 3702
-            {itemId = 2164, charges = 20}, -- Might Ring
-            {itemId = 2201, charges = 200}, -- Dragon Necklace
-            {itemId = 2383, count = 1}, -- Spike Sword
-            {itemId = 1955, count = 1, text = "This is the Journal of Krendorak,  the last of the Nightmare Knights: I tried to discover the secret of my ancestors, but I failed.  The damned dragons tricked me!  I escaped but I know I'm mortaly wounded.  Even if I could get out off here, I will never make it to Knightwatch Tower to  use its secret to resupply. Since now that Camdrek is dead I will never be able to open it... It is so hot, my sight is fading... May the gods forgive my failing..."}, -- Book
-            {itemId = 2524, count = 1}, -- Ornamented Shield
-            {itemId = 2457, count = 1}, -- Steel Helmet
-            {itemId = 2600, count = 1} -- Inkwell
-        },
-        storage = 62372
-    },
-
-    -- Silver Amulet Quest
-    [21982] = {
-        items = {
-            {itemId = 2170, charges = 200} -- Silver Amulet
-        },
-        storage = 21982
-    },
-
-    -- Blood Herb Quest
-    [65535] = {
-        items = {
-            {itemId = 2798, count = 1} -- Blood Herb
-        },
-        storage = 59659
-    },
-
-    -- Emperor's Cookies Quest
-    [21981] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 3800} -- Copper Key 3800
-        },
-        storage = 21981
-    },
-    [21980] = {
-        items = {
-            {itemId = 2687, count = 7}, -- Cookie
-            {itemId = 2089, count = 1, actionId = 3801}, -- Copper Key 3801
-            {itemId = 2687, count = 20} -- Cookie
-        },
-        storage = 21980
-    },
-    [21979] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 3802} -- Copper Key 3802
-        },
-        storage = 21979
-    },
-
-    -- Explorer Brooch Quest
-    [8900] = {
-        items = {
-            {itemId = 4873, count = 1} -- Explorer brooch
-        },
-        storage = 8900
-    },
-
-    -- Orc Fortress Quest
-    [43987] = {
-        items = {
-            {itemId = 2430, count = 1} -- Knight Axe
-        },
-        storage = 43987
-    },
-    [43981] = {
-        items = {
-            {itemId = 2476, count = 1} -- Knight Armor
-        },
-        storage = 43981
-    },
-    [43985] = {
-        items = {
-            {itemId = 2392, count = 1} -- Fire Sword
-        },
-        storage = 43985
-    },
-
-    -- Panpipe Quest
-    [21978] = {
-        items = {
-            {itemId = 2088, count = 1, actionId = 4055} -- Silver Key 4055
-        },
-        storage = 21978
-    },
-    [21977] = {
-        items = {
-            {itemId = 2166, count = 1}, -- Power Ring
-            {itemId = 2074, count = 1}, -- Panpipes
-            {itemId = 2150, count = 2} -- Small Amethyst
-        },
-        storage = 21977
-    },
-
-    -- The Desert Dungeon Quest
-    [1740] = {
-        items = {
-            {itemId = 2152, count = 100} -- Platinum Coin
-        },
-        storage = 1740
-    },
-    [7163] = {
-        items = {
-            {itemId = 2200, charges = 250}, -- Protection Amulet
-            {itemId = 2214, count = 1}, -- Ring of Healing
-            {itemId = 2162, count = 1}, -- Magic Light Wand
-            {itemId = 2193, count = 1} -- Ankh
-        },
-        storage = 7163,
-        containerId = 1991
-    },
-
-    -- Draconia Quest
-    [21976] = {
-        items = {
-            {itemId = 2396, count = 1}, -- Ice Rapier
-            {itemId = 2409, count = 1} -- Serpent Sword
-        },
-        storage = 21976
-    },
-    [21975] = {
-        items = {
-            {itemId = 2167, count = 1}, -- Energy Ring
-            {itemId = 2197, charges = 5} -- Stone Skin Amulet
-        },
-        storage = 21975
-    },
-
-    -- Adorned UH Rune Quest
-    [23124] = {
-        items = {
-            {itemId = 12559, count = 1} -- Silver Rune Emblem
-        },
-        storage = 23124
-    },
-    [14224] = {
-        items = {
-            {itemId = 2169, count = 1} -- Time Ring
-        },
-        storage = 14224
-    },
-    [14225] = {
-        items = {
-            {itemId = 1738, count = 1} -- Sword Ring
-        },
-        storage = 14225
-    },
-    [24881] = {
-        items = {
-            {itemId = 2201, charges = 200} -- Dragon Necklace
-        },
-        storage = 24881
-    },
-    [24880] = {
-        items = {
-            {itemId = 1738, count = 1} -- Wedding Ring
-        },
-        storage = 24880
-    },
-
-    -- Barbarian Axe Quest
-    [1452] = {
-        items = {
-            {itemId = 2429, count = 1} -- Barbarian Axe
-        },
-        storage = 1452
-    },
-    [1451] = {
-        items = {
-            {itemId = 2419, count = 1} -- Scimitar
-        },
-        storage = 1451
-    },
-
-    -- Berserker Treasure Quest
-    [7442] = {
-        items = {
-            {itemId = 2143, count = 3}, -- White Pearl
-            {itemId = 2148, count = 77}, -- Gold Coin
-            {itemId = 2148, count = 98} -- Gold Coin
-        },
-        storage = 7442
-    },
-    
-    -- Dark Armor Quest
-    [6662] = {
-        items = {
-            {itemId = 2489, count = 1} -- Dark Armor
-        },
-        storage = 6662
-    },
-
-    -- Double Hero Quest
-    [18721] = {
-        items = {
-            {itemId = 2156, count = 1} -- Red Gem
-        },
-        storage = 18721
-    },
-    [18720] = {
-        items = {
-            {itemId = 2209, count = 1} -- Club Ring
-        },
-        storage = 18720
-    },
-
-    -- Double Hero Quest
-    [7771] = {
-        items = {
-            {itemId = 2170, charges = 200} -- Silver Amulet
-        },
-        storage = 7771
-    },
-    [7770] = {
-        items = {
-            {itemId = 2509, count = 1} -- Steel Shield
-        },
-        storage = 7770
-    },
-
-    -- Fire Axe Quest
-    [8118] = {
-        items = {
-            {itemId = 2214, count = 1}, -- Ring of Healing
-            {itemId = 2201, charges = 200}, -- Dragon Necklace
-            {itemId = 2145, count = 7} -- Small Diamond
-        },
-        storage = 8118
-    },
-    [14260] = {
-        items = {
-            {itemId = 2432, count = 1} -- Fire Axe
-        },
-        storage = 14260
-    },
-
-    -- Poison Daggers Quest
-    [14331] = {
-        items = {
-            {itemId = 2545, count = 30}, -- Poison Arrow
-            {itemId = 2411, count = 1}, -- Poison Dagger
-            {itemId = 2411, count = 1} -- Poison Dagger
-        },
-        storage = 14331,
-        containerId = 1988
-    },
-
-    -- Shaman Treasure Quest
-    [21974] = {
-        items = {
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2260, count = 1} -- Blank Rune
-        },
-        storage = 21974
-    },
-
-    -- The Outlaw Camp Quest
-    [21973] = {
-        items = {
-            {itemId = 2088, count = 1, actionId = 3301} -- Silver Key 3301
-        },
-        storage = 21973
-    },
-    [21972] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 3302} -- Copper Key 3302
-        },
-        storage = 21972
-    },
-    [21971] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 3303} -- Copper Key 3303
-        },
-        storage = 21971
-    },
-    [21970] = {
-        items = {
-            {itemId = 2091, count = 1, actionId = 3304} -- Golden Key 3304
-        },
-        storage = 21970
-    },
-    [21969] = {
-        items = {
-            {itemId = 2407, count = 1}, -- Bright Sword
-            {itemId = 2156, count = 1} -- Red Gem
-        },
-        storage = 21969
-    },
-
-    -- Troll Cave Quest
-    [8886] = {
-        items = {
-            {itemId = 2199, charges = 150} -- Garlic Necklace
-        },
-        storage = 8886
-    },
-    [8887] = {
-        items = {
-            {itemId = 2478, count = 1} -- Brass Legs
-        },
-        storage = 8887
-    },
-
-    -- Vampire Shield Quest
-    [16331] = {
-        items = {
-            {itemId = 2194, count = 1}, -- Mysterious Fetish
-            {itemId = 2174, count = 1}, -- Strange Symbol
-            {itemId = 2144, count = 1} -- Black Pearl
-        },
-        storage = 16331
-    },
-    [5142] = {
-        items = {
-            {itemId = 2414, count = 1} -- Dragon Lance
-        },
-        storage = 5142
-    },
-    [5141] = {
-        items = {
-            {itemId = 2534, count = 1} -- Vampire Shield
-        },
-        storage = 5141
-    },
-
-    -- Alawar's Vault Quest
-    [6733] = {
-        items = {
-            {itemId = 2143, count = 3} -- White Pearl
-        },
-        storage = 6733
-    },
-    [6732] = {
-        items = {
-            {itemId = 2413, count = 1} -- Broadsword
-        },
-        storage = 6732
-    },
-    [21968] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 4503} -- Copper Key 4503
-        },
-        storage = 21968
-    },
-    [21967] = {
-        items = {
-            {itemId = 2490, count = 1}, -- Dark Helmet
-            {itemId = 2410, count = 4}, -- Throwing Knife
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2148, count = 33}, -- Gold Coin
-            {itemId = 2089, count = 1, actionId = 4502} -- Copper Key 4502
-        },
-        storage = 21967
-    },
-    [21966] = {
-        items = {
-            {itemId = 2089, count = 1, actionId = 4501} -- Copper Key 4501
-        },
-        storage = 21966
-    },
-
-    -- Iron Hammer Quest
-    [21965] = {
-        items = {
-            {itemId = 2422, count = 1} -- Iron Hammer
-        },
-        storage = 21965
-    },
-
-    -- Plate Armor Quest
-    [21964] = {
-        items = {
-            {itemId = 2463, count = 1} -- Plate Armor
-        },
-        storage = 21964
-    },
-
-    -- Stealth Ring Quest
-    [21963] = {
-        items = {
-            {itemId = 2200, charges = 250} -- Protection Amulet
-        },
-        storage = 21963
-    },
-    [21962] = {
-        items = {
-            {itemId = 2165, count = 1} -- Stealth Ring
-        },
-        storage = 21962
-    },
-
-    -- Steel Helmet Quest
-    [21961] = {
-        items = {
-            {itemId = 2457, count = 1} -- Steel Helmet
-        },
-        storage = 21961
-    },
-
-    -- Black Knight Quest
-    [57497] = {
-        items = {
-            {itemId = 2088, count = 1, actionId = 5010} -- Silver Key 5010
-        },
-        storage = 50305
-    },
-    [20000] = {
-        items = {
-            {itemId = 2519, count = 1} -- Crown Shield
-        },
-        storage = 50309
-    },
-    [20001] = {
-        items = {
-            {itemId = 2487, count = 1} -- Crown Armor
-        },
-        storage = 50308
-    },
-
-    -- Dragon Tower Quest
-    [21960] = {
-        items = {
-            {itemId = 2545, count = 60}, -- Poison Arrow
-            {itemId = 2546, count = 30}, -- Burst Arrow
-            {itemId = 7618, count = 1}, -- Health Potion
-            {itemId = 7620, count = 1} -- Mana Potion
-        },
-        storage = 21960,
-        containerId = 1988
-    },
-    [21959] = {
-        items = {
-            {itemId = 2146, count = 2}, -- Small Sapphire
-            {itemId = 2456, count = 1} -- Bow
-        },
-        storage = 21959,
-        containerId = 1988
-    },
-
-    -- Time Ring Quest
-    [21958] = {
-        items = {
-            {itemId = 2192, count = 1} -- Crystal Ball
-        },
-        storage = 21958
-    },
-    [21957] = {
-        items = {
-            {itemId = 2169, count = 1} -- Time Ring
-        },
-        storage = 21957
-    },
-    [21956] = {
-        items = {
-            {itemId = 2198, charges = 50} -- Elven Amulet
-        },
-        storage = 21956
-    },
-
-    -- Behemoth Quest
-    [1298] = {
-        items = {
-            {itemId = 2171, count = 1}, -- Platinum Amulet
-            {itemId = 2168, count = 1}, -- Life Ring
-            {itemId = 2124, count = 1}, -- Crystal Ring
-            {itemId = 2146, count = 4}, -- Small Sapphire
-            {itemId = 2145, count = 3} -- Small Diamond
-        },
-        storage = 2103
-    },
-    [1299] = {
-        items = {
-            {itemId = 2427, count = 1} -- Guardian Halberd
-        },
-        storage = 2102
-    },
-    [1297] = {
-        items = {
-            {itemId = 2520, count = 1} -- Demon Shield
-        },
-        storage = 2101
-    },
-    [1296] = {
-        items = {
-            {itemId = 2466, count = 1} -- Golden Armor
-        },
-        storage = 2100
-    },
-
-    -- Parchment Room Quest
-    [60994] = {
-        items = {
-            {itemId = 2091, count = 1, actionId = 6010}, -- Golden Key 6010
-            {itemId = 2230, count = 1}, -- Bone
-            {itemId = 2165, count = 1}, -- Stealth Ring
-            {itemId = 2151, count = 2}, -- Talon
-            {itemId = 2151, count = 2}, -- Talon
-            {itemId = 2229, count = 1} -- Skull
-        },
-        storage = 60994
-    },
-
-    -- Giant Smithhammer Quest
-    [9831] = {
-        items = {
-            {itemId = 2151, count = 1} -- Talon
-        },
-        storage = 9831
-    },
-    [9832] = {
-        items = {
-            {itemId = 2321, count = 1} -- Giant Smithhammer
-        },
-        storage = 9832
-    },
-    [9833] = {
-        items = {
-            {itemId = 2148, count = 100} -- Gold Coin
-        },
-        storage = 9833
-    },
-    [50012] = {
-        items = {
-            {itemId = 1955, count = 1, text = "Diary of Hengis Wulfson\n...\nI can only hope I can escape the\ncyclops someday. For now I have\noccupied their chief with an attempt\nto learn to read and write, but for\nhow long?\nI'm so desperate.\nWhat a foolish idea to travel here to\nsearch the famous treasures of this\nancient, knightly order.\nI wish I had never heard about it.\nI wish I had never sung that song.\nNo clue how many unfortunate souls I\nhave lured to death with it."} -- Book
-        },
-        storage = 50012
-    },
-
-    -- Skull of Ratha Quest
-    [46757] = {
-        items = {
-            {itemId = 2143, count = 1}, -- White Pearl
-            {itemId = 2320, count = 1} -- Skull of Ratha
-        },
-        storage = 46757
-    },
-    [57357] = {
-        items = {
-            {itemId = 2213, count = 1}, -- Dwarven Ring
-            {itemId = 2129, count = 1} -- Wolf Tooth Chain
-        },
-        storage = 57357
-    },
-    [14298] = {
-        items = {
-            {itemId = 2148, count = 100}, -- Gold Coin
-            {itemId = 2144, count = 4}, -- Black Pearl
-            {itemId = 2125, count = 1} -- Crystal Necklace
-        },
-        storage = 14298
-    },
-
-    -- Voodoo Doll Quest
-    [21955] = {
-        items = {
-            {itemId = 2322, count = 1} -- Voodoo Doll
-        },
-        storage = 21955
-    },
-    [21944] = {
-        items = {
-            {itemId = 2162, count = 1} -- Magic Light Wand
-        },
-        storage = 21944
-    },
-    
-    -- Medusa Shield Quest
-    [48811] = {
-        items = {
-            {itemId = 2436, count = 1}, -- Skull Staff
-            {itemId = 2656, count = 1}, -- Blue Robe
-            {itemId = 2536, count = 1} -- Medusa Shield
-        },
-        storage = 48811
-    },
-
-    -- Serpentine Tower Quest
-    [56490] = {
-        items = {
-            {itemId = 2143, count = 1} -- White Pearl
-        },
-        storage = 56490
-
-    },
-
-    -- Elephant Tusk Quest
-    [21953] = {
-        items = {
-            {itemId = 3956, count = 2} -- Tusk
-        },
-        storage = 21953
-    },   
-
-    -- Sam's Old Backpack Quest
-    [62382] = {
-        items = {
-            {itemId = 2503, count = 1} -- Dwarven Armor
-        },
-        storage = 62382,
-        formerValue = 2,
-        newValue = 3
-    },
-
-    -- Hydra Egg Quest
-    [13410] = {
-        items = {
-            {itemId = 4850, count = 1} -- Hydra Egg
-        },
-        storage = 13410
-    },
-
-    -- Berserk Potion Quest
-    [21954] = {
-        items = {
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 2152, count = 2}, -- Platinum Coin
-            {itemId = 6500, count = 3}, -- Demonic Essence
-            {itemId = 7439, count = 1} -- Berserk Potion
-        },
-        storage = 21954
-    },
-
-    -- Fishing Box Quest
-    [21953] = {
-        items = {
-            {itemId = 7158, count = 3}, -- Rainbow Trout
-            {itemId = 7159, count = 3}, -- Green Perch
-            {itemId = 2152, count = 5} -- Platinum Coin
-        },
-        storage = 21953,
-        containerId = 7343 -- Fur Bag
-    },
-
-    -- Frost Dragon Quest
-    [21952] = {
-        items = {
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 7443, count = 1}, -- Bullseye Potion
-            {itemId = 2152, count = 10} -- Platinum Coin
-        },
-        storage = 21952
-    },
-
-    -- Lion Trophy Quest
-    [21951] = {
-        items = {
-            {itemId = 7400, count = 1}, -- Lion Trophy
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 2152, count = 2} -- Platinum Coin
-        },
-        storage = 21951
-    },
-    
-    -- Mastermind Potion Quest
-    [21950] = {
-        items = {
-            {itemId = 7440, count = 1}, -- Mastermind Potion
-            {itemId = 2148, count = 78}, -- Gold Coin
-            {itemId = 2148, count = 100}, -- Gold Coin
-            {itemId = 2148, count = 23}, -- Gold Coin
-            {itemId = 7159, count = 1}, -- Green Perch
-            {itemId = 7158, count = 1} -- Rainbow Trout
-        },
-        storage = 21950
-    },
-
-    -- Inukaya Quest
-    [21949] = {
-        items = {
-            {itemId = 2148, count = 48}, -- Gold Coin
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 7158, count = 3} -- Rainbow Trout
-        },
-        storage = 21949,
-        containerId = 7343 -- Fur Bag
-    },
-
-    -- Skeleton Decoration Quest
-    [21948] = {
-        items = {
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 2148, count = 89}, -- Gold Coin
-            {itemId = 6526, count = 1} -- Skeleton Decoration
-        },
-        storage = 21948,
-        containerId = 7343 -- Fur Bag
-    },
-
-    -- Koshei the Deathless Quest
-    [7511] = {
-        items = {
-            {itemId = 8264, count = 1} -- Piece of a Broken Amulet
-        },
-        storage = 7611
-    },
-    [7512] = {
-        items = {
-            {itemId = 8262, count = 1} -- Piece of a Broken Amulet
-        },
-        storage = 7612
-    },
-    [7513] = {
-        items = {
-            {itemId = 8263, count = 1} -- Piece of a Broken Amulet
-        },
-        storage = 7613
-    },
-    [7514] = {
-        items = {
-            {itemId = 8265, count = 1} -- Piece of a Broken Amulet
-        },
-        storage = 7614
-    },
-
-    -- Steal From Thieves Quest
-    [21947] = {
-        items = {
-            {itemId = 7587, count = 1} -- Bag
-        },
-        storage = 21947
-    },
-
-    -- Strong Potions Quest
-    [32177] = {
-        items = {
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1}, -- Strong Mana Potion
-            {itemId = 7509, count = 1} -- Strong Mana Potion
-        },
-        storage = 32177,
-        containerId = 1991
-    },
-
-    -- Waterfall Quest
-    [1881] = {
-        items = {
-            {itemId = 2213, count = 1}, -- Dwarven Ring
-            {itemId = 6096, count = 1} -- Pirate Hat
-        },
-        storage = 1881,
-        containerId = 5926 -- Pirate Backpack
-    },
-
-    -- Darashia Dragon Quest
-    [52374] = {
-        items = {
-            {itemId = 2168, count = 1} -- Life Ring
-        },
-        storage = 52374
-    },
-
-    -- Lone Medusa Quest
-    [51140] = {
-        items = {
-            {itemId = 2144, count = 4} -- Black Pearl
-        },
-        storage = 51140
-    },
-
-    -- Formorgar Mines Quest
-    [21946] = {
-        items = {
-            {itemId = 7290, count = 1}, -- Shard
-            {itemId = 2148, count = 100}, -- Gold Coin
-            {itemId = 7443, count = 1}, -- Bullseye Potion
-            {itemId = 2455, count = 1}, -- Crossbow
-            {itemId = 2547, count = 20} -- Power Bolt
-        },
-        storage = 21946
-    },
-
-    -- Small Ruby Quest
-    [21945] = {
-        items = {
-            {itemId = 2147, count = 1} -- Small Ruby
-        },
-        storage = 21945
-    },
-
-    -- Demon Helmet Quest
-    [13446] = {
-        items = {
-            {itemId = 2645, count = 1} -- Steel Boots
-        },
-        storage = 13446
-    },
-    [13445] = {
-        items = {
-            {itemId = 2493, count = 1} -- Demon Helmet
-        },
-        storage = 13445
-    },
-    [13447] = {
-        items = {
-            {itemId = 2520, count = 1} -- Demon Shield
-        },
-        storage = 13447
-    },
-
-    -- The Queen of the Banshees Quest
-    [30016] = {
-        items = {
-            {itemId = 2528, count = 1} -- Tower Shield
-        },
-        storage = 30016
-    },
-    [30017] = {
-        items = {
-            {itemId = 2195, count = 1} -- Boots of Haste
-        },
-        storage = 30017
-    },
-    [30018] = {
-        items = {
-            {itemId = 2152, count = 100} -- Platinum Coin
-        },
-        storage = 30018
-    },
-    [30019] = {
-        items = {
-            {itemId = 2165, count = 1} -- Stealth Ring
-        },
-        storage = 30019
-    },
-    [30020] = {
-        items = {
-            {itemId = 2197, charges = 5} -- Stone Skin Amulet
-        },
-        storage = 30020
-    },
-    [30021] = {
-        items = {
-            {itemId = 2393, count = 1} -- Giant Sword
-        },
-        storage = 30021
-    },
-
-    -- The Annihilator Quest
-    [49111] = {
-        items = {
-            {itemId = 2494, count = 1} -- Demon Armor
-        },
-        storage = 5000
-    },
-    [49112] = {
-        items = {
-            {itemId = 2400, count = 1} -- Magic Sword
-        },
-        storage = 5000
-    },
-    [49113] = {
-        items = {
-            {itemId = 2431, count = 1} -- Stonecutter Axe
-        },
-        storage = 5000
-    },
-    [49114] = {
-        items = {
-            {itemId = 2326, count = 1} -- Annihilation Bear
-        },
-        storage = 5000,
-        containerId = 1990
-    },
-
-    -- Barbarian Arena Quest
-    -- Arena Greenhorn
-    [26300] = {
-        items = {
-            {itemId = 2114, count = 1}, -- Piggy Bank
-            {itemId = 6570, count = 1}, -- Suprise Bag
-            {itemId = 6574, count = 1}, -- Bar of Chocolate
-            {itemId = 2688, count = 10}, -- Candy Cane
-            {itemId = 7372, count = 1} -- Ice Cream Cone
-        },
-        storage = 26300,
-        containerId = 1990
-    },
-    [26400] = {
-        items = {
-            {itemId = 7364, count = 100}, -- Sniper Arrow
-            {itemId = 7365, count = 100} -- Onyx Arrow
-        },
-        storage = 26400,
-        containerId = 7342
-    },
-    [26500] = {
-        items = {
-            {itemId = 7406, count = 1} -- Blacksteel Sword
-        },
-        storage = 24709
-    },
-    [26600] = {
-        items = {
-            {itemId = 7380, count = 1} -- Headchopper
-        },
-        storage = 24709
-    },
-    [26700] = {
-        items = {
-            {itemId = 7392, count = 1} -- Orcish Maul
-        },
-        storage = 24709
-    },
-    -- Arena Scrapper
-    [27300] = {
-        items = {
-            {itemId = 7183, count = 1}, -- Baby Seal Doll
-            {itemId = 6574, count = 1}, -- Bar of Chocolate
-            {itemId = 7375, count = 1}, -- Ice Cream Cone
-            {itemId = 6569, count = 10} -- Candy
-        },
-        storage = 27300,
-        containerId = 1990
-    },
-    [27400] = {
-        items = {
-            {itemId = 2304, count = 50}, -- Great Fireball Rune
-            {itemId = 2311, count = 50}, -- Heavy Magic Missile Rune
-            {itemId = 2547, count = 100}, -- Power Bolt
-            {itemId = 2547, count = 100}, -- Power Bolt
-            {itemId = 7365, count = 100} -- Oxy Arrow
-        },
-        storage = 27400,
-        containerId = 7342
-    },
-    [27500] = {
-        items = {
-            {itemId = 7384, count = 1} -- Mystic Blade
-        },
-        storage = 35809
-    },
-    [27600] = {
-        items = {
-            {itemId = 7389, count = 1} -- Heroic Axe
-        },
-        storage = 35809
-    },
-    [27700] = {
-        items = {
-            {itemId = 7415, count = 1} -- Cranial Basher
-        },
-        storage = 35809
-    },
-    -- Arena Warlord
-    [28300] = {
-        items = {
-            {itemId = 5080, count = 1}, -- Panda Teddy
-            {itemId = 6574, count = 1}, -- Bar of Chocolate
-            {itemId = 7372, count = 1}, -- Ice Cream Cone
-            {itemId = 6569, count = 10} -- Candy
-        },
-        storage = 28300,
-        containerId = 1990
-    },
-    [28400] = {
-        items = {
-            {itemId = 6529, count = 100}, -- Infernal Bolt
-            {itemId = 7440, count = 1}, -- Mastermind Potion
-            {itemId = 7443, count = 1}, -- Bullseye Potion
-            {itemId = 2268, count = 50}, -- Sudden Death Rune
-            {itemId = 2273, count = 50} -- Ultimate Healing Rune
-        },
-        storage = 28400,
-        containerId = 7342
-    },
-    [28500] = {
-        items = {
-            {itemId = 7390, count = 1} -- The Justice Seeker
-        },
-        storage = 15909
-    },
-    [28600] = {
-        items = {
-            {itemId = 7434, count = 1} -- Royal Axe
-        },
-        storage = 15909
-    },
-    [28700] = {
-        items = {
-            {itemId = 7429, count = 1} -- Blessed Sceptre
-        },
-        storage = 15909
-    },
-    -- The Pits of Inferno Quest
-    [15713] = {
-        items = {
-            {itemId = 2090, count = 1, actionId = 3700} -- Crystal Key 3700
-        },
-        storage = 15713
-    },
-    [10552] = {
-        items = {
-            {itemId = 1970, count = 1, text = "Banor I praise your name.\nBe with me in the battle.\nBe my shield, let me be your sword.\nI will honour the godly spark in my soul. May it flourish and grow."} -- The Holy Tible
-        },
-        storage = 10552
-    },
-    [30228] = {
-        items = {
-            {itemId = 1950, count = 1, text = "look at the 4 and ignore the 2\nend the 7 with 5 in mind\nvalue of 6 is 9\nexplain the second of 4\nrun past the 7\nsubstract 10\nuse the northeast first\nsee the colors change\nerrors are red\nlook what changes\nexpect no mercy\nsix times 10\nstupidity is red."} -- Book
-        },
-        storage = 30228
-    },
-    [56221] = {
-        items = {
-            {itemId = 2152, count = 11}, -- Platinum Coin
-            {itemId = 2143, count = 5}, -- White Pearl
-            {itemId = 5944, count = 1}, -- Soul Orb
-            {itemId = 5022, count = 3}, -- Orichalcum Pearl
-            {itemId = 5944, count = 1}, -- Soul Orb
-            {itemId = 6300, count = 1}, -- Death Ring
-            {itemId = 2168, count = 1}, -- Life Ring
-            {itemId = 2260, count = 1}, -- Blank Rune
-            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
-            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
-            {itemId = 2268, count = 1}, -- Sudden Death Rune
-            {itemId = 2268, count = 1}, -- Sudden Death Rune
-            {itemId = 2273, count = 1}, -- Ultimate Healing Rune
-            {itemId = 6561, count = 1}, -- Cerimonial Ankh
-            {itemId = 7590, count = 1} -- Great Mana Potion
-        },
-        storage = 45123,
-        containerId = 5926
-    },
-    [10548] = {
-        items = {
-            {itemId = 12559, count = 1}, -- Silver Rune Emblem
-            {itemId = 12565, count = 1}, -- Silver Rune Emblem
-            {itemId = 12563, count = 1}, -- Silver Rune Emblem
-            {itemId = 12561, count = 1} -- Silver Rune Emblem
-        },
-        storage = 23782,
-        containerId = 2365
-    },
-    [10559] = {
-        items = {
-            {itemId = 2152, count = 100} -- Platinum Coin
-        },
-        storage = 10559
-    },
-    [10550] = {
-        items = {
-            {itemId = 2361, count = 1} -- Frozen Starlight
-        },
-        storage = 10550
-    },
-    [10549] = {
-        items = {
-            {itemId = 5791, count = 1} -- Stuffed Dragon
-        },
-        storage = 10549
-    },
-    [10547] = {
-        items = {
-            {itemId = 6132, count = 1} -- Pair of Soft Boots
-        },
-        storage = 10547
-    },
-    [10544] = {
-        items = {
-            {itemId = 2453, count = 1} -- Arcane Staff
-        },
-        storage = 10544
-    },
-    [10545] = {
-        items = {
-            {itemId = 6528, count = 1} -- The Avenger
-        },
-        storage = 10544
-    },
-    [10546] = {
-        items = {
-            {itemId = 5803, count = 1} -- Arbalest
-        },
-        storage = 10544
-    },
-
-    -- The Inquisition Quest
-    [64440] = {
-        items = {
-            {itemId = 8702, count = 1} -- The Witches' Grimoire
-        },
-        storage = 53659
-    },
-    [1304] = {
-        items = {
-            {itemId = 8851, count = 1} -- Royal Crossbow
-        },
-        storage = 100166
-    },
-    [1300] = {
-        items = {
-            {itemId = 8851, count = 1} -- Royal Crossbow
-        },
-        storage = 100166
-    },
-    [1301] = {
-        items = {
-            {itemId = 8854, count = 1} -- Warsinger Bow
-        },
-        storage = 100166
-    },
-    [1302] = {
-        items = {
-            {itemId = 8918, count = 1} -- Spellbook of Dark Mysteries
-        },
-        storage = 100166
-    },
-    [1303] = {
-        items = {
-            {itemId = 8930, count = 1} -- Emerald Sword
-        },
-        storage = 100166
-    },
-    [1304] = {
-        items = {
-            {itemId = 8924, count = 1} -- Hellforged Axe
-        },
-        storage = 100166
-    },
-    [1305] = {
-        items = {
-            {itemId = 8928, count = 1} -- Obsidian Truncheon
-        },
-        storage = 100166
-    },
-    [1306] = {
-        items = {
-            {itemId = 8888, count = 1} -- Master Archer's Armor
-        },
-        storage = 100166
-    },
-    [1307] = {
-        items = {
-            {itemId = 8881, count = 1} -- Fireborn Giant Armor
-        },
-        storage = 100166
-    },
-    [1308] = {
-        items = {
-            {itemId = 8890, count = 1} -- Robe of the Underworld
-        },
-        storage = 100166
-    },
-
-    -- In Service of Yalahar Quest
-    [22001] = {
-        items = {
-            {itemId = 1954, count = 1, text = "History of the Augur, Part II They brought more and more people to Yalahar, not all of them became Augur, a good part of them lived in Yalahar as ordinary citizens, at some point, the city had reached a much larger population than under the rule of the true Yalahari, and it became difficult to provide food and shelter for everyone, time and overuse took it's toll on the city, over the years, more and more parts of the city were lost due to ignorance, lack of resources, or catastrophes, the new Yalahari were unable to restore broken machines and devices, and their efforts to retake certain parts of the city with the help of the Augur caused only more disaster, so the new Yalahari decided to stay in the city's centre, letting the Augur care for the rest of the city as well as they could, still, their image as Yalahari allowed them to claim supremacy and to rule over the whole city, this all did not matter too much to our ancestors, the new Yalahari were neither cruel nor overly abusive, and they still wielded the powerful weapons and armors of the true Yalahari, so they stuck to the status quo and continued to work for the Yalahari despite everything they had found out, this worked quite well although the city was still declining and great parts of it had been lost to chaos and anarchy, lately, though, things started to change, it is not a dramatic change but it can be recognised gradually at many places, some of the known routines in the orders of the Yalahari have altered, there are more and more orders who have a dubious purpose, the most frightening thing is that some orders obviously hint at a person with Yalahari knowledge that had been considered as lost for centuries, the overwhelming majority of the new Yalahari still clings to their ignorant and self-centred ways, but perhaps one of them or a small group has discovered some hidden secrets of their vanished masters, it is also possible that something completely different is happening, we simply don't know, but these new orders that seem to aim at restoring order in the city have some bitter taste, they are somewhat oppressive and destructive, not in an obvious way, though, taken together, they paint a dark picture of Yalahar's future, a future of oppression, betrayal, and a much stricter rule by the Yalahari."}, -- Papper
-            {itemId = 1954, count = 1, text = "History of the Augur, Part I We, the families of the Augur, have been living here for many generations, in the course of time, we acquired certain insights in the ways of our masters, the Yalahari, many years ago, things used to be very different in this city, once it was a marvel to behold, but then it started to decay slowly and steadily, this process of deterioration begun in the far past, long before our ancestors came here, at the time they were brought here by the Yalahari as helpers and workers, the city already showed signs of decline, despite their claim of having great power, the Yalahari could do little to stop the catastrophes that should occur, neither did they do anything to restore the damaged parts of the city, still, it took many centuries until the city had reached the pitiful state that you can witness today, some decades ago, a group of Augur suspected that we all were lied to by our masters, they started to look for clues that proved their assumptions, and secretly gathered parts of the puzzle one by one, for all we know, there had been indeed a powerful race called the Yalahari that built this city to distance itself from the wars of some capricious gods, so far the tales that our masters had told us, have been true, these Yalahari were served by a group of Augur such as us, they were their helpers and workers, and the Yalahari shared some of their luxuries and achievements with them, the Yalahari concentrated on research and art, and left the more manual work to their servants, who often only knew what they had to do without understanding their tasks, at one far-away point in history, the Yalahari seemingly vanished, certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers, when the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace, after getting over the initial shock, the Augur assumed the role of the Yalahari themselves, for a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge, they stuck to their usual tasks to keep the city running, still, they were too few to keep the enormous city, of which they understood so little, in shape, so they decided to recruit Augur on their own, this way most of our forefathers came to Yalahar, in the meanwhile, the former Augur retreated into the inner city."} -- Papper
-        },
-        storage = 100012
-    },
-    [22002] = {
-        items = {
-            {itemId = 1954, count = 1, text = "Manifest of the Yalahari, Part II\nIt is obvious that such greatness comes not without sacrifices, but we will make sure to keep them to a minimum. All of our decisions serve a greater good, of course. Even if this is not always obvious, in the end things will work out and provide us all with a better life and a bright future.\nBased on the ruins of our former glory, it is hard to imagine how magnificent this future will be, but we, the Yalahari, still carry the vision of what we want to accomplish in our hearts. To bring this vision to life is our greatest goal which we all work towards.\nThere are elements that see their power and influence waning in these days of change. They are afraid of the things to come, and in their ignorance they cling to the rotting reality they know all too well. They created their own little niches of power and influence and feel guilty for neglecting their duties, and with that also for the decay of the city. They are surely already approaching unsuspecting outsiders to poison their minds with selfish lies. For generations the Augur, once the pride of our people, have done things the same way they had known for generations, and everyone can see where it has taken Yalahar."}, -- Papper
-            {itemId = 1954, count = 1, text = "Manifest of the Yalahari, Part I\nThe city has been neglected for far too long. We concentrated on our research and spiritual evolution and have turned a blind eye on the needs of the people that are our subjects. We have too strongly relied on the help of the Augur who in turn did little but the same routines for many generations. We have decided it is time to take initiative. The experiment to give people too much freedom and too little guidance has to be stopped before all is lost. We have a responsibility for this city and the people living here. Only with our help, they will be able to flourish and to overcome the shadows of the past. The city can be rebuilt and restored to at least some of its former glory when we diligently work for it. It will be hard and it will take the help of determined individuals to assist us in our efforts. However, in the long run, order will be completely re-established and Yalahar will once again be the magnificent city it used to be.\nOnly with drastic decisions and changes, this great goal can be achieved. We will have to get through hard times and prepare for them as good as we can. Most importantly, a good city needs a solid base. For this reason we have to start at the bottom to clean things up. We have to be precise and consequent in our decisions and actions. This way we will be able to create a solid base for the city.\nTo some extent, we have to work like a gardener. The rotten parts have to be cut off, and the healthy parts have to be cherished. The city has to be retaken. Then order can be restored and the actual rebuilding can begin. In the end, the city will once again be a centre of prosperity and a shining light in a dark world."} -- Papper
-        },
-        storage = 100014
-    },
-    [22003] = {
-        items = {
-            {itemId = 9733, count = 1} -- The Alchemist's Formulas
-        },
-        storage = 22003,
-        missionStorage = {
-            storage = 100086,
-            value = 9
-        }
-    },
-    [22004] = {
-        items = {
-            {itemId = 9744, count = 1} -- Matrix Crystal (good)
-        },
-        storage = 100038,
-        missionStorage = {
-            storage = 100086,
-            value = 25
-        }
-    },
-    [22005] = {
-        items = {
-            {itemId = 9743, count = 1} -- Matrix Crystal (bad)
-        },
-        storage = 100038,
-        missionStorage = {
-            storage = 100086,
-            value = 25
-        }
-    },
-    [58268] = {
-        items = {
-            {itemId = 9776, count = 1} -- Yalahari Armor
-        },
-        storage = 102504
-    },
-    [58269] = {
-        items = {
-            {itemId = 9777, count = 1} -- Yalahari Leg Piece
-        },
-        storage = 102504
-    },
-    [58267] = {
-        items = {
-            {itemId = 9778, count = 1} -- Yalahari Mask
-        },
-        storage = 102504
-    },
-
-    [64441] = {
-        items = {
-            {itemId = 2346, count = 1} -- Tear of Daraman
-        },
-        storage = 100059,
-        missionStorage = {
-            storage = 100062,
-            value = 7
-        }
-    },
+	[13903] = {
+		items = {
+			{ itemId = 2435, count = 1 }, -- Dwarven Axe
+		},
+		storage = 13903,
+	},
+	[13902] = {
+		items = {
+			{ itemId = 2425, count = 1 }, -- Obsidian Lance
+		},
+		storage = 13902,
+	},
+	[13901] = {
+		items = {
+			{ itemId = 2533, count = 1 }, -- Griffin Shield
+		},
+		storage = 13901,
+	},
+	[14361] = {
+		items = {
+			{ itemId = 2184, count = 1 }, -- Crystal Wand
+		},
+		storage = 14361,
+	},
+	[14362] = {
+		items = {
+			{
+				itemId = 1953,
+				count = 1,
+				text = "Dear Gelunidas,\nI request that you send me the twinkiller-rune I ordered some months ago immediately. If I am convinced that they work as promised I will order them in greater numbers. They might be handy in my next schemes. As this letter should show you, the tales of my death are wildly exagerated. I hope you and your warlock brethren did not think you get off the hook that easy? If you don't work on the stuff I ordered and I do not receive the stuff I ordered in time, be prepared for a visit. You won't like my new friends that I would introduce to you.\n\nFerumbras",
+			}, -- Twinkiller Rune
+			{ itemId = 12565, count = 1 }, -- Silver Rune Emblem
+		},
+		storage = 14362,
+	},
+	[14363] = {
+		items = {
+			{ itemId = 2165, count = 1 }, -- Stealth Ring
+		},
+		storage = 14363,
+	},
+	[14364] = {
+		items = {
+			{ itemId = 2167, count = 1 }, -- Energy Ring
+		},
+		storage = 14364,
+	},
+	[61235] = {
+		items = {
+			{ itemId = 1956, count = 1 }, -- Map (Brown)
+		},
+		storage = 61235,
+	},
+	[61233] = {
+		items = {
+			{ itemId = 1982, count = 1 }, -- Purple Tome
+		},
+		storage = 61233,
+	},
+	[52372] = {
+		items = {
+			{ itemId = 1957, count = 1 }, -- Map (Colour)
+		},
+		storage = 52372,
+	},
+
+	-- Fanfare Quest
+	[52373] = {
+		items = {
+			{ itemId = 2092, count = 1, actionId = 3520 }, -- Bone Key 3520
+		},
+		storage = 52373,
+	},
+	[8441] = {
+		items = {
+			{ itemId = 2076, count = 1 }, -- Fanfare
+		},
+		storage = 8441,
+	},
+
+	-- Heaven Blossom Quest
+	[8442] = {
+		items = {
+			{ itemId = 5921, count = 1 }, -- Heaven Blossom
+		},
+		storage = 8442,
+	},
+
+	-- Iron Helmet Quest
+	[45123] = {
+		items = {
+			{ itemId = 2238, count = 1 }, -- Worn Leather Boots
+			{ itemId = 2268, count = 3 }, -- Sudden Death Rune
+			{ itemId = 2467, count = 1 }, -- Leather Armor
+			{ itemId = 2459, count = 1 }, -- Iron Helmet
+			{ itemId = 2397, count = 1 }, -- Longsword
+			{ itemId = 2598, count = 1 }, -- Stamped Letter
+		},
+		storage = 45123,
+		containerId = 1988,
+	},
+
+	-- Iron Ore Quest
+	[45124] = {
+		items = {
+			{ itemId = 5880, count = 1 }, -- Iron Ore
+		},
+		storage = 45124,
+	},
+
+	-- Longsword Quest
+	[21996] = {
+		items = {
+			{ itemId = 2397, count = 1 }, -- Longsword
+		},
+		storage = 21996,
+	},
+	[21997] = {
+		items = {
+			{ itemId = 2121, count = 1 }, -- Wedding ring
+		},
+		storage = 21997,
+	},
+	[21998] = {
+		items = {
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2108, count = 1 }, -- Wooden Doll
+			{ itemId = 2148, count = 76 }, -- Gold Coin
+		},
+		storage = 21998,
+	},
+
+	-- Minotaur Leather Quest
+	[21999] = {
+		items = {
+			{ itemId = 5878, count = 1 }, -- Minotaur Leather
+		},
+		storage = 21999,
+	},
+
+	-- Mintwallin Cyclops Quest
+	[22000] = {
+		items = {
+			{ itemId = 2145, count = 1 }, -- Small Diamond
+		},
+		storage = 22000,
+	},
+	[8271] = {
+		items = {
+			{ itemId = 2088, count = 1, actionId = 3610 }, -- Silver Key 3610
+		},
+		storage = 8234,
+	},
+
+	-- Orc Shaman Quest
+	[7451] = {
+		items = {
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2208, count = 1 }, -- Axe Ring
+			{ itemId = 2162, count = 1 }, -- Magic Light Wand
+		},
+		storage = 39784,
+		containerId = 1988,
+	},
+
+	-- Power Bolts Quest
+	[43430] = {
+		items = {
+			{ itemId = 2546, count = 12 }, -- Burst Arrow
+			{ itemId = 2547, count = 5 }, -- Power Bolt
+		},
+		storage = 43430,
+	},
+	[43431] = {
+		items = {
+			{
+				itemId = 1955,
+				count = 1,
+				text = "... the dream master retreated to the world behind the curtains of awareness, I can't reach him, now that the last hall of dreams is lost to the forces of evil. I sealed Goshnar's grave so no one can enter the pits without knowing our secret. I will try to retreat to Knightwatch Tower and wait for a dreamer in possession of the key. So we can travel on one of the dream paths to a saver place to regroup and to plan a counter-attack. I fear we have to recruit new members and we have only little time left to train them. I hope Taciror will not waste our last forces in a futile attack on the Ruthless Seven. Our order has never truly recovered from the losses in our war against Goshnar and his undead hordes. Now that our leaders and best warriors have died in the attack on the demonic forces, we don't stand a chance against our enemies. Our only hope is to gather new forces and to recapture the chamber of dreams. Of course I know the right method to distract Hugo long enough to get past him. The dream master is important to teach our recruits in the old ways and in the art of dreamwalking. We need a leader for our cause and we need him badly. Headless we will fail and fall. It is already uncertain who took the Nightmare Chronicles out of the pits and I have no idea where they are hidden. They are fighting about power and influence but unity is the key to success. Our whole order is centred about unity. All our rituals and procedures rooted on unity and sharing, they can't neglect that.",
+			}, -- Book
+		},
+		storage = 43431,
+	},
+
+	-- Power Ring Quest
+	[3689] = {
+		items = {
+			{ itemId = 2166, count = 1 }, -- Power Ring
+		},
+		storage = 3689,
+	},
+	[3690] = {
+		items = {
+			{ itemId = 2172, count = 1 }, -- Bronze Amulet
+		},
+		storage = 3690,
+	},
+
+	-- Scale Armor Quest
+	[7644] = {
+		items = {
+			{ itemId = 2483, count = 1 }, -- Scale Armor
+		},
+		storage = 39781,
+		containerId = 1987,
+	},
+
+	-- Silver Brooch Quest
+	[47666] = {
+		items = {
+			{ itemId = 2134, count = 1 }, -- Silver Broch
+			{ itemId = 2147, count = 2 }, -- Small Ruby
+			{ itemId = 2145, count = 3 }, -- Small Diamond
+		},
+		storage = 39680,
+	},
+
+	-- Six Rubies Quest
+	[21995] = {
+		items = {
+			{ itemId = 2147, count = 6 }, -- Small Ruby
+		},
+		storage = 21995,
+	},
+
+	-- Spike Sword Quest
+	[14433] = {
+		items = {
+			{ itemId = 2383, count = 1 }, -- Spike Sword
+		},
+		storage = 14433,
+	},
+
+	-- Elvenbane Quest
+	[21993] = {
+		items = {
+			{ itemId = 2525, count = 1 }, -- Dwarven Shield
+		},
+		storage = 21993,
+	},
+	[21992] = {
+		items = {
+			{ itemId = 2394, count = 1 }, -- morning star
+		},
+		storage = 21992,
+	},
+	[21991] = {
+		items = {
+			{ itemId = 2175, count = 1 }, -- Spellbook
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 7589, count = 1 }, -- Strong Mana Potion
+		},
+		storage = 21991,
+	},
+	[21990] = {
+		items = {
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+			{ itemId = 2145, count = 1 }, -- Small Diamond
+		},
+		storage = 21990,
+	},
+
+	-- Isle of the Mists Quest
+	[21988] = {
+		items = {
+			{ itemId = 2149, count = 2 }, -- Small Emerald
+		},
+		storage = 21988,
+	},
+
+	-- Thais Quest
+	-- Missão 01: Ancient Temple
+	[21987] = {
+		items = {
+			{ itemId = 2201, charges = 200 }, -- Dragon Necklace
+			{ itemId = 2168, count = 1 }, -- Life Ring
+		},
+		storage = 21987,
+	},
+	-- Missão 02: Noble Armor
+	[16451] = {
+		items = {
+			{ itemId = 2486, count = 1 }, -- Noble Armor
+		},
+		storage = 16451,
+	},
+	[16452] = {
+		items = {
+			{ itemId = 2491, count = 1 }, -- Crown Helmet
+		},
+		storage = 16452,
+	},
+	-- Missão 03: Geomancer
+	[21989] = {
+		items = {
+			{ itemId = 2146, count = 1 }, -- Small sapphire
+			{ itemId = 2145, count = 1 }, -- Small Diamond
+			{ itemId = 2213, count = 1 }, -- Dwarven Ring
+		},
+		storage = 21989,
+	},
+	-- Missão 04: Dead Archer
+	[21994] = {
+		items = {
+			{ itemId = 2545, count = 5 }, -- Poison Arrow
+			{ itemId = 2456, count = 1 }, -- Bow
+			{ itemId = 7618, count = 1 }, -- Health Potion
+			{ itemId = 7620, count = 1 }, -- Mana Potion
+		},
+		storage = 21994,
+	},
+	-- Missão 05: The Lighthouse
+	[46574] = {
+		items = {
+			{ itemId = 2417, count = 1 }, -- Battle Hammer
+		},
+		storage = 46574,
+	},
+	[46575] = {
+		items = {
+			{ itemId = 2521, count = 1 }, -- Dark Shield
+		},
+		storage = 46575,
+	},
+	-- Missão 06: Naginata
+	[19182] = {
+		items = {
+			{ itemId = 2426, count = 1 }, -- Naginata
+		},
+		storage = 19182,
+	},
+
+	-- Throwing Star Quest
+	[21986] = {
+		items = {
+			{ itemId = 2399, count = 10 }, -- Throwing Star
+		},
+		storage = 21986,
+	},
+
+	-- Triangle Tower Quest
+	[61001] = {
+		items = {
+			{ itemId = 2199, charges = 150 }, -- Garlic Necklace
+			{ itemId = 2146, count = 2 }, -- Small Sapphire
+			{ itemId = 2213, count = 1 }, -- Dwarven Ring
+		},
+		storage = 61001,
+	},
+
+	-- Deeper Fibula Quest
+	[14009] = {
+		items = {
+			{ itemId = 2091, count = 1, actionId = 3980 }, -- Golden Key 3980
+		},
+		storage = 50304,
+	},
+	[11190] = {
+		items = {
+			{ itemId = 2528, count = 1 }, -- Tower Shield
+		},
+		storage = 11190,
+	},
+	[11190] = {
+		items = {
+			{ itemId = 2528, count = 1 }, -- Tower Shield
+		},
+		storage = 11190,
+	},
+	[11194] = {
+		items = {
+			{ itemId = 2475, count = 1 }, -- Warrior Helmet
+		},
+		storage = 11194,
+	},
+	[11191] = {
+		items = {
+			{ itemId = 2213, count = 1 }, -- Dwarven Ring
+		},
+		storage = 11191,
+	},
+	[11192] = {
+		items = {
+			{ itemId = 2198, charges = 50 }, -- Elven Amulet
+		},
+		storage = 11192,
+	},
+	[11193] = {
+		items = {
+			{ itemId = 2430, count = 50 }, -- Knight Axe
+		},
+		storage = 11193,
+	},
+
+	-- Devil Helmet Quest
+	[21985] = {
+		items = {
+			{ itemId = 2146, count = 4 }, -- Small Sapphire
+		},
+		storage = 21985,
+	},
+	[21984] = {
+		items = {
+			{ itemId = 2462, count = 1 }, -- Devil Helmet
+		},
+		storage = 21984,
+	},
+	[21983] = {
+		items = {
+			{ itemId = 2381, count = 1 }, -- Halberd
+		},
+		storage = 21983,
+	},
+
+	-- Ghoul Room Quest
+	[9991] = {
+		items = {
+			{ itemId = 2088, count = 1, actionId = 3600 }, -- Silver Key 3600
+		},
+		storage = 9991,
+	},
+	[1239] = {
+		items = {
+			{ itemId = 2209, count = 1 }, -- Club Ring
+		},
+		storage = 1239,
+	},
+	[1238] = {
+		items = {
+			{ itemId = 2199, charges = 150 }, -- Garlic Necklace
+		},
+		storage = 1238,
+	},
+
+	-- Ornamented Shield Quest
+	[62372] = {
+		items = {
+			{ itemId = 2090, count = 1, actionId = 3702 }, -- Crystal Key 3702
+			{ itemId = 2164, charges = 20 }, -- Might Ring
+			{ itemId = 2201, charges = 200 }, -- Dragon Necklace
+			{ itemId = 2383, count = 1 }, -- Spike Sword
+			{
+				itemId = 1955,
+				count = 1,
+				text = "This is the Journal of Krendorak,  the last of the Nightmare Knights: I tried to discover the secret of my ancestors, but I failed.  The damned dragons tricked me!  I escaped but I know I'm mortaly wounded.  Even if I could get out off here, I will never make it to Knightwatch Tower to  use its secret to resupply. Since now that Camdrek is dead I will never be able to open it... It is so hot, my sight is fading... May the gods forgive my failing...",
+			}, -- Book
+			{ itemId = 2524, count = 1 }, -- Ornamented Shield
+			{ itemId = 2457, count = 1 }, -- Steel Helmet
+			{ itemId = 2600, count = 1 }, -- Inkwell
+		},
+		storage = 62372,
+	},
+
+	-- Silver Amulet Quest
+	[21982] = {
+		items = {
+			{ itemId = 2170, charges = 200 }, -- Silver Amulet
+		},
+		storage = 21982,
+	},
+
+	-- Blood Herb Quest
+	[65535] = {
+		items = {
+			{ itemId = 2798, count = 1 }, -- Blood Herb
+		},
+		storage = 59659,
+	},
+
+	-- Emperor's Cookies Quest
+	[21981] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 3800 }, -- Copper Key 3800
+		},
+		storage = 21981,
+	},
+	[21980] = {
+		items = {
+			{ itemId = 2687, count = 7 }, -- Cookie
+			{ itemId = 2089, count = 1, actionId = 3801 }, -- Copper Key 3801
+			{ itemId = 2687, count = 20 }, -- Cookie
+		},
+		storage = 21980,
+	},
+	[21979] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 3802 }, -- Copper Key 3802
+		},
+		storage = 21979,
+	},
+
+	-- Explorer Brooch Quest
+	[8900] = {
+		items = {
+			{ itemId = 4873, count = 1 }, -- Explorer brooch
+		},
+		storage = 8900,
+	},
+
+	-- Orc Fortress Quest
+	[43987] = {
+		items = {
+			{ itemId = 2430, count = 1 }, -- Knight Axe
+		},
+		storage = 43987,
+	},
+	[43981] = {
+		items = {
+			{ itemId = 2476, count = 1 }, -- Knight Armor
+		},
+		storage = 43981,
+	},
+	[43985] = {
+		items = {
+			{ itemId = 2392, count = 1 }, -- Fire Sword
+		},
+		storage = 43985,
+	},
+
+	-- Panpipe Quest
+	[21978] = {
+		items = {
+			{ itemId = 2088, count = 1, actionId = 4055 }, -- Silver Key 4055
+		},
+		storage = 21978,
+	},
+	[21977] = {
+		items = {
+			{ itemId = 2166, count = 1 }, -- Power Ring
+			{ itemId = 2074, count = 1 }, -- Panpipes
+			{ itemId = 2150, count = 2 }, -- Small Amethyst
+		},
+		storage = 21977,
+	},
+
+	-- The Desert Dungeon Quest
+	[1740] = {
+		items = {
+			{ itemId = 2152, count = 100 }, -- Platinum Coin
+		},
+		storage = 1740,
+	},
+	[7163] = {
+		items = {
+			{ itemId = 2200, charges = 250 }, -- Protection Amulet
+			{ itemId = 2214, count = 1 }, -- Ring of Healing
+			{ itemId = 2162, count = 1 }, -- Magic Light Wand
+			{ itemId = 2193, count = 1 }, -- Ankh
+		},
+		storage = 7163,
+		containerId = 1991,
+	},
+
+	-- Draconia Quest
+	[21976] = {
+		items = {
+			{ itemId = 2396, count = 1 }, -- Ice Rapier
+			{ itemId = 2409, count = 1 }, -- Serpent Sword
+		},
+		storage = 21976,
+	},
+	[21975] = {
+		items = {
+			{ itemId = 2167, count = 1 }, -- Energy Ring
+			{ itemId = 2197, charges = 5 }, -- Stone Skin Amulet
+		},
+		storage = 21975,
+	},
+
+	-- Adorned UH Rune Quest
+	[23124] = {
+		items = {
+			{ itemId = 12559, count = 1 }, -- Silver Rune Emblem
+		},
+		storage = 23124,
+	},
+	[14224] = {
+		items = {
+			{ itemId = 2169, count = 1 }, -- Time Ring
+		},
+		storage = 14224,
+	},
+	[14225] = {
+		items = {
+			{ itemId = 1738, count = 1 }, -- Sword Ring
+		},
+		storage = 14225,
+	},
+	[24881] = {
+		items = {
+			{ itemId = 2201, charges = 200 }, -- Dragon Necklace
+		},
+		storage = 24881,
+	},
+	[24880] = {
+		items = {
+			{ itemId = 1738, count = 1 }, -- Wedding Ring
+		},
+		storage = 24880,
+	},
+
+	-- Barbarian Axe Quest
+	[1452] = {
+		items = {
+			{ itemId = 2429, count = 1 }, -- Barbarian Axe
+		},
+		storage = 1452,
+	},
+	[1451] = {
+		items = {
+			{ itemId = 2419, count = 1 }, -- Scimitar
+		},
+		storage = 1451,
+	},
+
+	-- Berserker Treasure Quest
+	[7442] = {
+		items = {
+			{ itemId = 2143, count = 3 }, -- White Pearl
+			{ itemId = 2148, count = 77 }, -- Gold Coin
+			{ itemId = 2148, count = 98 }, -- Gold Coin
+		},
+		storage = 7442,
+	},
+
+	-- Dark Armor Quest
+	[6662] = {
+		items = {
+			{ itemId = 2489, count = 1 }, -- Dark Armor
+		},
+		storage = 6662,
+	},
+
+	-- Double Hero Quest
+	[18721] = {
+		items = {
+			{ itemId = 2156, count = 1 }, -- Red Gem
+		},
+		storage = 18721,
+	},
+	[18720] = {
+		items = {
+			{ itemId = 2209, count = 1 }, -- Club Ring
+		},
+		storage = 18720,
+	},
+
+	-- Double Hero Quest
+	[7771] = {
+		items = {
+			{ itemId = 2170, charges = 200 }, -- Silver Amulet
+		},
+		storage = 7771,
+	},
+	[7770] = {
+		items = {
+			{ itemId = 2509, count = 1 }, -- Steel Shield
+		},
+		storage = 7770,
+	},
+
+	-- Fire Axe Quest
+	[8118] = {
+		items = {
+			{ itemId = 2214, count = 1 }, -- Ring of Healing
+			{ itemId = 2201, charges = 200 }, -- Dragon Necklace
+			{ itemId = 2145, count = 7 }, -- Small Diamond
+		},
+		storage = 8118,
+	},
+	[14260] = {
+		items = {
+			{ itemId = 2432, count = 1 }, -- Fire Axe
+		},
+		storage = 14260,
+	},
+
+	-- Poison Daggers Quest
+	[14331] = {
+		items = {
+			{ itemId = 2545, count = 30 }, -- Poison Arrow
+			{ itemId = 2411, count = 1 }, -- Poison Dagger
+			{ itemId = 2411, count = 1 }, -- Poison Dagger
+		},
+		storage = 14331,
+		containerId = 1988,
+	},
+
+	-- Shaman Treasure Quest
+	[21974] = {
+		items = {
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+		},
+		storage = 21974,
+	},
+
+	-- The Outlaw Camp Quest
+	[21973] = {
+		items = {
+			{ itemId = 2088, count = 1, actionId = 3301 }, -- Silver Key 3301
+		},
+		storage = 21973,
+	},
+	[21972] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 3302 }, -- Copper Key 3302
+		},
+		storage = 21972,
+	},
+	[21971] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 3303 }, -- Copper Key 3303
+		},
+		storage = 21971,
+	},
+	[21970] = {
+		items = {
+			{ itemId = 2091, count = 1, actionId = 3304 }, -- Golden Key 3304
+		},
+		storage = 21970,
+	},
+	[21969] = {
+		items = {
+			{ itemId = 2407, count = 1 }, -- Bright Sword
+			{ itemId = 2156, count = 1 }, -- Red Gem
+		},
+		storage = 21969,
+	},
+
+	-- Troll Cave Quest
+	[8886] = {
+		items = {
+			{ itemId = 2199, charges = 150 }, -- Garlic Necklace
+		},
+		storage = 8886,
+	},
+	[8887] = {
+		items = {
+			{ itemId = 2478, count = 1 }, -- Brass Legs
+		},
+		storage = 8887,
+	},
+
+	-- Vampire Shield Quest
+	[16331] = {
+		items = {
+			{ itemId = 2194, count = 1 }, -- Mysterious Fetish
+			{ itemId = 2174, count = 1 }, -- Strange Symbol
+			{ itemId = 2144, count = 1 }, -- Black Pearl
+		},
+		storage = 16331,
+	},
+	[5142] = {
+		items = {
+			{ itemId = 2414, count = 1 }, -- Dragon Lance
+		},
+		storage = 5142,
+	},
+	[5141] = {
+		items = {
+			{ itemId = 2534, count = 1 }, -- Vampire Shield
+		},
+		storage = 5141,
+	},
+
+	-- Alawar's Vault Quest
+	[6733] = {
+		items = {
+			{ itemId = 2143, count = 3 }, -- White Pearl
+		},
+		storage = 6733,
+	},
+	[6732] = {
+		items = {
+			{ itemId = 2413, count = 1 }, -- Broadsword
+		},
+		storage = 6732,
+	},
+	[21968] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 4503 }, -- Copper Key 4503
+		},
+		storage = 21968,
+	},
+	[21967] = {
+		items = {
+			{ itemId = 2490, count = 1 }, -- Dark Helmet
+			{ itemId = 2410, count = 4 }, -- Throwing Knife
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2148, count = 33 }, -- Gold Coin
+			{ itemId = 2089, count = 1, actionId = 4502 }, -- Copper Key 4502
+		},
+		storage = 21967,
+	},
+	[21966] = {
+		items = {
+			{ itemId = 2089, count = 1, actionId = 4501 }, -- Copper Key 4501
+		},
+		storage = 21966,
+	},
+
+	-- Iron Hammer Quest
+	[21965] = {
+		items = {
+			{ itemId = 2422, count = 1 }, -- Iron Hammer
+		},
+		storage = 21965,
+	},
+
+	-- Plate Armor Quest
+	[21964] = {
+		items = {
+			{ itemId = 2463, count = 1 }, -- Plate Armor
+		},
+		storage = 21964,
+	},
+
+	-- Stealth Ring Quest
+	[21963] = {
+		items = {
+			{ itemId = 2200, charges = 250 }, -- Protection Amulet
+		},
+		storage = 21963,
+	},
+	[21962] = {
+		items = {
+			{ itemId = 2165, count = 1 }, -- Stealth Ring
+		},
+		storage = 21962,
+	},
+
+	-- Steel Helmet Quest
+	[21961] = {
+		items = {
+			{ itemId = 2457, count = 1 }, -- Steel Helmet
+		},
+		storage = 21961,
+	},
+
+	-- Black Knight Quest
+	[57497] = {
+		items = {
+			{ itemId = 2088, count = 1, actionId = 5010 }, -- Silver Key 5010
+		},
+		storage = 50305,
+	},
+	[20000] = {
+		items = {
+			{ itemId = 2519, count = 1 }, -- Crown Shield
+		},
+		storage = 50309,
+	},
+	[20001] = {
+		items = {
+			{ itemId = 2487, count = 1 }, -- Crown Armor
+		},
+		storage = 50308,
+	},
+
+	-- Dragon Tower Quest
+	[21960] = {
+		items = {
+			{ itemId = 2545, count = 60 }, -- Poison Arrow
+			{ itemId = 2546, count = 30 }, -- Burst Arrow
+			{ itemId = 7618, count = 1 }, -- Health Potion
+			{ itemId = 7620, count = 1 }, -- Mana Potion
+		},
+		storage = 21960,
+		containerId = 1988,
+	},
+	[21959] = {
+		items = {
+			{ itemId = 2146, count = 2 }, -- Small Sapphire
+			{ itemId = 2456, count = 1 }, -- Bow
+		},
+		storage = 21959,
+		containerId = 1988,
+	},
+
+	-- Time Ring Quest
+	[21958] = {
+		items = {
+			{ itemId = 2192, count = 1 }, -- Crystal Ball
+		},
+		storage = 21958,
+	},
+	[21957] = {
+		items = {
+			{ itemId = 2169, count = 1 }, -- Time Ring
+		},
+		storage = 21957,
+	},
+	[21956] = {
+		items = {
+			{ itemId = 2198, charges = 50 }, -- Elven Amulet
+		},
+		storage = 21956,
+	},
+
+	-- Behemoth Quest
+	[1298] = {
+		items = {
+			{ itemId = 2171, count = 1 }, -- Platinum Amulet
+			{ itemId = 2168, count = 1 }, -- Life Ring
+			{ itemId = 2124, count = 1 }, -- Crystal Ring
+			{ itemId = 2146, count = 4 }, -- Small Sapphire
+			{ itemId = 2145, count = 3 }, -- Small Diamond
+		},
+		storage = 2103,
+	},
+	[1299] = {
+		items = {
+			{ itemId = 2427, count = 1 }, -- Guardian Halberd
+		},
+		storage = 2102,
+	},
+	[1297] = {
+		items = {
+			{ itemId = 2520, count = 1 }, -- Demon Shield
+		},
+		storage = 2101,
+	},
+	[1296] = {
+		items = {
+			{ itemId = 2466, count = 1 }, -- Golden Armor
+		},
+		storage = 2100,
+	},
+
+	-- Parchment Room Quest
+	[60994] = {
+		items = {
+			{ itemId = 2091, count = 1, actionId = 6010 }, -- Golden Key 6010
+			{ itemId = 2230, count = 1 }, -- Bone
+			{ itemId = 2165, count = 1 }, -- Stealth Ring
+			{ itemId = 2151, count = 2 }, -- Talon
+			{ itemId = 2151, count = 2 }, -- Talon
+			{ itemId = 2229, count = 1 }, -- Skull
+		},
+		storage = 60994,
+	},
+
+	-- Giant Smithhammer Quest
+	[9831] = {
+		items = {
+			{ itemId = 2151, count = 1 }, -- Talon
+		},
+		storage = 9831,
+	},
+	[9832] = {
+		items = {
+			{ itemId = 2321, count = 1 }, -- Giant Smithhammer
+		},
+		storage = 9832,
+	},
+	[9833] = {
+		items = {
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+		},
+		storage = 9833,
+	},
+	[50012] = {
+		items = {
+			{
+				itemId = 1955,
+				count = 1,
+				text = "Diary of Hengis Wulfson\n...\nI can only hope I can escape the\ncyclops someday. For now I have\noccupied their chief with an attempt\nto learn to read and write, but for\nhow long?\nI'm so desperate.\nWhat a foolish idea to travel here to\nsearch the famous treasures of this\nancient, knightly order.\nI wish I had never heard about it.\nI wish I had never sung that song.\nNo clue how many unfortunate souls I\nhave lured to death with it.",
+			}, -- Book
+		},
+		storage = 50012,
+	},
+
+	-- Skull of Ratha Quest
+	[46757] = {
+		items = {
+			{ itemId = 2143, count = 1 }, -- White Pearl
+			{ itemId = 2320, count = 1 }, -- Skull of Ratha
+		},
+		storage = 46757,
+	},
+	[57357] = {
+		items = {
+			{ itemId = 2213, count = 1 }, -- Dwarven Ring
+			{ itemId = 2129, count = 1 }, -- Wolf Tooth Chain
+		},
+		storage = 57357,
+	},
+	[14298] = {
+		items = {
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+			{ itemId = 2144, count = 4 }, -- Black Pearl
+			{ itemId = 2125, count = 1 }, -- Crystal Necklace
+		},
+		storage = 14298,
+	},
+
+	-- Voodoo Doll Quest
+	[21955] = {
+		items = {
+			{ itemId = 2322, count = 1 }, -- Voodoo Doll
+		},
+		storage = 21955,
+	},
+	[21944] = {
+		items = {
+			{ itemId = 2162, count = 1 }, -- Magic Light Wand
+		},
+		storage = 21944,
+	},
+
+	-- Medusa Shield Quest
+	[48811] = {
+		items = {
+			{ itemId = 2436, count = 1 }, -- Skull Staff
+			{ itemId = 2656, count = 1 }, -- Blue Robe
+			{ itemId = 2536, count = 1 }, -- Medusa Shield
+		},
+		storage = 48811,
+	},
+
+	-- Serpentine Tower Quest
+	[56490] = {
+		items = {
+			{ itemId = 2143, count = 1 }, -- White Pearl
+		},
+		storage = 56490,
+	},
+
+	-- Elephant Tusk Quest
+	[21953] = {
+		items = {
+			{ itemId = 3956, count = 2 }, -- Tusk
+		},
+		storage = 21953,
+	},
+
+	-- Sam's Old Backpack Quest
+	[62382] = {
+		items = {
+			{ itemId = 2503, count = 1 }, -- Dwarven Armor
+		},
+		storage = 62382,
+		formerValue = 2,
+		newValue = 3,
+	},
+
+	-- Hydra Egg Quest
+	[13410] = {
+		items = {
+			{ itemId = 4850, count = 1 }, -- Hydra Egg
+		},
+		storage = 13410,
+	},
+
+	-- Berserk Potion Quest
+	[21954] = {
+		items = {
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 2152, count = 2 }, -- Platinum Coin
+			{ itemId = 6500, count = 3 }, -- Demonic Essence
+			{ itemId = 7439, count = 1 }, -- Berserk Potion
+		},
+		storage = 21954,
+	},
+
+	-- Fishing Box Quest
+	[21953] = {
+		items = {
+			{ itemId = 7158, count = 3 }, -- Rainbow Trout
+			{ itemId = 7159, count = 3 }, -- Green Perch
+			{ itemId = 2152, count = 5 }, -- Platinum Coin
+		},
+		storage = 21953,
+		containerId = 7343, -- Fur Bag
+	},
+
+	-- Frost Dragon Quest
+	[21952] = {
+		items = {
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 7443, count = 1 }, -- Bullseye Potion
+			{ itemId = 2152, count = 10 }, -- Platinum Coin
+		},
+		storage = 21952,
+	},
+
+	-- Lion Trophy Quest
+	[21951] = {
+		items = {
+			{ itemId = 7400, count = 1 }, -- Lion Trophy
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 2152, count = 2 }, -- Platinum Coin
+		},
+		storage = 21951,
+	},
+
+	-- Mastermind Potion Quest
+	[21950] = {
+		items = {
+			{ itemId = 7440, count = 1 }, -- Mastermind Potion
+			{ itemId = 2148, count = 78 }, -- Gold Coin
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+			{ itemId = 2148, count = 23 }, -- Gold Coin
+			{ itemId = 7159, count = 1 }, -- Green Perch
+			{ itemId = 7158, count = 1 }, -- Rainbow Trout
+		},
+		storage = 21950,
+	},
+
+	-- Inukaya Quest
+	[21949] = {
+		items = {
+			{ itemId = 2148, count = 48 }, -- Gold Coin
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 7158, count = 3 }, -- Rainbow Trout
+		},
+		storage = 21949,
+		containerId = 7343, -- Fur Bag
+	},
+
+	-- Skeleton Decoration Quest
+	[21948] = {
+		items = {
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 2148, count = 89 }, -- Gold Coin
+			{ itemId = 6526, count = 1 }, -- Skeleton Decoration
+		},
+		storage = 21948,
+		containerId = 7343, -- Fur Bag
+	},
+
+	-- Koshei the Deathless Quest
+	[7511] = {
+		items = {
+			{ itemId = 8264, count = 1 }, -- Piece of a Broken Amulet
+		},
+		storage = 7611,
+	},
+	[7512] = {
+		items = {
+			{ itemId = 8262, count = 1 }, -- Piece of a Broken Amulet
+		},
+		storage = 7612,
+	},
+	[7513] = {
+		items = {
+			{ itemId = 8263, count = 1 }, -- Piece of a Broken Amulet
+		},
+		storage = 7613,
+	},
+	[7514] = {
+		items = {
+			{ itemId = 8265, count = 1 }, -- Piece of a Broken Amulet
+		},
+		storage = 7614,
+	},
+
+	-- Steal From Thieves Quest
+	[21947] = {
+		items = {
+			{ itemId = 7587, count = 1 }, -- Bag
+		},
+		storage = 21947,
+	},
+
+	-- Strong Potions Quest
+	[32177] = {
+		items = {
+			{ itemId = 7509, count = 1 }, -- Strong Mana Potion
+			{ itemId = 7509, count = 1 }, -- Strong Mana Potion
+			{ itemId = 7509, count = 1 }, -- Strong Mana Potion
+			{ itemId = 7509, count = 1 }, -- Strong Mana Potion
+			{ itemId = 7509, count = 1 }, -- Strong Mana Potion
+		},
+		storage = 32177,
+		containerId = 1991,
+	},
+
+	-- Waterfall Quest
+	[1881] = {
+		items = {
+			{ itemId = 2213, count = 1 }, -- Dwarven Ring
+			{ itemId = 6096, count = 1 }, -- Pirate Hat
+		},
+		storage = 1881,
+		containerId = 5926, -- Pirate Backpack
+	},
+
+	-- Darashia Dragon Quest
+	[52374] = {
+		items = {
+			{ itemId = 2168, count = 1 }, -- Life Ring
+		},
+		storage = 52374,
+	},
+
+	-- Lone Medusa Quest
+	[51140] = {
+		items = {
+			{ itemId = 2144, count = 4 }, -- Black Pearl
+		},
+		storage = 51140,
+	},
+
+	-- Formorgar Mines Quest
+	[21946] = {
+		items = {
+			{ itemId = 7290, count = 1 }, -- Shard
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+			{ itemId = 7443, count = 1 }, -- Bullseye Potion
+			{ itemId = 2455, count = 1 }, -- Crossbow
+			{ itemId = 2547, count = 20 }, -- Power Bolt
+		},
+		storage = 21946,
+	},
+
+	-- Small Ruby Quest
+	[21945] = {
+		items = {
+			{ itemId = 2147, count = 1 }, -- Small Ruby
+		},
+		storage = 21945,
+	},
+
+	-- Demon Helmet Quest
+	[13446] = {
+		items = {
+			{ itemId = 2645, count = 1 }, -- Steel Boots
+		},
+		storage = 13446,
+	},
+	[13445] = {
+		items = {
+			{ itemId = 2493, count = 1 }, -- Demon Helmet
+		},
+		storage = 13445,
+	},
+	[13447] = {
+		items = {
+			{ itemId = 2520, count = 1 }, -- Demon Shield
+		},
+		storage = 13447,
+	},
+
+	-- The Queen of the Banshees Quest
+	[30016] = {
+		items = {
+			{ itemId = 2528, count = 1 }, -- Tower Shield
+		},
+		storage = 30016,
+	},
+	[30017] = {
+		items = {
+			{ itemId = 2195, count = 1 }, -- Boots of Haste
+		},
+		storage = 30017,
+	},
+	[30018] = {
+		items = {
+			{ itemId = 2152, count = 100 }, -- Platinum Coin
+		},
+		storage = 30018,
+	},
+	[30019] = {
+		items = {
+			{ itemId = 2165, count = 1 }, -- Stealth Ring
+		},
+		storage = 30019,
+	},
+	[30020] = {
+		items = {
+			{ itemId = 2197, charges = 5 }, -- Stone Skin Amulet
+		},
+		storage = 30020,
+	},
+	[30021] = {
+		items = {
+			{ itemId = 2393, count = 1 }, -- Giant Sword
+		},
+		storage = 30021,
+	},
+
+	-- The Annihilator Quest
+	[49111] = {
+		items = {
+			{ itemId = 2494, count = 1 }, -- Demon Armor
+		},
+		storage = 5000,
+	},
+	[49112] = {
+		items = {
+			{ itemId = 2400, count = 1 }, -- Magic Sword
+		},
+		storage = 5000,
+	},
+	[49113] = {
+		items = {
+			{ itemId = 2431, count = 1 }, -- Stonecutter Axe
+		},
+		storage = 5000,
+	},
+	[49114] = {
+		items = {
+			{ itemId = 2326, count = 1 }, -- Annihilation Bear
+		},
+		storage = 5000,
+		containerId = 1990,
+	},
+
+	-- Barbarian Arena Quest
+	-- Arena Greenhorn
+	[26300] = {
+		items = {
+			{ itemId = 2114, count = 1 }, -- Piggy Bank
+			{ itemId = 6570, count = 1 }, -- Suprise Bag
+			{ itemId = 6574, count = 1 }, -- Bar of Chocolate
+			{ itemId = 2688, count = 10 }, -- Candy Cane
+			{ itemId = 7372, count = 1 }, -- Ice Cream Cone
+		},
+		storage = 26300,
+		containerId = 1990,
+	},
+	[26400] = {
+		items = {
+			{ itemId = 7364, count = 100 }, -- Sniper Arrow
+			{ itemId = 7365, count = 100 }, -- Onyx Arrow
+		},
+		storage = 26400,
+		containerId = 7342,
+	},
+	[26500] = {
+		items = {
+			{ itemId = 7406, count = 1 }, -- Blacksteel Sword
+		},
+		storage = 24709,
+	},
+	[26600] = {
+		items = {
+			{ itemId = 7380, count = 1 }, -- Headchopper
+		},
+		storage = 24709,
+	},
+	[26700] = {
+		items = {
+			{ itemId = 7392, count = 1 }, -- Orcish Maul
+		},
+		storage = 24709,
+	},
+	-- Arena Scrapper
+	[27300] = {
+		items = {
+			{ itemId = 7183, count = 1 }, -- Baby Seal Doll
+			{ itemId = 6574, count = 1 }, -- Bar of Chocolate
+			{ itemId = 7375, count = 1 }, -- Ice Cream Cone
+			{ itemId = 6569, count = 10 }, -- Candy
+		},
+		storage = 27300,
+		containerId = 1990,
+	},
+	[27400] = {
+		items = {
+			{ itemId = 2304, count = 50 }, -- Great Fireball Rune
+			{ itemId = 2311, count = 50 }, -- Heavy Magic Missile Rune
+			{ itemId = 2547, count = 100 }, -- Power Bolt
+			{ itemId = 2547, count = 100 }, -- Power Bolt
+			{ itemId = 7365, count = 100 }, -- Oxy Arrow
+		},
+		storage = 27400,
+		containerId = 7342,
+	},
+	[27500] = {
+		items = {
+			{ itemId = 7384, count = 1 }, -- Mystic Blade
+		},
+		storage = 35809,
+	},
+	[27600] = {
+		items = {
+			{ itemId = 7389, count = 1 }, -- Heroic Axe
+		},
+		storage = 35809,
+	},
+	[27700] = {
+		items = {
+			{ itemId = 7415, count = 1 }, -- Cranial Basher
+		},
+		storage = 35809,
+	},
+	-- Arena Warlord
+	[28300] = {
+		items = {
+			{ itemId = 5080, count = 1 }, -- Panda Teddy
+			{ itemId = 6574, count = 1 }, -- Bar of Chocolate
+			{ itemId = 7372, count = 1 }, -- Ice Cream Cone
+			{ itemId = 6569, count = 10 }, -- Candy
+		},
+		storage = 28300,
+		containerId = 1990,
+	},
+	[28400] = {
+		items = {
+			{ itemId = 6529, count = 100 }, -- Infernal Bolt
+			{ itemId = 7440, count = 1 }, -- Mastermind Potion
+			{ itemId = 7443, count = 1 }, -- Bullseye Potion
+			{ itemId = 2268, count = 50 }, -- Sudden Death Rune
+			{ itemId = 2273, count = 50 }, -- Ultimate Healing Rune
+		},
+		storage = 28400,
+		containerId = 7342,
+	},
+	[28500] = {
+		items = {
+			{ itemId = 7390, count = 1 }, -- The Justice Seeker
+		},
+		storage = 15909,
+	},
+	[28600] = {
+		items = {
+			{ itemId = 7434, count = 1 }, -- Royal Axe
+		},
+		storage = 15909,
+	},
+	[28700] = {
+		items = {
+			{ itemId = 7429, count = 1 }, -- Blessed Sceptre
+		},
+		storage = 15909,
+	},
+	-- The Pits of Inferno Quest
+	[15713] = {
+		items = {
+			{ itemId = 2090, count = 1, actionId = 3700 }, -- Crystal Key 3700
+		},
+		storage = 15713,
+	},
+	[10552] = {
+		items = {
+			{
+				itemId = 1970,
+				count = 1,
+				text = "Banor I praise your name.\nBe with me in the battle.\nBe my shield, let me be your sword.\nI will honour the godly spark in my soul. May it flourish and grow.",
+			}, -- The Holy Tible
+		},
+		storage = 10552,
+	},
+	[30228] = {
+		items = {
+			{
+				itemId = 1950,
+				count = 1,
+				text = "look at the 4 and ignore the 2\nend the 7 with 5 in mind\nvalue of 6 is 9\nexplain the second of 4\nrun past the 7\nsubstract 10\nuse the northeast first\nsee the colors change\nerrors are red\nlook what changes\nexpect no mercy\nsix times 10\nstupidity is red.",
+			}, -- Book
+		},
+		storage = 30228,
+	},
+	[56221] = {
+		items = {
+			{ itemId = 2152, count = 11 }, -- Platinum Coin
+			{ itemId = 2143, count = 5 }, -- White Pearl
+			{ itemId = 5944, count = 1 }, -- Soul Orb
+			{ itemId = 5022, count = 3 }, -- Orichalcum Pearl
+			{ itemId = 5944, count = 1 }, -- Soul Orb
+			{ itemId = 6300, count = 1 }, -- Death Ring
+			{ itemId = 2168, count = 1 }, -- Life Ring
+			{ itemId = 2260, count = 1 }, -- Blank Rune
+			{ itemId = 2273, count = 1 }, -- Ultimate Healing Rune
+			{ itemId = 2273, count = 1 }, -- Ultimate Healing Rune
+			{ itemId = 2268, count = 1 }, -- Sudden Death Rune
+			{ itemId = 2268, count = 1 }, -- Sudden Death Rune
+			{ itemId = 2273, count = 1 }, -- Ultimate Healing Rune
+			{ itemId = 6561, count = 1 }, -- Cerimonial Ankh
+			{ itemId = 7590, count = 1 }, -- Great Mana Potion
+		},
+		storage = 45123,
+		containerId = 5926,
+	},
+	[10548] = {
+		items = {
+			{ itemId = 12559, count = 1 }, -- Silver Rune Emblem
+			{ itemId = 12565, count = 1 }, -- Silver Rune Emblem
+			{ itemId = 12563, count = 1 }, -- Silver Rune Emblem
+			{ itemId = 12561, count = 1 }, -- Silver Rune Emblem
+		},
+		storage = 23782,
+		containerId = 2365,
+	},
+	[10559] = {
+		items = {
+			{ itemId = 2152, count = 100 }, -- Platinum Coin
+		},
+		storage = 10559,
+	},
+	[10550] = {
+		items = {
+			{ itemId = 2361, count = 1 }, -- Frozen Starlight
+		},
+		storage = 10550,
+	},
+	[10549] = {
+		items = {
+			{ itemId = 5791, count = 1 }, -- Stuffed Dragon
+		},
+		storage = 10549,
+	},
+	[10547] = {
+		items = {
+			{ itemId = 6132, count = 1 }, -- Pair of Soft Boots
+		},
+		storage = 10547,
+	},
+	[10544] = {
+		items = {
+			{ itemId = 2453, count = 1 }, -- Arcane Staff
+		},
+		storage = 10544,
+	},
+	[10545] = {
+		items = {
+			{ itemId = 6528, count = 1 }, -- The Avenger
+		},
+		storage = 10544,
+	},
+	[10546] = {
+		items = {
+			{ itemId = 5803, count = 1 }, -- Arbalest
+		},
+		storage = 10544,
+	},
+
+	-- The Inquisition Quest
+	[64440] = {
+		items = {
+			{ itemId = 8702, count = 1 }, -- The Witches' Grimoire
+		},
+		storage = 53659,
+	},
+	[1304] = {
+		items = {
+			{ itemId = 8851, count = 1 }, -- Royal Crossbow
+		},
+		storage = 100166,
+	},
+	[1300] = {
+		items = {
+			{ itemId = 8851, count = 1 }, -- Royal Crossbow
+		},
+		storage = 100166,
+	},
+	[1301] = {
+		items = {
+			{ itemId = 8854, count = 1 }, -- Warsinger Bow
+		},
+		storage = 100166,
+	},
+	[1302] = {
+		items = {
+			{ itemId = 8918, count = 1 }, -- Spellbook of Dark Mysteries
+		},
+		storage = 100166,
+	},
+	[1303] = {
+		items = {
+			{ itemId = 8930, count = 1 }, -- Emerald Sword
+		},
+		storage = 100166,
+	},
+	[1304] = {
+		items = {
+			{ itemId = 8924, count = 1 }, -- Hellforged Axe
+		},
+		storage = 100166,
+	},
+	[1305] = {
+		items = {
+			{ itemId = 8928, count = 1 }, -- Obsidian Truncheon
+		},
+		storage = 100166,
+	},
+	[1306] = {
+		items = {
+			{ itemId = 8888, count = 1 }, -- Master Archer's Armor
+		},
+		storage = 100166,
+	},
+	[1307] = {
+		items = {
+			{ itemId = 8881, count = 1 }, -- Fireborn Giant Armor
+		},
+		storage = 100166,
+	},
+	[1308] = {
+		items = {
+			{ itemId = 8890, count = 1 }, -- Robe of the Underworld
+		},
+		storage = 100166,
+	},
+
+	-- In Service of Yalahar Quest
+	[22001] = {
+		items = {
+			{
+				itemId = 1954,
+				count = 1,
+				text = "History of the Augur, Part II They brought more and more people to Yalahar, not all of them became Augur, a good part of them lived in Yalahar as ordinary citizens, at some point, the city had reached a much larger population than under the rule of the true Yalahari, and it became difficult to provide food and shelter for everyone, time and overuse took it's toll on the city, over the years, more and more parts of the city were lost due to ignorance, lack of resources, or catastrophes, the new Yalahari were unable to restore broken machines and devices, and their efforts to retake certain parts of the city with the help of the Augur caused only more disaster, so the new Yalahari decided to stay in the city's centre, letting the Augur care for the rest of the city as well as they could, still, their image as Yalahari allowed them to claim supremacy and to rule over the whole city, this all did not matter too much to our ancestors, the new Yalahari were neither cruel nor overly abusive, and they still wielded the powerful weapons and armors of the true Yalahari, so they stuck to the status quo and continued to work for the Yalahari despite everything they had found out, this worked quite well although the city was still declining and great parts of it had been lost to chaos and anarchy, lately, though, things started to change, it is not a dramatic change but it can be recognised gradually at many places, some of the known routines in the orders of the Yalahari have altered, there are more and more orders who have a dubious purpose, the most frightening thing is that some orders obviously hint at a person with Yalahari knowledge that had been considered as lost for centuries, the overwhelming majority of the new Yalahari still clings to their ignorant and self-centred ways, but perhaps one of them or a small group has discovered some hidden secrets of their vanished masters, it is also possible that something completely different is happening, we simply don't know, but these new orders that seem to aim at restoring order in the city have some bitter taste, they are somewhat oppressive and destructive, not in an obvious way, though, taken together, they paint a dark picture of Yalahar's future, a future of oppression, betrayal, and a much stricter rule by the Yalahari.",
+			}, -- Papper
+			{
+				itemId = 1954,
+				count = 1,
+				text = "History of the Augur, Part I We, the families of the Augur, have been living here for many generations, in the course of time, we acquired certain insights in the ways of our masters, the Yalahari, many years ago, things used to be very different in this city, once it was a marvel to behold, but then it started to decay slowly and steadily, this process of deterioration begun in the far past, long before our ancestors came here, at the time they were brought here by the Yalahari as helpers and workers, the city already showed signs of decline, despite their claim of having great power, the Yalahari could do little to stop the catastrophes that should occur, neither did they do anything to restore the damaged parts of the city, still, it took many centuries until the city had reached the pitiful state that you can witness today, some decades ago, a group of Augur suspected that we all were lied to by our masters, they started to look for clues that proved their assumptions, and secretly gathered parts of the puzzle one by one, for all we know, there had been indeed a powerful race called the Yalahari that built this city to distance itself from the wars of some capricious gods, so far the tales that our masters had told us, have been true, these Yalahari were served by a group of Augur such as us, they were their helpers and workers, and the Yalahari shared some of their luxuries and achievements with them, the Yalahari concentrated on research and art, and left the more manual work to their servants, who often only knew what they had to do without understanding their tasks, at one far-away point in history, the Yalahari seemingly vanished, certain clues that our ancestors gathered, hint that they locked themselves in the city's centre and cut off all contact to their helpers, when the Augur sometime later dared to enter the inner city, the Yalahari were all gone - vanished without a trace, after getting over the initial shock, the Augur assumed the role of the Yalahari themselves, for a while they tried to get familiar with some of the secrets of their lost masters, but they were only able to understand the most basic concepts of the Yalahari's knowledge, they stuck to their usual tasks to keep the city running, still, they were too few to keep the enormous city, of which they understood so little, in shape, so they decided to recruit Augur on their own, this way most of our forefathers came to Yalahar, in the meanwhile, the former Augur retreated into the inner city.",
+			}, -- Papper
+		},
+		storage = 100012,
+	},
+	[22002] = {
+		items = {
+			{
+				itemId = 1954,
+				count = 1,
+				text = "Manifest of the Yalahari, Part II\nIt is obvious that such greatness comes not without sacrifices, but we will make sure to keep them to a minimum. All of our decisions serve a greater good, of course. Even if this is not always obvious, in the end things will work out and provide us all with a better life and a bright future.\nBased on the ruins of our former glory, it is hard to imagine how magnificent this future will be, but we, the Yalahari, still carry the vision of what we want to accomplish in our hearts. To bring this vision to life is our greatest goal which we all work towards.\nThere are elements that see their power and influence waning in these days of change. They are afraid of the things to come, and in their ignorance they cling to the rotting reality they know all too well. They created their own little niches of power and influence and feel guilty for neglecting their duties, and with that also for the decay of the city. They are surely already approaching unsuspecting outsiders to poison their minds with selfish lies. For generations the Augur, once the pride of our people, have done things the same way they had known for generations, and everyone can see where it has taken Yalahar.",
+			}, -- Papper
+			{
+				itemId = 1954,
+				count = 1,
+				text = "Manifest of the Yalahari, Part I\nThe city has been neglected for far too long. We concentrated on our research and spiritual evolution and have turned a blind eye on the needs of the people that are our subjects. We have too strongly relied on the help of the Augur who in turn did little but the same routines for many generations. We have decided it is time to take initiative. The experiment to give people too much freedom and too little guidance has to be stopped before all is lost. We have a responsibility for this city and the people living here. Only with our help, they will be able to flourish and to overcome the shadows of the past. The city can be rebuilt and restored to at least some of its former glory when we diligently work for it. It will be hard and it will take the help of determined individuals to assist us in our efforts. However, in the long run, order will be completely re-established and Yalahar will once again be the magnificent city it used to be.\nOnly with drastic decisions and changes, this great goal can be achieved. We will have to get through hard times and prepare for them as good as we can. Most importantly, a good city needs a solid base. For this reason we have to start at the bottom to clean things up. We have to be precise and consequent in our decisions and actions. This way we will be able to create a solid base for the city.\nTo some extent, we have to work like a gardener. The rotten parts have to be cut off, and the healthy parts have to be cherished. The city has to be retaken. Then order can be restored and the actual rebuilding can begin. In the end, the city will once again be a centre of prosperity and a shining light in a dark world.",
+			}, -- Papper
+		},
+		storage = 100014,
+	},
+	[22003] = {
+		items = {
+			{ itemId = 9733, count = 1 }, -- The Alchemist's Formulas
+		},
+		storage = 22003,
+		missionStorage = {
+			storage = 100086,
+			value = 9,
+		},
+	},
+	[22004] = {
+		items = {
+			{ itemId = 9744, count = 1 }, -- Matrix Crystal (good)
+		},
+		storage = 100038,
+		missionStorage = {
+			storage = 100086,
+			value = 25,
+		},
+	},
+	[22005] = {
+		items = {
+			{ itemId = 9743, count = 1 }, -- Matrix Crystal (bad)
+		},
+		storage = 100038,
+		missionStorage = {
+			storage = 100086,
+			value = 25,
+		},
+	},
+	[58268] = {
+		items = {
+			{ itemId = 9776, count = 1 }, -- Yalahari Armor
+		},
+		storage = 102504,
+	},
+	[58269] = {
+		items = {
+			{ itemId = 9777, count = 1 }, -- Yalahari Leg Piece
+		},
+		storage = 102504,
+	},
+	[58267] = {
+		items = {
+			{ itemId = 9778, count = 1 }, -- Yalahari Mask
+		},
+		storage = 102504,
+	},
+
+    -- The Djinn War Quest
+	[64441] = {
+		items = {
+			{ itemId = 2346, count = 1 }, -- Tear of Daraman
+		},
+		storage = 100059,
+		missionStorage = {
+			storage = 100062,
+			value = 7,
+		},
+	},
+
+    -- Koshei The Deathless Quest
+	[53115] = {
+		items = {
+			{ itemId = 2148, count = 100 }, -- Gold Coin
+		},
+		storage = 53115,
+	},
+	[36207] = {
+		items = {
+			{ itemId = 2152, count = 50 }, -- Platinum Coin
+			{ itemId = 7730, count = 1 }, -- Blue Legs
+		},
+		storage = 36207,
+	},
+
+	-- The Travelling Trader Quest
+	[9058] = {
+		storage = 100008,
+		formerValue = 2,
+		newValue = 3,
+		items = {
+			{ itemId = 7503, count = 1 }, -- Heavy Package
+		},
+		missionStorage = {
+			{ storage = 100158, value = 5 }
+		}
+	}	
 }
 
 local function getRewardText(itemId, count)
-    local item = getItemInfo(itemId)
+	local item = getItemInfo(itemId)
 
-    count = count or 1
+	count = count or 1
 
-    if count > 1 then
-        return count .. " " .. item.plural
-    end
+	if count > 1 then
+		return count .. " " .. item.plural
+	end
 
-    if item.article ~= "" then
-        return item.article .. " " .. item.name
-    end
+	if item.article ~= "" then
+		return item.article .. " " .. item.name
+	end
 
-    return item.name
+	return item.name
 end
 
 function onUse(cid, item, fromPosition, itemEx, toPosition)
-    local useItem = config[item.uid]
+	local useItem = config[item.uid]
 
-    if not useItem then
-        return true
-    end
+	if not useItem then
+		return true
+	end
 
-    local storage = getPlayerStorageValue(cid, useItem.storage)
+	local storage = getPlayerStorageValue(cid, useItem.storage)
 
 	if useItem.time then
 		if storage > os.time() then
@@ -1722,104 +1789,103 @@ function onUse(cid, item, fromPosition, itemEx, toPosition)
 		end
 	end
 
-    if useItem.needItem then
-        if getPlayerItemCount(cid, useItem.needItem.itemId) < (useItem.needItem.count or 1) then
-            doPlayerSendCancel(cid, "You do not have the required item.")
-            return true
-        end
-    end
+	if useItem.needItem then
+		if getPlayerItemCount(cid, useItem.needItem.itemId) < (useItem.needItem.count or 1) then
+			doPlayerSendCancel(cid, "You do not have the required item.")
+			return true
+		end
+	end
 
-    local items = useItem.items
-    local result = ""
+	local items = useItem.items
+	local result = ""
 
-    if #items == 1 then
-        local reward = doCreateItemEx(items[1].itemId, items[1].count or 1)
+	if #items == 1 then
+		local reward = doCreateItemEx(items[1].itemId, items[1].count or 1)
 
-        if items[1].actionId then
-            doItemSetAttribute(reward, "aid", items[1].actionId)
-        end
+		if items[1].actionId then
+			doItemSetAttribute(reward, "aid", items[1].actionId)
+		end
 
-        if items[1].text then
-            doItemSetAttribute(reward, "text", items[1].text)
-        end
+		if items[1].text then
+			doItemSetAttribute(reward, "text", items[1].text)
+		end
 
-        if doPlayerAddItemEx(cid, reward, true) ~= RETURNVALUE_NOERROR then
-            doPlayerSendCancel(cid, "You do not have enough capacity or space.")
-            return true
-        end
+		if doPlayerAddItemEx(cid, reward, true) ~= RETURNVALUE_NOERROR then
+			doPlayerSendCancel(cid, "You do not have enough capacity or space.")
+			return true
+		end
 
-        if items[1].decay then
-            doDecayItem(reward)
-        end
+		if items[1].decay then
+			doDecayItem(reward)
+		end
 
-        result = getRewardText(items[1].itemId, items[1].count)
-    else
-        local size = #items
-        local containerId = useItem.containerId or ((size > 8) and 1988 or 1987)
+		result = getRewardText(items[1].itemId, items[1].count)
+	else
+		local size = #items
+		local containerId = useItem.containerId or ((size > 8) and 1988 or 1987)
 
-        local reward = doCreateItemEx(containerId, 1)
+		local reward = doCreateItemEx(containerId, 1)
 
-        for i = size, 1, -1 do
-            local tmp = doCreateItemEx(items[i].itemId, items[i].count or 1)
+		for i = size, 1, -1 do
+			local tmp = doCreateItemEx(items[i].itemId, items[i].count or 1)
 
-            if items[i].actionId then
-                doItemSetAttribute(tmp, "aid", items[i].actionId)
-            end
+			if items[i].actionId then
+				doItemSetAttribute(tmp, "aid", items[i].actionId)
+			end
 
-            if items[i].text then
-                doItemSetAttribute(tmp, "text", items[i].text)
-            end
+			if items[i].text then
+				doItemSetAttribute(tmp, "text", items[i].text)
+			end
 
-            doAddContainerItemEx(reward, tmp)
+			doAddContainerItemEx(reward, tmp)
 
-            if items[i].decay then
-                doDecayItem(tmp)
-            end
-        end
+			if items[i].decay then
+				doDecayItem(tmp)
+			end
+		end
 
-        if doPlayerAddItemEx(cid, reward, true) ~= RETURNVALUE_NOERROR then
-            doPlayerSendCancel(cid, "You do not have enough capacity or space.")
-            return true
-        end
+		if doPlayerAddItemEx(cid, reward, true) ~= RETURNVALUE_NOERROR then
+			doPlayerSendCancel(cid, "You do not have enough capacity or space.")
+			return true
+		end
 
-        result = getItemArticleById(containerId) .. " " .. getItemNameById(containerId)
-    end
+		result = getItemArticleById(containerId) .. " " .. getItemNameById(containerId)
+	end
 
-    if useItem.say then
-        doCreatureSay(cid, useItem.say, TALKTYPE_ORANGE_1)
-    end
+	if useItem.say then
+		doCreatureSay(cid, useItem.say, TALKTYPE_ORANGE_1)
+	end
 
-    if useItem.needItem then
-        doPlayerRemoveItem(cid, useItem.needItem.itemId, useItem.needItem.count or 1)
-    end
+	if useItem.needItem then
+		doPlayerRemoveItem(cid, useItem.needItem.itemId, useItem.needItem.count or 1)
+	end
 
-    if useItem.effect then
-        doSendMagicEffect(toPosition, useItem.effect)
-    end
+	if useItem.effect then
+		doSendMagicEffect(toPosition, useItem.effect)
+	end
 
-    if useItem.missionStorage then
-        if useItem.missionStorage.storage then
-            setPlayerStorageValue(cid, useItem.missionStorage.storage, useItem.missionStorage.value)
-        else
-            for _, storage in ipairs(useItem.missionStorage) do
-                setPlayerStorageValue(cid, storage.storage, storage.value)
-            end
-        end
-    end
+	if useItem.missionStorage then
+		if useItem.missionStorage.storage then
+			setPlayerStorageValue(cid, useItem.missionStorage.storage, useItem.missionStorage.value)
+		else
+			for _, storage in ipairs(useItem.missionStorage) do
+				setPlayerStorageValue(cid, storage.storage, storage.value)
+			end
+		end
+	end
 
-    doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have found " .. result .. ".")
+	doPlayerSendTextMessage(cid, MESSAGE_INFO_DESCR, "You have found " .. result .. ".")
 
-    if useItem.time then
-        setPlayerStorageValue(cid, useItem.storage, os.time() + 86400)
-    else
-        setPlayerStorageValue(cid, useItem.storage, useItem.newValue or 1)
-    end
+	if useItem.time then
+		setPlayerStorageValue(cid, useItem.storage, os.time() + 86400)
+	else
+		setPlayerStorageValue(cid, useItem.storage, useItem.newValue or 1)
+	end
 
-    if useItem.experience and useItem.experience > 0 then
-        doPlayerAddExpEx(cid, useItem.experience)
-        doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE,
-            "You have gained " .. useItem.experience .. " experience.")
-    end
+	if useItem.experience and useItem.experience > 0 then
+		doPlayerAddExpEx(cid, useItem.experience)
+		doPlayerSendTextMessage(cid, MESSAGE_EVENT_ADVANCE, "You have gained " .. useItem.experience .. " experience.")
+	end
 
-    return true
+	return true
 end

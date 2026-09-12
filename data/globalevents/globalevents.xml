@@ -18,7 +18,11 @@
 
 	<!-- Shop System -->
 	<globalevent name="ShopSystem" interval="5000" event="script" value="shop_system.lua"/>
-	
+
+	<!-- Rashid System -->
+	<globalevent name="RashidStartup" type="startup" event="script" value="custom/rashid/rashid_startup.lua"/>
+	<globalevent name="RashidTime" time="23:59:59" event="script" value="custom/rashid/rashid_time.lua"/>
+
 	<!-- Events -->
 	<globalevent name="LotterySystem" interval="60000" event="script" value="events/lottery_system/lottery_system.lua"/>
 

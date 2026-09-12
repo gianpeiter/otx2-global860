@@ -2,18 +2,27 @@ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
-function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
-function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
-function onThink() npcHandler:onThink() end
+function onCreatureAppear(cid)
+	npcHandler:onCreatureAppear(cid)
+end
+function onCreatureDisappear(cid)
+	npcHandler:onCreatureDisappear(cid)
+end
+function onCreatureSay(cid, type, msg)
+	npcHandler:onCreatureSay(cid, type, msg)
+end
+function onThink()
+	npcHandler:onThink()
+end
 
 local function greetCallback(cid)
 	local sex = getPlayerSex(cid)
 
-	npcHandler:setMessage(MESSAGE_GREET,
-		"Hello " ..
-		(sex == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman") ..
-		", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?"
+	npcHandler:setMessage(
+		MESSAGE_GREET,
+		"Hello "
+			.. (sex == PLAYERSEX_FEMALE and "beautiful lady" or "handsome gentleman")
+			.. ", welcome to the atrium of Pumin's Domain. We require some information from you before we can let you pass. Where do you want to go?"
 	)
 
 	return true
@@ -46,25 +55,21 @@ local function creatureSayCallback(cid, type, msg)
 			npcHandler:say("I'm not sure if you know what you are doing but anyway. Your name is?", cid)
 			npcHandler.topic[cid] = 1
 		end
-
 	elseif msgcontains(msg, getPlayerName(cid)) then
 		if npcHandler.topic[cid] == 1 then
 			npcHandler:say("Alright |PLAYERNAME|. Vocation?", cid)
 			npcHandler.topic[cid] = 2
 		end
-
 	elseif vocationName and msgcontains(msg, vocationName) then
 		if npcHandler.topic[cid] == 2 then
 			npcHandler:say(vocationText .. ", is that right?! What do you want from me?", cid)
 			npcHandler.topic[cid] = 3
 		end
-
 	elseif msgcontains(msg, "356") then
 		if npcHandler.topic[cid] == 3 then
 			setPlayerStorageValue(cid, 10007, 2)
 			npcHandler:say("Sorry, you need Form 145 to get Form 356. Come back when you have it.", cid)
 			npcHandler.topic[cid] = 0
-
 		elseif getPlayerStorageValue(cid, 10007) == 7 then
 			setPlayerStorageValue(cid, 10007, 8)
 			npcHandler:say("You are better than I thought! Congratulations, here you are: Form 356!", cid)

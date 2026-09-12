@@ -57,6 +57,9 @@
 	<talkaction access="0-4" words="/serverinfo;!serverinfo" event="script" value="serverinfo.lua"/>
 	<talkaction access="0-4" words="/commands;!commands" event="script" value="commands.lua"/>
 	<talkaction access="0-4" words="/pvp;!pvp" event="script" value="pvp.lua"/>
+	<talkaction access="0-4" words="/dodge;!dodge" event="script" value="dodge_stone.lua"/>
+	<talkaction access="0-4" words="/critical;!critical" event="script" value="critical_stone.lua"/>
+	<talkaction access="0-4" words="/pz;!pz" event="script" value="protection_zone.lua"/>
 	
 	<!-- Players/Disable -->
 	<!-- <talkaction access="0-4" words="/software;!software" event="function" value="software"/> -->
